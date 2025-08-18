@@ -1,0 +1,36 @@
+贡献者：
+========
+
+此工具箱使用了数个第三方组件，我非常感谢这些开发人员的贡献。
+
+7z.exe ：Igor Pavlov，https://www.7-zip.org/
+esddecrypt.exe ：murphy78 @ MDL（编译）、qad @ MDL（原型）
+NSudo.exe ：M2-Team，https://github.com/M2Team/NSudo
+ToolkitHelper.exe ：MSMG，https://msmgtoolkit.in
+ResourceHacker.exe ：Angus Johnson，https://www.angusj.com/resourcehacker/
+wimlib-imagex.exe ：Eric Biggers，https://wimlib.net/
+
+此工具箱使用了多个包，我感谢这些人对工具箱适配包的贡献。
+
+abbodi1406        ：适用于 Windows 8.1 的 Microsoft .NET Framework 3.5 MUI 程序包、Microsoft .NET Framework 4.8 程序包、Windows 重复数据删除程
+                    序包、Windows 8.1/10 默认 Metro Apps 存储库、WHD 存储库更新列表、Windows 7 ESU 更新补丁。
+Alphawaves        ：用于使 MSMG 工具箱帖子成为粘性帖子及 WHD 下载器工具。
+Ef1               ：Microsoft DaRT 10 程序包文件。
+ElDiabl0          ：Windows 7 游戏（Tinker， Hold'Em）MUI 程序包文件。
+kelorgo           ：生成 WMC 通用激活令牌的方式。
+Kenafri           ：修改 MSMG 工具箱打包注册表文件以支持动态路径、Microsoft 桌球游戏包多语言包文件、Windows 边栏、Windows 10 WinToGo 工作区程序包。
+lite8             ：注册表调整以使隐藏的程序包可见以进行移除。
+LostED            ：提供 MSMG 工具箱的下载镜像链接。
+Melinda Bellemore ：SxS Package Extractor。
+murphy78          ：Microsoft DaRT 7/8.1/10 程序包文件。
+moderate          ：Windows Vista 和 Windows 7 游戏程序包文件、Windows 重复数据删除程序包、WinToGo 工作区程序包、Fraunhofer MP3 Pro 编解码器调整。
+Mr Jinje          ：修补 Windows 终端服务器文件（termsrv.dll）的方式。
+Tito              ：Windows Vista 和 Windows 7 Games 可执行补丁工具，Windows 10 Windows To Go 工作区程序包。
+TS                ：适用于 Linux 的 Windows 子系统程序包。
+qad               ：提供 ESD 解密原型源代码。
+Xinso             ：调整以集成旧/新版本 cab 套件。
+RaiyvaN           ：代码优化。
+IMI Kurwic        ：Windows 7 ESU 更新补丁。
+th1r5bvn23        ：PSFExtractor 工具。
+
+我还要感谢所有其他以反馈、故障排除和建议的形式为此工具箱做出贡献的 MDL 会员。

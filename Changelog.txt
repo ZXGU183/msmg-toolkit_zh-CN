@@ -1,0 +1,2777 @@
+v13.7
++ 使用 Windows 11 v24H2 WADK（v10.0.26100.1）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v24.05 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 WimLib-Imagex v1.14.4 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 将以下应用的 Appx 许可证 XML 文件添加或更新到工具箱的 <Bin\AppLicense> 文件夹。
+
+Microsoft 应用程序兼容性增强
+Microsoft AVC Encoder Video Extension
+Microsoft Teams 应用
+Microsoft Windows 开发人员主页
+Microsoft Windows 跨设备
+
++ 更新“移除 Windows 组件”功能，将系统应用组件 WebView2SDK 更名为 WebView2Runtime。
++ 更新“移除 Windows 组件”功能以移除 Windows 11 客户端 v22H2/v23H2 源操作系统的轻松传送和 Windows 备份系统组件。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1/v10.0.17763.5696 [KB5036896]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2019（v10.0.17763.1/v10.0.17763.5696 [KB5036896]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1909 (v10.0.18363.2274 [KB5013945]) 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v22H2（v10.0.19045.4291 [KB5036892]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2021（v10.0.19044.1288/v10.0.19044.4291 [KB5036892]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.2899 [KB5036894]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1）和 v23H2（v10.0.22631.3447 [KB5036893]）源操作系统。
++ 更新“移除 Windows 组件”功能，更新了依赖项和兼容性设置。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v13.6
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25947.1000）工具集更新工具箱的 Bin 文件夹。
++ 将以下应用的 Appx 许可证 XML 文件添加或更新到工具箱的 <Bin\AppLicense> 文件夹中。
+
+Bing Search
+Dolby Audio Extensions
+SkyDrive
+适用于 Surface Hub 的 Microsoft Teams
+Microsoft Office Excel
+Microsoft Office PowerPoint
+Microsoft Office Word
+适用于 Windows 的 Microsoft Outlook
+
+* 将工具箱的 <Packs\Apps\w10> 和 <Packs\Apps\w11> 源文件夹合并到一个 <Packs\Apps\w10>。
++ 更新“集成 Windows 更新”功能，以支持按 Windows 10 和 Windows 11 源操作系统的排序顺序集成更新。
+> 将功能“集成 Windows 内置应用”菜单移至工具箱的集成菜单。
++ 更新“集成 Windows 内置应用”功能，以支持集成以下适用于 Windows 10 和 Windows 11 源操作系统的应用。
+
+Bing Search
+Dolby Audio Extensions
+家庭
+Microsoft Defender Dashboard
+适用于 Windows 的 Outlook
+Power Automate
+快速助手
+Teams
+Windows 安全中心（SecHealthUI）
+
++ 更新“集成 Windows 内置应用”功能，以支持集成以下适用于 Windows 11 源操作系统的应用。
+
+3D 查看器
+开发人员主页
+消息
+Microsoft Pay
+混合现实门户
+移动套餐
+Office OneNote
+画图 3D
+Print 3D
+Skype
+
++ 更新“集成 Windows 内置应用”功能以支持较新的应用依赖项包。
++ 针对“移除 Windows 组件”功能添加了兼容性设置菜单，以保护移除与 Windows 操作系统功能相关的组件。
++ 修复“移除 Windows 组件”功能中针对 Windows 10 客户端 v2004/v20H2/v21H1/v21H2/v22H2、Windows 11 客户端 v21H2/v22H2 源操作系统移除 Cortana 应用将破坏“开始”菜单、任务栏、资源管理器搜索的外壳搜索的 bug。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1/v10.0.17763.4737 [KB5029247]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2019（v10.0.17763.1/v10.0.17763.4737 [KB5029247]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909 (v10.0.1836x.2274 [KB5013945]) 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2/v22H2（v10.0.1904x.3324 [KB5029244]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2021（v10.0.19044.1288/v10.0.19044.3324 [KB5029244]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.2295 [KB5029253]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.2134 [KB5029263]）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v13.5
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25905.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v23.01 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 WimLib-Imagex v1.14.1 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用更新的 Esddecrypt 二进制文件更新了工具箱的 Bin 文件夹。
+- 从工具箱的 Bin 文件夹中移除了 Dism++CUI.exe。
++ 更新工具箱的对话 UI（感谢 MDL 会员 ：inTerActionVRI）。
++ 更新“无人值守”功能，以将自定义自动无人值守 XML 文件导入 Source DVD 文件夹（感谢 MDL 会员 ：inTerActionVRI）。
++ 更新“无人值守”功能，以验证无人值守 XML 文件（感谢 MDL 会员 ：@tempdrive1、inTerActionVRI）。
++ 修复“移除 Windows 组件”功能中移除 UndockedDevKit 组件将为 Windows 10 客户端 v2004/v20H2/v21H1/v21H2/v22H2、Windows 11 客户端 v21H2/v22H2 源操作系统生成 SFC /SCANNOW 错误的 bug。
++ 更新“移除 Windows 组件”功能，以在移除 Windows 10 客户端 v1809/v1903/v19H2/v2004/v20H2/v21H1/v21H2/v22H2、Windows 11 客户端 v21H2/v22H2 源操作系统的 Windows Media Player 组件时保留 Windows 资源管理器媒体文件缩略图支持。
++ 更新“移除 Windows 组件”功能，将系统组件 WindowsStoreClient 更名为 WindowsStoreCore。
++ 更新“移除 Windows 组件”功能，将系统组件 XboxClient 更名为 XboxCore。
++ 更新“移除 Windows 组件”功能，将系统组件 WindowsStoreApp 更名为 WindowsStore。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1/v10.0.17763.4645 [KB5028168]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2019（v10.0.17763.1/v10.0.17763.4499 [KB5027222]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909 (v10.0.1836x.2274 [KB5013945]) 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2/v22H2（v10.0.1904x.3208 [KB5028166]) 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2021（v10.0.19044.1288/v10.0.19044.3208 [KB5028166]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.2176 [KB5028182]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.1992 [KB5028185]）源操作系统。
++ 更新“应用调整”功能，以可将 Windows 11 源操作系统的任务栏对齐方式设置为左侧。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI 和正义羊）。
+
+v13.4
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25370.1）工具集更新工具箱的 Bin 文件夹。
++ 新增主菜单项“无人值守”，为选定的源映像创建 Autounattend XML 文件（感谢 MDL 会员 ：bala1、inTerActionVRI）。
++ 更新“从 <DVD> 文件夹中选择源文件”功能，以检测检测到的源 ESD 映像是应用商店还是 MCT ESD 映像。
++ 修复“从应用商店 ESD 映像中解压源文件”功能中工具箱无法处理存储 ESD 到 WIM 的转换的 Bug。
++ 修复“从 MCT 或自定义 ESD 映像中解压源文件”功能中工具箱无法处理 MCT 或自定义 ESD 到 WIM 的转换的 Bug。
++ 更新工具箱以支持 Windows 11 v22H2（10.0.22631）Moment 4 Insider Preview 源操作系统。
++ 使用 Microsoft .NET Desktop Runtime 6.0.16 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 7.0.5 Runtime 更新 Microsoft .NET 7 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 VC++ 2022（14.36.32532）Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 PowerShell 7.3.4 Runtime 更新了 Microsoft Windows PowerShell 7 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Windows 11 v22H2（v10.0.22621.1778）调试工具更新“集成 Microsoft DaRT 工具集”功能。
++ 更新“集成 WHD 更新”功能以支持集成 Windows 11 OOBE 更新包。
++ 更新“集成 WHD 更新”功能以集成 Windows 11 v22H2（10.0.22631）Moment 4 功能启用更新包。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1/v10.0.17763.4377 [KB5026362]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2019（v10.0.17763.1/v10.0.17763.4377 [KB5026362]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909 (v10.0.1836x.2274 [KB5013945]) 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2/v22H2（v10.0.1904x.2965 [KB5026361]) 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2021（v10.0.19044.1288/v10.0.19044.2965 [KB5026361]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.1936 [KB5026368]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.1702 [KB5026372]）源操作系统。
++ 更新“应用调整”功能以禁用 Windows 10 / Windows 11 源操作系统的下载文件夹自动按日期分组布局（感谢 MDL 会员 ：Shitagi）。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v13.3
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25324.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 WimLib-Imagex v1.13.6 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 11 v22H2（10.0.22624）Moment 3 Insider Preview 源操作系统。
++ 使用 .NET 4.8 KB5022509（4.8.4614.10）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.15 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 7.0.4 Runtime 更新 Microsoft .NET 7 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 PowerShell 7.3.3 Runtime 更新了 Microsoft Windows PowerShell 7 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 VC++ 2022（14.36.32502）Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
+* 将“集成 Mozilla Firefox 浏览器”功能更名为“集成第三方应用程序包”。
++ 新增以下包到适用于以下源操作系统的第三方应用程序包。
+
+7-Zip Extractor v22.01（Windows 7/Windows 8.1/Windows 10/Windows 11）
+Brave 浏览器 v1.48.171（Windows 10/Windows 11）
+Firefox v110.0.1（Windows 7/Windows 8.1/Windows 10/Windows 11）
+Google Chrome v109.0.5414.129（Windows 7/Windows 8.1）
+Google Chrome v111.0.5563.65（Windows 10/Windows 11）
+LibreOffice v7.5.1（Windows 10）
+Stardock Start11 v1.4.1.1（Windows 11）
+StartIsBack+ v1.7.6（Windows 8.1）
+StartIsBack++ v2.9.19（Windows 10）
+StartAllBack v3.6.2.4655（Windows 11）
+
++ 更新“集成 WHD 更新”功能以集成 Windows 11 v22H2（10.0.22624）Moment 3 功能启用更新包。
++ 修复“移除 Windows 组件”功能中除 NCSI 系统应用组件会破坏系统托盘网络状态的 Bug。
++ 更新“移除 Windows 组件”功能以移除适用于 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1/v21H2/v22H2、Windows 11 客户端 v21H2/v22H2 源操作系统的 Windows 更新系统组件。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1/v10.0.17763.4131 [KB5023702]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2019（v10.0.17763.1/v10.0.17763.4131 [KB5023702]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909 (v10.0.1836x.2274 [KB5013945]) 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2/v22H2（v10.0.1904x.2728 [KB5023696]) 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端企业版 LTSC 2021（v10.0.19044.1288/v10.0.19044.2728 [KB5023696]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.1696 [KB5023698]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.1413 [KB5023706]）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v13.2
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25281.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 Microsoft .NET Desktop Runtime 6.0.13 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 7.0.2 Runtime 更新 Microsoft .NET 7 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft Edge Chromium v109.0.1518.61 安装文件更新 Microsoft Edge Chromium 浏览器包（Windows 7/Windows 8.1）。
++ 使用更新的 Microsoft Edge Chromium 组策略定义文件更新适用于 MSMG 工具箱的 Microsoft Edge Chromium 浏览器包。
++ 使用 Microsoft Edge WebView 2 Runtime 1.3.171.39 安装文件更新了 Microsoft Edge WebView 2 Runtime 包（Windows 7/8.1/Windows 10）。
++ 使用 Firefox 109.0 安装文件更新 Mozilla Firefox 浏览器包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Windows 11 v22H2（v10.0.22621.755）调试工具更新“集成 Microsoft DaRT 工具集”功能。
++ 新增“集成 Microsoft 经典画图”功能。
++ 使用 Microsoft 经典画图二进制文件新增 Microsoft 经典画图包（Windows 11）。
++ 更新“集成 Microsoft 默认内置应用”功能以支持新的依赖程序包。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.3887 [KB5022286]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2274 [KB5013945]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.2486 [KB5022282]）、LTSC2021（v10.0.19044.1288/v10.0.19044.2486 [KB5022282]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.1455 [KB5022287]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.1105 [KB5022303]）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v13.1
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25267.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 .NET 4.8 KB5020879（4.8.4590.2）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET Core 3.1 Desktop Runtime 3.1.32 Runtime 更新了 Microsoft .NET Core 3.1 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.12 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 7.0.1 Runtime 更新 Microsoft .NET 7 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 PowerShell 7.3.1 Runtime 更新了 Microsoft Windows PowerShell 7 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft Edge Chromium v108.0.1462.54 安装文件更新 Microsoft Edge Chromium 浏览器包（Windows 7/Windows 8.1）。
++ 使用 Firefox 108.0 安装文件更新 Mozilla Firefox 浏览器包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 修复“移除 Windows 组件”功能中移除 Windows 混合现实组件会破坏 Windows 10 客户端 v1903/v1909 源操作系统的远程桌面的一个 bug。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.3770 [KB5021237]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2274 [KB5013945]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.2364 [KB5021233]）、LTSC2021（v10.0.19044.1288/v10.0.19044.2364 [KB5021233]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.1335 [KB5021234]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.963 [KB5021255]）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v13.0
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25247.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 .NET 4.8 KB5020621（4.8.4585.2）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET Core 3.1 Desktop Runtime 3.1.31 Runtime 更新了 Microsoft .NET Core 3.1 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.11 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 新增“集成 Microsoft .NET 7 Desktop Runtime”功能。
++ 使用 Microsoft .NET Desktop Runtime 7.0.0 Runtime 新增 Microsoft .NET 7 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft Edge Chromium v107.0.1418.56 安装文件更新了 Microsoft Edge Chromium 浏览器包（Windows 7/Windows 8.1）。
++ 使用 Microsoft Edge WebView 2 Runtime 1.3.169.31 安装文件更新了 Microsoft Edge WebView 2 Runtime 包（Windows 7/8.1/Windows 10）。
++ 新增“集成 Mozilla Firefox 浏览器”功能。
++ 使用 Firefox 107.0 安装文件新增 Mozilla Firefox 浏览器包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 PowerShell 7.3 Runtime 更新了 Microsoft Windows PowerShell 7 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 修复“集成 Microsoft 默认内置应用”功能中的几个 bug。
++ 更新“移除 Windows 组件”功能，从适用于 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1/v21H2、Windows 11 客户端 v21H2/v22H2 源操作系统的电子钱包应用中拆分电子钱包服务。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.3650 [KB5019966]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2274 [KB5013945]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.2251 [KB5019959]）、LTSC2021（v10.0.19044.1288/v10.0.19044.2251 [KB5019959]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.1219 [KB5019961]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.819 [KB5019980]）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v12.9
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25227.1000）工具集更新工具箱的 Bin 文件夹。
++ 添加 Windows 8.1 Appx 许可 XML 文件到工具箱的 <Bin\AppLicense> 文件夹。
++ 使用 .NET 4.8 KB5017036（4.8.4574.1）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET Core 3.1 Desktop Runtime 3.1.30 Runtime 更新了 Microsoft .NET Core 3.1 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.10 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 更新“集成 Microsoft Edge Chromium 浏览器”功能，以支持适用于 Windows 7/Windows 8.1 源操作系统的较新 Edge Chromium 版本。
++ 使用 Microsoft Edge Chromium v106.0.1370.52 安装文件更新了 Microsoft Edge Chromium 浏览器包（Windows 7/Windows 8.1）。
++ 使用 VC++ 2022（14.34.31931）Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 修复“集成 Microsoft 默认内置应用”功能中对 Windows 8.1 源操作系统应用集成失败的 Bug。
++ 更新“集成 WHD 更新”功能以集成 Windows Server 2022 v22H2（10.0.20349）功能启用更新包。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.3532 [KB5018419]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2274 [KB5013945]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.2130 [KB5018410]）、LTSC2021（v10.0.19044.1288/v10.0.19044.2130 [KB5018410]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.1098 [KB5018418]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.674 [KB5018427]）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v12.8
++ 将以下应用的 Appx 许可 XML 文件添加或更新到工具箱的 <Bin\AppLicense> 文件夹。
+
+AOMedia Video 1 (AV1) Codec Plugin（ARM64 位）
+OpenCL 和 OpenGL 兼容包（D3D Mapping Layers）
+Microsoft 日记
+Windows Defender（SecHealthUI）
+Webp 图像插件
+Windows 终端
+
++ 更新“集成 Microsoft 默认内置应用”功能，以支持集成适用于 Windows 10 和 Windows 11 源操作系统的 Microsoft 日记。
++ 修复“集成 WHD 更新”功能中在选择集成 WHD 更新到安装映像菜单时，工具箱被终止的 Bug。
++ 修复“集成 WHD 更新”功能中 Windows 11 v22H2 Moment 1/2 启用包未显示更新信息的 Bug。
+* 将菜单清理源映像更名为使用 DISM Cleanup-Image 清理源映像。
+
+v12.7
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25206.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 11 v22H2（10.0.22622）Moment 1 Insider Preview 源操作系统。
++ 更新工具箱以支持 Windows 11 v22H2（10.0.22623）Moment 2 Insider Preview 源操作系统。
++ 使用 .NET 4.8 汇总更新 KB5017036（4.8.4556.2）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET Core 3.1 Desktop Runtime 3.1.28 Runtime 更新了 Microsoft .NET Core 3.1 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.9 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 VC++ 2022（14.32.31823）Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 WHD 更新”功能以集成 Windows 11 v22H2（10.0.22622）Moment 1 功能启用更新包。
++ 更新“集成 WHD 更新”功能以集成 Windows 11 v22H2（10.0.22623）Moment 2 功能启用更新包。
++ 更新“移除 Windows 组件”功能 - 从适用于 Windows 11 源操作系统的 Edge Chromium 组件中拆分 Edge WebView。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.3406 [KB5017315]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2274 [KB5013945]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.2006 [KB5017308]）、LTSC2021（v10.0.19044.1288/v10.0.19044.2006 [KB5017308]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.978 [KB5017328]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.2262x.521 [KB5017321]）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v12.6
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25182.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 v22H2（v10.0.19045）源操作系统。
++ 使用 .NET 4.8 汇总更新 KB5014631（4.8.4545.3）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 新增“集成 Microsoft .NET Framework 4.8.1”，用于 Windows 10 v2004/v20H2/v21H1/v21H2/v22H2、Windows 11 v21H2/v22H2 源操作系统。
++ 新增“集成 Microsoft Edge WebView 2 Runtime”功能。
++ 新增适用于 MSMG 工具箱的 Microsoft Edge WebView 2 Runtime 包（Windows 7/8.1/Windows 10）。
++ 使用 Microsoft .NET Core 3.1 Desktop Runtime 3.1.28 Runtime 更新了 Microsoft .NET Core 3.1 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.8 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 PowerShell 7.2.6 Runtime 更新 Microsoft Windows PowerShell 7（Windows 7/Windows 8.1/Windows 10/Windows 11）包。
++ 使用 VC++ 2022（14.32.31332）Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Windows 11 v21H2（v10.0.22000.832）调试工具集更新了“集成 Microsoft DaRT 工具集”。
++ 更新“集成 WHD 更新”功能以集成 Windows 10 v22H2（v10.0.19045）功能启用更新包。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.3287 [KB5016623]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2274 [KB5013945]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.1889 [KB5016616]）、LTSC2021（v10.0.19044.1288/v10.0.19044.1889 [KB5016616]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.856 [KB5016629]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.22621.382 [KB5016632]）源操作系统。
++ 新增脚本以下载工具箱非自定义包文件（感谢 MDL 会员 ：inTerActionVRI）。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v12.5
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25158.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v22.01 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 更新“集成 Microsoft .NET Core 3.1 Desktop Runtime”功能用于 Windows 7/Windows 8.1 源操作系统。
++ 使用 Microsoft .NET Core 3.1 Desktop Runtime 3.1.27 Runtime 更新了 Microsoft .NET Core 3.1 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.7 Runtime 更新了 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 更新“集成 WHD 更新”功能以支持集成 Microsoft .NET Framework 3.5 关键动态更新。
++ 修复“移除 Windows 组件”功能中当在为 Windows 11 客户端 v22H2 源操作系统选择删除时，Clipchamp Windows 应用没有删除的 Bug。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.3165 [KB5015811]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2274 [KB5013945]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.1826 [KB5015807]）、LTSC2021（v10.0.19044.1288/v10.0.19044.1826 [KB5015807]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.795 [KB5015814]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.22621.232 [KB5015818]）源操作系统。
+
+v12.4
++ 恢复 Start.cmd 模组以启动 Toolkit.cmd。
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25145.1000）工具集更新工具箱的 Bin 文件夹。
++ 将以下应用的 Appx 许可 XML 文件添加到工具箱的 <Bin\AppLicense> 文件夹。
+
+AMD Link
+HP Support Assistant 9
+Intel Graphics Command Center
+Intel Thunderbolt Controller
+Rivet Networks Killer Control Center
+Waves Maxx Audio Pro for Dell
+
++ 使用 PowerShell 7.2.5 Runtime 更新 Microsoft Windows PowerShell 7（Windows 7/Windows 8.1/Windows 10/Windows 11）包。
++ 使用 Microsoft .NET Desktop Runtime 6.0.6 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1）。
++ 更新“集成 Microsoft 默认内置应用”功能，支持集成适用于 Windows 10 和 Windows 11 源操作系统的以下应用。
+
+AMD Link
+HP Support Assistant 9
+Intel Graphics Command Center
+Intel Thunderbolt Controller
+Rivet Networks Killer Control Center
+Waves Maxx Audio Pro for Dell
+
++ 更新“集成 WHD 更新”功能以支持 msu 文件格式的 Windows 11 更新。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI）。
+
+v12.3
+> 将 Start.cmd 代码迁移到 Toolkit.cmd 因此工具箱可以直接通过 Toolkit.cmd 启动（感谢 MDL 会员 ：inTerActionVRI）。
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.25140.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v22.0 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 PSFExtractor v2.0.0.0 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 WimLib-Imagex v1.13.5 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 11 v22H2（v10.0.22621）源操作系统。
+* 将“从 MCT ESD 映像中解压源文件”和“从自定义 ESD 映像解压源文件”功能合并为“从 MCT 或自定义 ESD 映像解压源文件”。
++ 更新“从 MCT 或自定义 ESD 映像解压源文件”功能以使用 Wimlib-imagex 导出映像索引。
++ 使用 .NET 4.8 汇总更新 KB5014631（4.8.4526.1）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 新增“集成 Microsoft .NET Core 3.1 Desktop Runtime”功能，用于 Windows 10/Windows 11 源操作系统。
++ 使用 Microsoft .NET Core 3.1 Desktop Runtime 3.1.26 Runtime 新增 Microsoft .NET Core 3.1 Desktop Runtime 包（Windows 10/Windows 11）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.5 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.6 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 10/Windows 11）。
++ 使用 PowerShell 7.2.4 Runtime 更新 Microsoft Windows PowerShell 7（Windows 7/Windows 8.1/Windows 10/Windows 11）包。
++ 使用 VC++ 2022（14.32.31326.0）Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 Microsoft DaRT 工具集”功能以支持 Windows 11 v22H2（v10.0.22621.1）源操作系统。
++ 使用 Windows 11 v21H2（v10.0.22621.1）调试工具更新 Microsoft DaRT 包。
++ 更新“集成 WHD 更新”功能以支持 Windows 11 v22H2 更新文件名称格式。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1/v21H2、Windows 11 客户端 v21H2/v22H2 源操作系统列出的以下多媒体组件。
+
+LockScreenBackground
+ScreenSavers
+SoundThemes
+Wallpapers
+WindowsThemes
+
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1/v21H2、Windows 11 客户端 v21H2/v22H2 源操作系统列出的 Windows 邮件（从 CommunicationsApps 拆分）网络组件。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1/v21H2、Windows 11 客户端 v21H2/v22H2 源操作系统的 Webcam Experience 系统应用组件。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 11 客户端 v22H2 源操作系统列出的以下 Windows 应用组件。
+
+Clipchamp
+Family
+HEVCVideoExtension
+RawImageExtension
+QuickAssist
+
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.3046 [KB5014692]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2274 [KB5013945]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2/LTSC2021（v10.0.1904x.1766 [KB5014699]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.739 [KB5014697]）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v22H2（v10.0.22621.1/v10.0.22621.105 [KB5014688]）源操作系统。
++ 新增适用于 Windows 11 客户端 v22H2 源操作系统的 DISM 移除程序包列表模板。
++ 新增适用于 Windows 11 客户端 v22H2 源操作系统的 ToolKitHelper 移除程序包列表模板。
++ 更新"应用并保存更改到源映像"功能以使用 Wimlib-imagex 导出或重建映像索引。
++ 更新“WIM 管理器 -> 导出”功能以使用 Wimlib-imagex 导出映像索引。
++ 更新“WIM 管理器 -> 转换”功能以使用 Wimlib-imagex 导出映像索引。
++ 更新“WIM 管理器 -> 转换”功能以使用 Wimlib-imagex 重建映像。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI 和正义羊）。
+
+v12.2
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.22598.1）工具集更新工具箱的 Bin 文件夹。
++ 将 Microsoft Clipchamp 视频编辑器应用、快速助手应用、Raw 图像插件应用和适用于 Linux 的 Windows 子系统许可 XML 文件添加到工具箱的 <Bin\AppLicense> 文件夹。
++ 使用 .NET 4.8 汇总更新 KB5012125（4.8.4494.3）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.4 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 VC++ 2022（14.32.31302.0）Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 Microsoft 默认内置应用”功能，支持集成适用于 Windows 10 和 Windows 11 源操作系统的 Microsoft Clipchamp 视频编辑器应用。
++ 更新“集成 Microsoft 默认内置应用”功能，支持集成适用于 Windows 11 v22H2 源操作系统的 Microsoft 快速助手应用。
++ 使用包含额外的运行时文件及程序和功能中的卸载信息更新了适用于 MSMG 工具箱 Microsoft DirectX 9.0c 包（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 WHD 更新”功能改进对更新包的检测。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统的以下系统组件列表。
+
+AccessibilityTools
+EaseOfAccessCursors
+Magnifier
+Narrator
+OnScreenKeyboard
+
++ 更新“移除 Windows 组件”功能以支持移除用于 Windows 11 客户端 v21H2 源操作系统的设置同步系统应用组件。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809/LTSC2019（v10.0.17763.1/v10.0.17763.2803）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2212）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2/LTSC2021（v10.0.1904x.1645）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.613）源操作系统。
++ 更新适用于 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1/v21H2、Windows 11 客户端 v21H2 源操作系统的 ToolKitHelper 移除包列表模板。
++ 使用 Tweak 更新了“应用调整 -> 禁用 Windows 11 硬件要求”功能，以禁用不受支持的硬件水印。
++ 使用 Tweak 更新了“应用调整”功能，以启用 Windows 11 源操作系统的 Windows 本地帐户支持。
++ 使用 Tweak 更新了“应用调整”功能，以隐藏 Windows 10/11 源操作系统任务栏上的 Cortana 图标。
++ 使用 Tweak 更新了“应用调整”功能，以隐藏 Windows 10/11 源操作系统任务栏上的搜索栏。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI 和正义羊）。
+
+v12.1
++ 使用 Windows 11 v22H2 Insider Preview WADK（v10.0.22567.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v21.07 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 .NET 4.8 汇总更新 KB5010457（4.8.4480.1）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.3 Runtime 更新 Microsoft .NET 6 Desktop Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）
++ 使用 PowerShell 7.2.1 Runtime 更新 Microsoft Windows PowerShell 7（Windows 7/Windows 8.1/Windows 10/Windows 11）包
++ 使用 VC++ 2022（14.31.31103.0）Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 Microsoft 默认内置应用”功能，带有改进的菜单，用于选择多个应用并立即集成。
++ 更新“集成 Microsoft 默认内置应用”功能以支持集成适用于 Windows 10 v1903/v1909/v2004/v20H2/v21H1/v21H2、Windows 11 v22H2 源操作系统的 Microsoft Raw 图像插件应用。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 修复“移除 Windows 组件”功能中移除 Cortana 系统应用组件会破坏 Windows 10 客户端 v1903/v1909 源操作系统的 Windows 资源管理器搜索栏的 Bug。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统中的 WindowsTIFFIFilter 多媒体组件。
++ 使用新的网络组件类别更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统列出的以下组件。
+
+OfflineFiles
+OpenSSH
+RemoteDesktopClient
+RemoteDifferentialCompression
+SimpleTCPIPServices
+TelnetClient
+TFTPClient
+
+> 将 OneDrive 组件从系统应用类别移至远程处理类别。
++ 更新“移除 Windows 组件”功能以删除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统的以下远程处理组件列表。
+
+RemoteDesktopServer
+RemoteRegistry
+WorkFoldersClient
+
++ 更新“移除 Windows 组件”功能以移除 Windows 10 企业版 LTSC 2019/2021 源操作系统的计算器（Win32Calc）系统组件。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统的以下系统组件列表。
+
+Notepad（Win32 记事本）
+ProjFS
+StorageSpaces
+
++ 更新“移除 Windows 组件”功能以移除以下 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统的系统应用组件列表。
+
+AddSuggestedFoldersToLibraryDialog
+AppResolverUX
+FilePicker
+PinningConfirmationDialog
+PrintDialog
+
++ 更新“移除 Windows 组件”功能以移除 Windows 10 客户端 v1909/v2004/v20H2/v21H1 源操作系统的 NcsiUwpApp 和 SearchApp 系统应用组件。
+* 将计算器 Windows 应用组件更名为 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1/v21H2、Windows 11 客户端 v21H2 源操作系统的计算机应用。
+* 将记事本 Windows 应用组件更名为适用于 Windows 11 客户端 v21H2 源操作系统的记事本应用。
++ 更新“移除 Windows 组件 -> 选择 Windows 组件”功能菜单以显示每个组件的详细说明。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.2686）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.2158）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.1586）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.556）源操作系统。
++ 更新 ToolKitHelper 程序以显示组件列表以及每个组件的详细描述。
++ 更新 ToolKitHelper 程序以支持在包列表中以 # 字符开头的注释，以指示该行是注释行。
++ 更新适用于 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1/v21H2、Windows 11 客户端 v21H2 源操作系统的 ToolKitHelper 移除包列表模板。
++ 使用 Tweak 更新了“应用调整”功能，以禁用适用于 Windows 11 源操作系统的 Microsoft Teams 应用的自动下载和安装（感谢 MDL 会员 ：hydropepon 和 roedel）。
++ 优化工具箱的代码（感谢 MDL 会员 ：inTerActionVRI 和正义羊）。
+
+v12.0
++ 使用 7-zip v21.06 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 企业版 LTSC 2021 源操作系统。
++ 更新“集成 Microsoft 默认内置应用”功能以支持为 Windows 10 和 Windows 11 源操作系统集成亚马逊应用商店和 NVIDIA 控制面板应用。
++ 修复“移除 Windows 组件”功能中当使用 SystemApps 或 AllComponents 类别作为组件名称时，OOBENetworkConnectionFlow 组件没有通过 ToolKitHelper.exe 删除的 Bug。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2/LTSC2021（v10.0.1904x.1387）源操作系统。
++ 更新“应用调整”功能以使用调整对 Windows 11 源操作系统禁用自动下载并安装第三方应用。
+
+v11.9
++ 使用 7-zip v21.04 Beta 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 PSFExtractor v1.0.7.1 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 WimLib-Imagex v1.13.5 Beta1 命令行二进制文件更新工具箱的 Bin 文件夹。
+> 移动“集成 Microsoft 默认内置应用”许可 XML 文件到工具箱的 <Bin\AppLicense> 文件夹。
++ 修复“集成 Edge Chromium 浏览器”功能中对于 Windows 8.1 源操作系统工具箱显示包文件未找到错误的 Bug。
++ 使用 Windows 10 企业版 LTSB 2016（v10.0.14393）Win32 计算器 MUI 二进制文件更新 Microsoft Win32 计算器包（Windows 10/Windows 11）。
++ 使用 .NET 4.8 汇总更新 KB5004755（4.8.4450.1）更新 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET Desktop Runtime 6.0.0 Runtime 新增 Microsoft .NET 6 Desktop Runtime 包（Windows 10/Windows 11）。
++ 使用 PowerShell 7.2.0 Runtime 更新 Microsoft Windows PowerShell 7 包（Windows 10/Windows 11）。
++ 使用 VC++ 2022（14.31.30818.0）Runtime 更新 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 修复“集成 Microsoft 默认内置应用”功能中在 Windows 邮件应用集成时抛出错误的 Bug。
++ 更新“集成 Microsoft 默认内置应用”功能以支持适用于 Windows 10 和 Windows 11 源操作系统的以下应用（感谢 MDL 会员 ：LostED）。
+
+.. AOMedia Video 1（AV1）编解码器插件（32 位）
+.. OpenCL 和 OpenGL 到 D3D12 的映射层
+.. 适用于 Windows 的 Microsoft Power BI
+.. 白板
+
++ 更新“集成 Microsoft 默认内置应用”功能以支持向 Windows 11 源操作系统集成以下应用（感谢 MDL 会员 ：LostED）。
+
+.. 我的世界教育版
+.. Teams 聊天
+.. Windows Defender Dashboard
+.. 适用于 Android 的 Windows 子系统（WSA）
+.. 适用于 Linux 的 Windows 子系统（WSL）
+
++ 使用 Windows 11 v21H2 Insider Preview（v10.0.22000.194）调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 更新“集成 WHD 更新包”功能以支持集成适用于 Windows 10 v1809/v1903/v19H2 源操作系统的组合 SSU + LCU 更新。
++ 修复“移除 Windows 组件”功能对 Windows 11 源操作系统移除小组件应用抛出由于长文件夹路径名导致的异常的 Bug。
++ 更新“移除 Windows 组件”功能将列出适用于 Windows 10 和 Windows 11 源操作系统的轻松访问所需的语音识别组件。
++ 更新“移除 Windows 组件”功能将列出适用于 Windows 11 源操作系统的 OOBE 所需的语音识别组件。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.2300）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903（v10.0.18362.1）和 v1903/v1909（v10.0.1836x.1916）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004（v10.0.19041.1）和 v2004/v20H2/v21H1/v21H2（v10.0.1904x.1348）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.318）源操作系统。
++ 更新适用于 Windows 10 和 Windows 11 源操作系统组件使用 DISM 方式的移除程序包模板。
++ 更新适用于 Windows 11 源操作系统组件使用 ToolKitHelper 方式的移除程序包模板。
++ 更新“应用调整”功能以使用调整启用 Windows 11 源操作系统的 Windows 经典上下文菜单。
++ 更新“应用调整”功能以使用调整禁用 Windows 防火墙。
++ 更新“应用调整”功能以使用调整隐藏 Windows 11 源操作系统中的 Windows 11 任务栏聊天图标。
++ 优化工具箱的代码（感谢 MDL 会员 ：RaiyvaN、spriditis 和正义羊）。
+
+v11.8
++ 更新了工具箱适配包结构以支持 Windows 11 源操作系统。
+> 将 WinPE 语言包修补文件从工具箱的 <Bin\Patches> 文件夹移动到 <Packs\LanguagePacks\SourceOS\ImageVersion\Architecture> 文件夹。
++ 更新“集成 Windows 语言包”功能以支持 Windows Server LTSC 2022（v10.0.20348）源操作系统。
++ 更新“集成 Windows 语言包”功能以支持 Windows 11 客户端 v21H2（v10.0.22000）源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 语言包（Windows Server LTSC 2022（v10.0.20348.1））。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 语言包（Windows 11 v21H2 Insider Preview（v10.0.22000））。
++ 更新“集成 Microsoft 默认内置应用”功能以支持 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统。
++ 更新“集成 Microsoft 默认内置应用”功能以支持为 Windows 10 32 位源操作系统集成 AV1 视频扩展编解码器插件。
++ 新增适用于 MSMG 工具箱的 Microsoft 默认内置应用包（Windows 11 v21H2）。
++ 使用 Windows 10 企业版 LTSB 2016（v10.0.14393）Win32 计算器二进制文件更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包（Windows 10/Windows 11）。
++ 使用 .NET 4.8 汇总更新 KB5004755（4.8.4410.1）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 PowerShell 7.1.4 Runtime 更新适用于 MSMG 工具箱的 Microsoft Windows PowerShell 7 包（Windows 7/Windows 8.1/Windows 10/Windows 11）。
++ 使用 VC++ 2019 v14.30.30528.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10/Windows 11）（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 WHD 更新”功能以支持 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统。（感谢 MDL 会员 ：th1r5bvn23）。
++ 修复“移除 Windows 组件”功能中移除组件 Windows Media Player 会破坏 Apple iCloud 安装程序的 Bug。
++ 更新“移除 Windows 组件”功能 - 从 Xbox 应用组件拆分 Windows XboxGameOverlay、XboxGamingOverlay、XboxIdentityProvider、XboxSpeechToTextOverlay 和 XboxTCUI 组件。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.2183）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1801/v10.0.18363.1801）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2/v21H1/v21H2（v10.0.19041.1237/v10.0.19042.1237/v10.0.19043.1237/v10.0.19044.1237）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 11 客户端 v21H2（v10.0.22000.1/v10.0.22000.194）源操作系统。
++ 在工具箱的 <Bin\Lists\DISM_Templates> 文件夹中为 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统添加 DISM 移除应用列表模板。
++ 在工具箱的 <Bin\Lists\DISM_Templates> 文件夹中为 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统添加 DISM 移除程序包列表模板。
++ 在工具箱的 <Bin\Lists\ToolkitHelper_Templates> 文件夹中为 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统添加 ToolKitHelper 移除程序包列表模板。
++ 在工具箱的 <Bin\Lists\Features_Templates> 文件夹中为 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统添加功能列表模板。
++ 更新“应用调整”功能以使用调整禁用 Windows 11 源操作系统的 Windows 11 安装程序 CPU 硬件检查。
++ 更新“WIM 管理器->转换”功能以支持 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：RaiyvaN）。
+
+v11.7
++ 使用 Windows 11 v21H2 Insider Preview WADK（v10.0.22000.1）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v21.03 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 21H2（v10.0.19044）源操作系统。
++ 更新工具箱以支持 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统。
++ 更新“集成 Microsoft .NET Framework 3.5”功能以支持 Windows Server LTSC 2022（v10.0.20348）源操作系统。
++ 更新“集成 Microsoft .NET Framework 3.5”功能以支持 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统。
++ 新增适用于 MSMG 工具箱的适用于 Windows Server LTSC 2022（v10.0.20348.1）源操作系统的 Microsoft .NET Framework 3.5 包。
++ 新增适用于 MSMG 工具箱的适用于 Windows 11 v21H2 Insider Preview（v10.0.22000.1）源操作系统的 Microsoft .NET Framework 3.5 包。
++ 使用 .NET 4.8 汇总更新 KB5004116（4.8.4395.1）+ KB4600944-v3 更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用较旧的 Windows 10 Enterprise LTSC 2019（v10.0.17763）Win32Calc 文件更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 更新“Microsoft Windows 盲文辅助”功能以支持 Windows Server LTSC 2022（v10.0.20348）源操作系统。
++ 更新“Microsoft Windows 盲文辅助”功能以支持 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统。
++ 使用 Windows Server LTSC 2022（v10.0.20348.1） - Windows 盲文辅助 CAB 文件新增适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包。
++ 使用 Windows 11 v21H2 Insider Preview（v10.0.22000.1） - Windows 盲文辅助 CAB 文件新增适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包。
++ 更新“集成 Multimedia Restricted Codecs”功能以对 Windows 10 LTSC 和服务器源操作系统集成 Windows 10 杜比编解码器。
++ 使用 Windows 10 Dolby 编解码器 MUI CAB 文件更新适用于 MSMG 工具箱的 Multimedia Restricted Codecs 包。
++ 更新“Open Secure Shell（SSH）”功能以支持 Windows Server LTSC 2022（v10.0.20348）源操作系统。
++ 更新“Open Secure Shell（SSH）”功能以支持 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统。
++ 使用 Windows Server LTSC 2022（v10.0.20348.1） - Windows Open Secure Shell（SSH）客户端和服务器端 CAB 文件新增适用于 MSMG 工具箱的 Open Secure Shell（SSH）包。
++ 使用 Windows 11 v21H2 Insider Preview（v10.0.22000.1） - Windows Open Secure Shell（SSH）客户端和服务器端 CAB 文件新增适用于 MSMG 工具箱的 Open Secure Shell（SSH）包。
++ 更新“集成 Microsoft DaRT 工具”功能以支持 Windows Server LTSC 2022（v10.0.20348）源操作系统。
++ 更新“集成 Microsoft DaRT 工具”功能以支持 Windows 11 v21H2 Insider Preview（v10.0.22000）源操作系统。
++ 使用 Windows Server LTSC 2022（v10.0.20348.1）调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 使用 Windows 11 v21H2 Insider Preview（v10.0.22000.1）调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.2061）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1679/v10.0.18363.1679）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2/v21H1（v10.0.19041.1110/v10.0.19042.1110/v10.0.19043.1110）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2/v21H1/v21H2（v10.0.19041.1151/v10.0.19042.1151/v10.0.19043.1151/v10.0.19044.1151）源操作系统。
++ 由于一个 Bug，禁用了对 Windows 防火墙 Windows 组件的移除。
++ 新增“集成 Microsoft 图标皮肤”功能，用于 Windows 10 源操作系统。
++ 更新“应用调整”功能以使用调整禁用 Windows 11 源操作系统的 Windows 11 安装程序硬件检查。
++ 修复“WIM 管理器->导出”功能中选择所有 WIM 索引时导出失败的 Bug。
++ 修复“WIM 管理器->转换”功能中选择所有 WIM 索引时转换失败的 Bug。
++ 优化工具箱的代码（感谢 MDL 会员 ：RaiyvaN）。
+
+v11.6
++ 使用 Windows 10 21H1 Insider Preview WADK（v10.0.21382.1）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v21.02 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 NSudo v8.2.0.0 二进制文件更新工具箱的 Bin 文件夹。
++ 使用 WimLib-Imagex v1.13.4 二进制文件更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows Server LTSC 2022（v10.0.20348）源操作系统。
++ 更新“从 DVD 选择源文件”功能以使用第一个源文件索引作为安装恢复映像（winre.wim）的来源。
++ 更新“从 DVD 选择源文件”功能以在选择多索引维护模式时仅从第一源文件索引安装恢复映像。
++ 使用 .NET 4.8 汇总更新 KB5003543（4.8.4380.1）+ KB5003318 / KB4600944-v3 更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET 5.0.7 Runtime 更新适用于 MSMG 工具箱的 Microsoft .NET 5 桌面运行时包（Windows 10）。
++ 使用最新的 Microsoft Edge Chromium cab 文件更新适用于 MSMG 工具箱的 Microsoft Edge Chromium 浏览器包（Windows 7/8.1）。
++ 使用最新的 Microsoft Edge Chromium 组策略定义文件更新适用于 MSMG 工具箱的 Microsoft Edge Chromium 浏览器包
++ 使用 Windows Server LTSC 2022（v10.0.20348）Win32Calc 文件更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 更新“Microsoft 游戏”功能以集成 Microsoft Windows XP 和 Vista 游戏（Carioca Rummy、Hold 'Em、墨球、桌上弹球、Sudoku、Tinker）。
++ 使用 Microsoft Windows XP 和 Vista 游戏更新适用于 MSMG 工具箱的 Microsoft 游戏包。
++ 更新“集成 Microsoft 默认内置应用”功能以支持集成打包为 .msixbundle 格式的应用。
++ 使用 VC++ 2019 v14.29.30130 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Windows 8.1/Windows 10）（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 WHD 更新”功能以支持集成 Windows 7 扩展安全更新（ESU）（感谢 MDL 会员 ：IMI Kurwica、abbodi1406）。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1999）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1621/v10.0.18363.1621）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2/v21H1（v10.0.19041.1052/v10.0.19042.1052/v10.0.19043.1052）源操作系统。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统中的 AccountsControl、CapturePicker、OOBENetworkCaptivePortal 和 OOBENetworkConnectionFlow 系统应用组件。
++ 更新“应用调整”功能以隐藏立即开会图标。
++ 更新“应用调整”功能以资讯和兴趣。
++ 更新“应用并保存更改”功能以跳过重建 boot.wim 和 winre.wim 映像（如果它们没有被选择安装）。
++ 更新“应用并保存更改”功能以当选择多索引维护模式时，将更新的恢复映像（winre.wim）复制到其余选定索引。
++ 优化工具箱的代码（感谢 MDL 会员 ：RaiyvaN）。
+
+v11.5
++ 使用 Windows 10 21H1 Insider Preview WADK（v10.0.20339.2）工具集更新工具箱的 Bin 文件夹。
++ 使用 Microsoft .NET 5.0.5 Runtime 更新适用于 MSMG 工具箱的 Microsoft .NET 5 包（Windows 7/Windows 8.1/Windows 10）。
++ 使用 .NET 4.8 汇总更新 KB5001843 Refresh（4.8.4351.2）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 .NET 4.8 汇总更新 KB4486105 Refresh（4.8.4351.0）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 8.1/Server 2012 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 .NET 4.8 更新（10.0.1.3333）更新了适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 10/Server 2016/2019）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 VC++ 2019 v14.29.30129.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 修复“集成 WHD 更新”功能中导致工具箱无法提取 v2004 以下版本的 Windows 10 版本的更新的 Bug。
++ 修复“移除 Windows 组件”功能中“系统组件”菜单选项选择不匹配的错误。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1935）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1556/v10.0.18363.1556）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2/v21H1（v10.0.19041.985/v10.0.19042.985/v10.0.19043.985）源操作系统。
++ 更新“移除 Windows 组件”功能以提高移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统中的 Windows 更新兼容性。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1809/v1903/v1909 源操作系统中的 Edge Chromium 组件。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v20H2/v21H1 源操作系统中的 AsyncTextService、CredDialogHost 和 XGpuEjectDialog 系统应用组件。
+
+v11.4
++ 使用 PowerShell 7.1.3 Runtime 更新适用于 MSMG 工具箱的 Microsoft Windows PowerShell 7 包（Windows 7/Windows 8.1/Windows 10）。
++ 使用 Microsoft .NET 5.0.4 Runtime 更新适用于 MSMG 工具箱的 Microsoft .NET 5 包（Windows 7/Windows 8.1/Windows 10）。
++ 使用 .NET 4.8 汇总更新 KB4578977-v2/KB4600944-v2（4.8.4331.3）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 VC++ 2019 v14.29.29917.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 WHD 更新”功能以集成新的组合式 SSU + LCU 更新包。
++ 更新“集成 WHD 更新”功能以集成新的 Windows 10 21H1（v10.0.19043）功能启用更新包。
++ 修复“集成 WHD 更新”功能中获取更新后的映像内部版本信息的模块给出注册表未找到的错误。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 21H1（v10.0.19043）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1817）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1440/v10.0.18363.1440）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2/v21H1（v10.0.19041.867/v10.0.19042.867/v10.0.19043.867）源操作系统。
++ 更新“应用调整”功能以一次集成所有调整。
++ 更新“WIM 管理器”功能，含有用于优化源操作系统的选项。 
+
+v11.3
++ 更新工具箱以支持 Windows 10 21H1（v10.0.19043）源操作系统。
++ 使用 PowerShell 7.1.2 Runtime 更新适用于 MSMG 工具箱的 Microsoft Windows PowerShell 7 包（Windows 10）。
++ 使用 Microsoft .NET 5.0.3 Runtime 更新适用于 MSMG 工具箱的 Microsoft .NET 5 包（Windows 10）。
++ 修复“集成 Microsoft 默认内置应用”功能中未集成 Google 的 VP9 扩展应用的 bug。
++ 更新“集成 WHD 更新”功能以集成 Windows 10 21H1（v10.0.19043）功能启用更新包。
++ 更新“移除 Windows 组件”功能——从 Windows 应用商店应用组件拆分 Windows 应用商店后端、Services Store Engagement 和应用商店购买应用。
++ 更新“移除 Windows 组件”功能——从 Xbox 应用组件拆分 Xbox 后端。 
++ 使用经过修订的组件依赖项设置更新了“移除 Windows 组件”功能。 
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1757）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1379/v10.0.18363.1379）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2（v10.0.19041.804/v10.0.19042.804）源操作系统。
++ 优化工具箱的代码（感谢 MDL 会员 ：RaiyvaN）。
+
+v11.2
++ 使用 .NET 4.8 更新（10.0.1.3314）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 10/Server 2016/2019）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 .NET 4.8 更新 KB4600944（4.8.4330.5）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 PowerShell 7.1.1 Runtime 更新适用于 MSMG 工具箱的 Microsoft Windows PowerShell 7 包（Windows 7/Windows 8.1/Windows 10）。
++ 使用 VC++ 2019 v14.28.29812.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 使用 Microsoft .NET 5.0.2 Runtime 更新适用于 MSMG 工具箱的 Microsoft .NET 5 包（Windows 7/8.1/10）。
++ 新增“集成 Windows 混合现实”功能，适用于 Windows 10 v1809 LTSC 源操作系统。
++ 新增适用于 MSMG 工具箱的 Windows 混合现实包（Windows 10）。
++ 将功能“集成 Microsoft 默认 Metro 应用”更名为“集成 Microsoft 默认内置应用”。
++ 更新了“集成的 Microsoft 默认内置应用”功能以在 Windows 10 源操作系统中使用统一应用文件夹。 
++ 更新了功能“集成 Microsoft 默认内置应用”，以集成适用于 Windows 10 源操作系统的 AV1 视频扩展编解码器插件、资讯和 Todos 应用。 
++ 新增“集成自定义字体”功能（感谢 MDL 会员 ：Javanicus）。
++ 更新“集成 WHD 更新”功能以向已达到 EOL 状态的 Windows 10 客户端 v1507/v1607/v1803/v1809 源操作系统版本集成更新。 
++ 更新“集成 WHD 更新”功能以从单一文件夹集成更新到 Windows 10 源操作系统。
++ 更新“集成 WHD 更新”功能以集成 Microsoft .NET Framework 3.5 到 Windows 10 源操作系统。
++ 更新“集成 WHD 更新”功能以集成 Microsoft .NET Framework 4.8 到 Windows 10 源操作系统。
++ 更新“集成 WHD 更新”功能以集成移除 Flash Player 更新到 Windows 10 源操作系统。
++ 优化工具箱“ Microsoft DaRT 工具集”功能的代码（感谢 MDL 会员 ：RaiyvaN）。
++ 修复“集成自定义 Windows 恢复环境映像”功能中未能正确检测到自定义恢复映像路径的 bug。 
++ 修复“移除 Windows 组件”功能中在使用“移除 Windows 组件”菜单时跳过 CEIP_SQM 组件移除的 bug。 
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1697）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1316/v10.0.18363.1316）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2（v10.0.19041.745/v10.0.19042.745）源操作系统。
++ 优化工具箱“移除 Windows 组件”功能的代码（感谢 MDL 会员 ：RaiyvaN）。
+
+v11.1
++ 使用对 Windows 10 客户端/Server v1909/v20H2 源操作系统更好的支持更新“集成 Windows 语言包”功能。
++ 使用 .NET 4.8 更新（10.0.1.3310）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 10/Server 2016/2019）（感谢 MDL 会员 ：abbodi1406）。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET 5.0.1 包（Windows 7/8.1）。
++ 使用更新的 Windows 10 v2004/V20H2 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10）。
++ 更新“集成 WHD 更新”功能以集成 Windows Feature Experience Pack 更新到 Windows 10 源操作系统。
++ 更新"移除 Windows 组件"功能，支持一次选择并移除多个组件。
++ 优化工具箱“移除 Windows 组件”功能的代码（感谢 MDL 会员 ：RaiyvaN）。
++ 更新“应用并保存更改到源映像”功能以清理注册表日志和备份文件。
++ 修正文本错误（感谢 MDL 会员 ：RaiyvaN、graver.x、bou7a）。
+
+v11.0
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.20279.1）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v20.02 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 NSudo v8.0.1.0 二进制文件更新工具箱的 Bin 文件夹。
++ 使用 WimLib-Imagex v1.13.3 二进制文件更新工具箱的 Bin 文件夹。
++ 优化工具箱中“从 DVD 选择源文件”功能的代码。（感谢 MDL 会员 ：RaiyvaN）。
++ 更新工具箱，使其在每次操作结束时将返回其父菜单，而不是主菜单。
++ 新增“集成 Microsoft .NET 5”功能。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET 5.0.1 包（Windows 10）。
++ 使用更新的 Microsoft Edge Chromium 组策略定义文件更新适用于 MSMG 工具箱的 Microsoft Edge Chromium 浏览器包。
++ 使用 VC++ 2019 v14.28.29617.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 WHD 更新”功能以支持适用于 Windows 10 源操作系统的功能启用包。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1637）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1256/v10.0.18363.1256）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2（v10.0.19041.685/v10.0.19042.685）源操作系统。
++ 修正文本错误（感谢 MDL 会员 ：RaiyvaN 和正义羊）。
+
+v10.9
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.20262.1）工具集更新工具箱的 Bin 文件夹。
++ 修复“转换 Windows MCT 为 WIM 映像”功能中没有显示选择索引选项的 bug。
++ 使用 .NET 4.8 汇总更新 KB4585205（4.8.4290.2）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 Microsoft Edge Chromium 浏览器”功能，以支持使用 Microsoft Edge Chromium 安装程序 CAB 文件。
++ 更新“集成 Microsoft Edge Chromium 浏览器”功能，以支持集成 Microsoft Edge Chromium 组策略定义文件。
++ 更新适用于 MSMG 工具箱的 Microsoft Edge Chromium 浏览器包（Windows 7/8.1/Windows 10 v1803/v1809/v1903/v1909/v2004/v20H2）。
++ 新增“集成 Windows PowerShell 7.1”功能。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows PowerShell 7.1 包（Windows 7/Windows 8.1/Windows 10）。
++ 修复“集成 Microsoft DaRT 工具集”功能中集成到恢复映像失败的错误的 BUG。（感谢 MDL 会员 ：Enthousiast）。
++ 使用 VC++ 2019 v14.28.29515.1 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 修复“移除 Windows 组件”功能中按组件类别删除组件无效的 bug。
++ 修复“移除 Windows 组件”功能中在 Windows 10 客户端 v1903/v1909 源操作系统中移除 MultiPoint Connector 组件时出现错误的 bug。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1577）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1198/v10.0.18363.1198）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v20H2（v10.0.19041.630/v10.0.19042.630）源操作系统。
++ 更新“从 XML 文件导入自定义默认 Metro 应用关联”功能，加入新的默认布局模板 XML（感谢 MDL 会员 ：Feartamixg）。
++ 优化工具箱中“清理源映像文件”功能的代码。（感谢 MDL 会员 ：RaiyvaN）。
++ 优化工具箱中“应用并保存到源映像文件”功能的代码。（感谢 MDL 会员 ：RaiyvaN）。
++ 更新“应用并保存到源映像文件”功能，新增修剪未选择的源映像索引的选项。
++ 优化工具箱中“丢弃更改并卸载源映像文件”功能的代码。（感谢 MDL 会员 ：RaiyvaN）。
+* 将“重建源映像文件”功能合并到“应用并保存到源映像文件”功能。
++ 修复代码重复的模块（感谢 MDL 会员 ：RaiyvaN）。
+
+v10.8
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.20246.1）工具集更新工具箱的 Bin 文件夹。
++ 修复“转换 Windows 应用商店 ESD 为 WIM 映像”功能中导致工具箱无法将 ESD 转换为 WIM 映像的错误。
++ 修复“转换 Windows ESD 为 WIM 映像”功能中导致工具箱无法将 ESD 转换为 WIM 映像的错误。
+- 从主菜单中移除转换菜单，因为它缺少工具箱正常运行的模块。
+> 移动“转换应用商店 ESD”、“MCT”和“自定义 ESD”菜单项到以下的源文件菜单
+
+[5]   从应用商店 ESD 映像中解压源文件
+[6]   从 Media Creation Tool 映像中解压源文件
+[7]   从自定义 Windows ESD 映像中解压源文件
+
+> 将菜单项“将 ESD 转换为 WIM”移动到“工具”->“ WIM 管理器”菜单中，为“转换”。
++ 针对“集成 WHD 更新”功能优化工具箱代码（感谢 MDL 会员 ：RaiyvaN）。
++ 更新“移除 Windows 组件”功能以支持移除 Edge Chromium 和 Windows 10 应用商店 ESD 源操作系统映像中的 Windows 应用。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v2009（v10.0.19041.572/610/v10.0.19042.572/610）源操作系统。
++ 修正文本错误（感谢 MDL 会员 ：RaiyvaN）。
+
+v10.7
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.20241.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持对随机多个索引映像维护。
++ 使用 .NET 4.8 汇总更新 KB4578977（4.8.4261.2）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 VC++ 2019 v14.28.29325.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 更新“集成 WHD 更新”功能以将 Windows Defender 定义更新集成到 Windows 10 源操作系统。
++ 更新“集成 WHD 更新”功能的选项，以跳过集成 Windows 10 源操作系统的功能启用包中将 Edge Chromium 的集成的步骤。
++ 更新“移除 Windows 组件”功能以清理 Windows 10 多语言源操作系统映像的剩余资源条目。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1554）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1171/v10.0.18363.1171）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v2009（v10.0.19041.608/v10.0.19042.608）源操作系统。
++ 针对“移除 Windows 组件”功能优化工具箱的代码（感谢 MDL 会员 ：RaiyvaN）。
++ 更新“WIM 管理器”功能以支持导出随机多个索引。
++ 修正文本错误（感谢 MDL 会员 ：RaiyvaN 和正义羊）。
+
+v10.6
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.20226.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新“集成 WHD 更新包”功能以更新 Windows 10 源操作系统的映像版本和内部版本信息。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1490）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1110/v10.0.18363.1110）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v2009（v10.0.19041.546/v10.0.19042.546）源操作系统。
++ 使用禁用 Windows 升级调整更新更新“应用调整”功能。
++ 使用禁用显示 Windows Defender 通知和系统托盘图标的调整更新“应用调整”功能。
++ 修正文本错误（感谢 MDL 会员 ：正义羊）。
+
+v10.5
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.20211.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 .NET 4.8 汇总更新 KB4576487（4.8.4240.2）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 VC++ 2019 v14.28.29213.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1809（v10.0.17763.1457）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1082/v10.0.18363.1082）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v2009（v10.0.19041.508/v10.0.19042.508）源操作系统。
++ 使用禁用 Windows SmartScreen 的调整更新“应用调整”功能。
++ 修正文本错误。
+
+v10.4
++ 修复“从 DVD 中选择源文件”功能中无法检查输入的索引是否大于映像中索引的总数的 Bug。
++ 修复“集成 Windows PowerShell 7.0”功能中工具箱合并注册表设置失败的 Bug。
++ 修复“移除 Windows 组件”功能中在使用列表移除 Windows 8.1/Windows 10 v1507/v1511/v1607/v1703/v1709/v1803 源操作系统中应用/组件时不能正确显示的 Bug。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v2009（v10.0.19041.487/v10.0.19042.487）源操作系统。
++ 修正文本错误（感谢 MDL 会员 ：正义羊）。
+
+v10.3
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.20190.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 .NET 4.8 汇总更新 KB4569754（4.8.4210.6）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 使用 VC++ 2019 v14.28.29115.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 修复“集成 Windows PowerShell 7.0”功能中工具箱对 Windows 8.1/10 源操作系统合并错误的注册表文件的 Bug。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1809/v1903/v1909/v2004/v2009 源操作系统中的 Windows 防火墙系统组件。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.1049/v10.0.18363.1049）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v2009（v10.0.19041.450/v10.0.19042.450）源操作系统。
++ 修正文本错误（感谢 MDL 会员 ：正义羊）。
+
+v10.2
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.20175.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 .NET 4.8 汇总更新 KB4565636（4.8.4190.2）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 更新适用于 MSMG 工具箱的 Microsoft Edge Chromium 浏览器包到 v84.0.522.44（Windows 7/8.1/Windows 10）。
++ 使用 VC++ 2019 v14.27.29016.0 Runtime 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 新增“集成 Windows PowerShell 7.0”功能。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows PowerShell 7.0.2 包（Windows 7）
++ 新增适用于 MSMG 工具箱的 Microsoft Windows PowerShell 7.0.3 包（Windows 8.1/Windows 10）
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 优化“移除 Windows 组件”功能的代码。
++ 修复“移除 Windows 组件”功能中在移除 Windows 备份时破坏 Windows 10 客户端 v1809/v1903/v1909/v2004/v2009 源操作系统的写字板快捷方式的错误。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v1903/v1909/v2004/v2009 源操作系统中的 CallingshellApp 系统应用。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v2009 源操作系统中的 Edge Chromium 浏览器。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1903/v1909（v10.0.18362.997/v10.0.18363.997）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v2009（v10.0.19041.421/v10.0.19042.421）源操作系统。
++ 优化“应用调整”功能的代码。
+
+v10.1
++ 新增对 Windows 10 20H2 v2009（v10.0.19042）源操作系统的支持。
++ 在工具箱的 <Bin\Lists> 文件夹中为每个受支持的源操作系统添加功能列表模板。
++ 使用 .NET 4.8 汇总更新 KB4552921（4.8.4180.13）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 更新适用于 MSMG 工具箱的 Microsoft Edge Chromium 浏览器包到 v83.0.478.45（Windows 7/8.1/Windows 10）。
++ 更新“集成 Visual C++ Runtime”功能，面向 W7-W10/Server 2008R2-Server v2009 源操作系统。
++ 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
++ 在工具箱的组件删除程序 ToolKitHelper 中新增选项，以接受多个组件名称，从而实现一次性删除。
++ 在工具箱的组件删除程序 ToolKitHelper 中新增选项，以移除程序包移除列表文件中指定的所有组件。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1909（v10.0.18363.904）源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v2004/v2009（v10.0.19041.331/v10.0.19042.331）源操作系统的以下组件。
++ 修正文本错误（感谢 MDL 会员 ：正义羊和 xlincn）。
+
+v10.0
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.19624.1000）工具集更新工具箱的 Bin 文件夹。
++ 在工具箱的 <Bin\Lists> 文件夹中，为每个受支持的源操作系统添加单独的组件移除程序包列表模板。
+- 由于一个 Bug，移除适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 10）。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v2004（v10.0.19041.264）源操作系统的以下组件。
+
+Internet
+多媒体
+隐私
+
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1909（v10.0.18363.836）源操作系统。
++ 修复“移除 Windows 组件”功能中在移除 Windows 10 客户端版本 v2004 源操作系统的 Cortana 应用时开始菜单搜索无法正常工作的 Bug。
++ 修复“移除 Windows 组件”功能中在移除适用于 Windows 10 客户端版本 v2004 源操作系统的 Cortana 应用时未应用设置应用 -> 搜索设置的 Bug。
++ 修正文本错误（感谢 MDL 会员 ：正义羊）。
+
+v9.9
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.19613.1000）工具集更新工具箱的 Bin 文件夹。
++ 将以下新组件添加到“移除 Windows 组件”功能中“系统类别”下。
+
+轻松传送
+文件历史记录
+步骤记录器
+Windows 备份
+写字板
+
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1909（v10.0.18363.815）源操作系统。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v2004（v10.0.19041.208）源操作系统的以下组件。
+
+远程协助
+系统
+系统应用
+
++ 修正文本错误（感谢 MDL 会员 ：正义羊）。
+
+v9.8
++ 修复“移除 Windows 组件”->“Windows 应用-1”菜单项选择的一个 Bug。
++ 修复“移除 Windows 组件”功能中“组件移除”不适用于非 en-US 源映像的 Bug。
+
+v9.7
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.19592.1000）工具集更新工具箱的 Bin 文件夹。
++ 修复“集成 Windows 功能菜单”选项的 Bug。
++ 更新“集成 WHD 更新”功能以反映 WHD 修补程序存储库更新列表。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1909（v10.0.18363.753）源操作系统。
++ 更新“移除 Windows 组件”功能以支持移除 Windows 10 客户端 v2004（v10.0.19041.172）源操作系统的 Windows 应用。
++ 修正错字错误并优化工具箱的代码（感谢 MDL 会员 Kenafri）。
+
+v9.6
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.19546.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 NSudo v8.0 二进制文件更新工具箱的 Bin 文件夹。
++ 更新工具箱，以支持 Windows 10 客户端/Server v2004（v10.0.19041.1）源操作系统。
++ 更新“集成 Windows 语言包”功能以支持 Windows 10 客户端/Server v2004 源操作系统。
++ 更新“集成 Microsoft .NET Framework 3.5”功能以支持 Windows 10 v2004 源操作系统。
++ 新增适用于 MSMG 工具箱的适用于 Windows 10 v2004 源操作系统的 Microsoft .NET Framework 3.5 包。
++ 使用 .NET 4.8 汇总更新 KB4532941（4.8.4115.0）更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员：abbodi1406）。
++ 使用刷新的 .NET Framework 4.8 更新更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 8.1/Server 2012 R2）。
++ 更新“集成 Microsoft Edge”功能以支持 Windows 10 v2004 源操作系统。
++ 使用 Windows 10 v1903/v1909 - Edge 浏览器 MUI CAB 文件更新适用于 MSMG 工具箱的 Microsoft Edge 浏览器包（感谢 MDL 会员：Enthousiast）。
++ 使用 Windows 10 v2004 - Edge 浏览器基础和 MUI CAB 文件新增适用于 MSMG 工具箱的 Microsoft Edge 浏览器包
++ 新增“集成 Microsoft Edge Chromium 浏览器”功能。
++ 新增适用于 MSMG 工具箱的 Microsoft Edge Chromium 浏览器包（Windows 7/8.1/Windows 10）。
++ 更新“集成 Windows 重复数据移除”功能以支持 Windows 10 v2004 源操作系统。
++ 使用 Windows Server v1809 - Windows 重复数据移除 MUI CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 重复数据移除包。
++ 使用 Windows Server v1903/v1909 - Windows 重复数据移除 MUI CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 重复数据移除包。
++ 更新“Microsoft Windows 盲文辅助”功能以支持 Windows 10 v2004 源操作系统。
++ 使用 Windows 10 v2004 - Windows 盲文辅助 CAB 文件新增适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包。
++ 更新“Open Secure Shell（SSH）”功能以支持 Windows 10 v2004 源操作系统。
++ 使用 Windows 10 v2004 - Open Secure Shell（SSH）客户端和服务器端 CAB 文件新增适用于 MSMG 工具箱的 Open Secure Shell（SSH）包。
++ 使用 Windows 10 v1903/v1909 - Windows To Go 包 MUI CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows To Go 包（感谢 MDL 会员：Enthousiast）。
++ 更新“集成 Multimedia Restricted Codecs”功能以支持 Windows Server v2004 源操作系统。
++ 使用 Windows 10 v1903/v1909 - Multimedia Restricted Codecs MUI CAB 文件更新适用于 MSMG 工具箱的 Multimedia Restricted Codecs 包（感谢 MDL 会员：Enthousiast）。
++ 使用 Windows 10 v2004 - Multimedia Restricted Codecs 基础和 MUI CAB 文件新增适用于 MSMG 工具箱的 Multimedia Restricted Codecs 包。
++ 更新“集成适用于 Linux 的 Windows 子系统（WSL）”功能以支持 Windows Server v2004 源操作系统。
++ 使用 Windows 10 v1903/v1909 - 适用于 Linux 的 Windows 子系统（WSL） MUI CAB 文件更新适用于 MSMG 工具箱的适用于 Linux 的 Windows 子系统（WSL）包（感谢 MDL 会员：Enthousiast）。
++ 使用 Windows 10 v2004 - 适用于 Linux 的 Windows 子系统（WSL）基础和 MUI CAB 文件新增适用于 MSMG 工具箱的适用于 Linux 的 Windows 子系统（WSL）包。
++ 更新“集成 Microsoft Windows 媒体功能包”功能以支持 Windows 10 v2004 源操作系统。
++ 更新“集成 Windows 便携设备”功能，面向 Windows 10 v2004“N”版源操作系统。
++ 使用 Windows 10 v1903/v1909 - 便携设备 MUI CAB 文件更新适用于 MSMG 工具箱的 Windows 便携设备包（感谢 MDL 会员：Enthousiast）。
++ 使用 Windows 10 v2004 - 便携设备基础和 MUI CAB 文件更新适用于 MSMG 工具箱的 Windows 便携设备包。
++ 使用最新版本的基本应用和依赖关系 Appx 文件更新适用于 MSMG 工具箱的默认 Metro 应用包。
++ 更新“集成 Microsoft DaRT 工具集”功能以支持 Windows 10 v2004 源操作系统。
++ 使用 Windows 10 v2004（v10.0.19041.1）调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10）。
++ 修复 DirectX 9.0c 包注册表设置中包含一些无效条目的错误（感谢 MDL 会员：shyamsundarsoni）。
+- 由于一个 Bug，移除适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 7/8.1）。
++ 更新适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（Windows 10）（感谢 MDL 会员：abbodi1406）。
++ 更新“集成 WHD 更新”功能以反映 WHD 修补程序存储库更新列表。
++ 修复“集成 WHD 更新”功能中该功能在集成 Windows 安装程序源 DVD 更新时还会集成非安装程序的语言环境文件夹的错误（感谢 MDL 会员：Feartamixg）。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1909（v10.0.18363.693）源操作系统。
+
+v9.5
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.18999.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新工具箱，以支持 Windows 10 客户端/Server v1909 源操作系统。
++ 修复“集成 Windows 重复数据移除”功能中 Windows 文件服务器（fssmres.dll）注册表修复无法应用的 Bug。
++ 使用最新版本的基本应用和依赖关系 Appx 文件更新适用于 MSMG 工具箱的默认 Metro 应用包。
++ 更新功能“Microsoft Windows 边栏”以支持添加第 3 方小工具（感谢 MDL 会员：LupusRex）。
++ 更新适用于 MSMG 工具箱的“Microsoft Windows 边栏”包（感谢 MDL 会员：LupusRex）。
++ 修复“移除 Windows 组件”功能中，在移除所有与隐私相关的组件时，移除组件将跳过移除几个组件的 Bug。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 客户端 v1909（v10.0.18363.418）源操作系统（感谢 MDL 会员：Enthousiast）。
++ 修正错字错误和错位文本（感谢 MDL 会员 ：正义羊）。
+
+v9.4.2
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.18975.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip v19.2.0.0 命令行二进制文件更新工具箱的 Bin 文件夹。
++ 使用 NSudo v7.0.1904.3 二进制文件更新工具箱的 Bin 文件夹。
++ 使用 WimLib-Imagex v1.13.1 二进制文件更新工具箱的 Bin 文件夹。
++ 为工具箱的包文件夹添加放置位置。
++ 使用新的 .NET Framework 4.8 语言包 cab 文件刷新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（感谢 MDL 会员 ：abbodi1406）。
++ 在自定义菜单下新增“使用功能列表启用 Windows 功能”功能。
++ 在自定义菜单下新增“使用功能列表禁用 Windows 功能”功能。
++ 在 RemovePkgsList_W10_Template.txt 文件中添加移除组件版本兼容性信息。
++ 修正错字错误和错位文本（感谢 MDL 会员 ：正义羊）。
+
+v9.4.1
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.18970.1000）工具集更新工具箱的 Bin 文件夹。
+> 移动自定义 Activation Tokens、Files、Recovery、Registry、Terminal Server、UxTheme 功能文件夹到工具箱的 Custom 文件夹。
++ 修复“使用包列表移除 Windows 组件”功能中工具箱无法处理包列表的 Bug。
++ 修复“从注册表文件导入自定义注册表设置”功能中导入失败，文件名包含空格的 Bug。
+
+v9.4
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.18963.1000）工具集更新工具箱的 Bin 文件夹。
++ 从工具箱主压缩包中分离出工具箱的包文件夹。
++ 重新组织工具箱的文件/文件夹结构。
++ 修复“将 Windows 应用商店 ESD 转换为 WIM 映像”功能中工具箱无法处理单个版本的映像的 Bug。
++ 更新“集成 Windows 语言包”功能以支持 Windows 8.1 RT（ARM）源映像。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 语言包（Windows 8.1 RT（ARM））。
++ 更新“集成 Windows 驱动程序”功能以支持 Windows 8.1 RT（ARM）源映像。
++ 使用 KB4511525 更新更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008 R2）（感谢 MDL 会员 ：abbodi1406）。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 8.1 RT（ARM））。
++ 更新“集成默认 Metro 应用”功能以支持 Windows 10 v1903 源操作系统。
++ 使用 Windows 10 v1903 依赖关联 Appx 和许可证 XML 文件更新适用于 MSMG 工具箱的的默认 Metro 应用包。
++ 更新“集成 Microsoft 游戏”功能，以支持 Windows 10 v1809 和 v1903 源操作系统。
++ 修复并重新添加适用于 MSMG 工具箱的 Microsoft Games 包（感谢 MDL 会员 ：Kenafri）。
++ 更新适用于 MSMG 工具箱的“Microsoft Windows 边栏”包（感谢 MDL 会员 ：Kenafri）。
++ 为 W7-W10/Server 2008R2-Server v19H1 源操作系统新增“集成 Visual C ++ Runtime”功能。
++ 新增适用于 MSMG 工具箱的 Microsoft Visual C++ Runtime 包（感谢 MDL 会员 ：abbodi1406）。
+> 将 WHD 更新包文件夹从工具箱的 Packs 文件夹移动到工具箱的 Root 文件夹。
++ 更新“集成 WHD 更新”功能以反映 WHD 修补程序存储库更新列表。
++ 重新组织工具箱将 Windows 组件菜单项移动到新类别。
+
+.. Internet
+.. Multimedia
+.. Privacy
+.. Remoting
+.. System
+.. SystemApps
+.. WindowsApps
+
++ 更新“移除 Windows 组件”功能以更深入地移除适用于 Windows 10 v1809 源操作系统的组件。
++ 更新“移除 Windows 组件”功能以移除适用于 Windows 10 v1809 和 v1903 源操作系统的以下新组件。
+
+.. 语音识别
+.. 图片密码
+.. Pin Enrollment（Pin-SignIn 支持）
+.. WiFi Network Manager（WiFi 感知）
+.. Windows 会员中心
+.. 安全中心
+.. Win32 WebView 主机
+ 
++ 更新“移除 Windows 组件”功能，以支持移除 Windows 10 v1903 源操作系统的以下组件。
+
+.. Internet
+.. Multimedia
+.. Privacy
+.. Remoting
+.. System
+.. SystemApps
+
++ 在“自定义定制”菜单下新增“从注册表文件导入自定义注册表设置”功能（感谢 MDL 会员 ：cuzzon）。
+
+v9.3.2
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.18898.1000）工具集更新工具箱的 Bin 文件夹。
++ 修复“集成语言包”功能中对于Windows 10 v1607客户端/服务器源操作系统，本地化资源文件的提取失败的 Bug。
++ 更新“移除 Windows 组件”功能，以支持移除 Windows 10 v1809 源操作系统的讲述人快速入门系统应用程序。
++ 更新“移除 Windows 组件”功能，以支持移除用于 Windows 10 v1903（v10.0.18362.30）源操作系统的 Windows 应用。
++ 修复“使用包列表移除 Windows 组件”功能中如果存在多个“_”，则工具箱无法解析 ToolkitHelper.exe 组件名称的 Bug。
+
+v9.3.1
++ 修复“集成 Windows 功能”功能中菜单选择错误显示的位置的 Bug。
++ 修复“集成 WHD 更新包”功能中菜单选择不起作用的位置的 Bug。
++ 修复“集成 WHD 更新包”功能中由于条件检查失败而跳过 .NET 累积集成的 Bug。
+
+v9.3
++ 使用 Windows 10 20H1 Insider Preview WADK（v10.0.18890.1000）工具集更新工具箱的 Bin 文件夹。
++ 修复工具箱中选择 Windows Server 源映像会终止工具箱的 Bug。
++ 更新工具箱以支持 Windows 10 客户端/Server v1903 源操作系统。
++ 修复“集成语言包”功能中 Windows 10 客户端/Server 非英语源操作系统的本地化资源文件提取失败的 Bug。
++ 更新“集成语言包”功能以支持Windows 10 客户端/Server v1903 源操作系统。
++ 更新“集成 Microsoft .NET Framework 3.5”功能以支持 Windows 10 客户端/Server v1903 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 3.5 包，面向 Windows 10 v1903 源操作系统。
++ 新增“集成 Microsoft .NET Framework 4.8”功能，面向 Windows 7/ThinPC/Server 2008R2、Windows 8.1/Server 2012R2、Windows 10 v1607 / v1703 / v1709 / v1803 / v1809、Windows Server 2016/v1703/v1709/v1803/Server 2019/v1809 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 4.8 包（Windows 7/Server 2008R2/Windows 8.1/Server 2012R2、Windows 10 v1607/v1703/v1709/v1803/v1809、Windows Server 2016/v1703/v1709/v1803/Server 2019/v1809）。
++ 更新“集成 Microsoft Edge”功能以支持 Windows 10 v1903 源操作系统。
++ 使用 Windows 10 v1903 - Edge 浏览器基础 + en-US CAB 文件更新适用于 MSMG 工具箱的 Microsoft Edge 浏览器包。
++ 更新“集成 Windows 重复数据移除”功能以支持 Windows 10 v1903 源操作系统。
++ 使用 Windows Server v1903 - Windows 重复数据移除基础 + en-US CAB 文件更新 MSMG 工具箱的 Microsoft Windows 重复数据移除包。
++ 更新功能“Microsoft Windows 盲文辅助”以支持 Windows 10 v1903 源操作系统。
++ 使用 Windows 10 v1903 - Windows 盲文辅助 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包。
++ 更新“Open Secure Shell（SSH）”功能以支持 Windows 10 v1903 源操作系统。
++ 使用 Windows 10 v1903 - Open Secure Shell（SSH）客户端和服务器端 CAB 文件更新 MSMG 工具箱的 Open Secure Shell（SSH）包。
++ 更新“集成 Windows To Go”功能以支持 Windows 10 v1903 源操作系统。
++ 使用 Windows 10 v1903 - Windows 重复数据移除基础 + en-US CAB 文件更新 MSMG 工具箱的 Microsoft Windows To Go 包。
++ 更新“集成多媒体受限编解码器”功能以支持Windows Server v1903 源操作系统。
++ 使用 Windows 10 v1903 - Multimedia Restricted Codecs 基础 + en-US CAB 文件更新 MSMG 工具箱的 Multimedia Restricted Codecs 包。
++ 更新适用于 Windows 10 v1903‘N’版源操作系统的功能“集成 Windows 便携设备”。
++ 使用 Windows 10 v1903 - 便携设备基础 + en-US CAB 文件更新适用于 MSMG 工具箱的 Windows 便携设备包。
++ 更新“集成适用于 Windows 的 Linux 子系统（WSL）”功能，以支持 Windows Server v1903 源操作系统。
++ 使用 Windows 10 v1903  - 适用于 Linux 的 Windows 子系统（WSL）基础 + en-US CAB 文件更新适用于 MSMG 工具箱的适用于 Windows 的 Linux 子系统（WSL）包。
++ 更新“集成 Microsoft Windows 媒体功能包”功能以支持 Windows 10 v1903 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 媒体功能包（Windows 10 v1903）。
++ 更新“集成 Microsoft DaRT 工具”功能以支持 Windows 10 客户端/Server v1903 源操作系统。
++ 使用 Windows 10 v1903（v10.0.18362.1）调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10）。
++ 修复适用于 MSMG 工具箱的 Microsoft DaRT 包的文件系统 ACL 问题。
++ 更新功能“集成 WHD 更新包”和 Windows 10 v1507 源操作系统的累积更新集成修复程序（感谢 MDL 会员：abbodi1406）。
++ 在功能“集成 WHD 更新包”中新增子菜单以将更新集成到 Windows 安装程序的安装映像。
++ 更新“集成 WHD 更新包”功能以将更新集成到 Windows 安装程序的安装映像。
++ 修复适用于 MSMG 工具箱的 Windows 媒体中心通用令牌包的文件系统 ACL 问题。
++ 修复与 Windows 10 v1809 源操作系统的共享组件移除相关的功能“移除 Windows 组件”中的 Bug。
++ 修复功能“移除 Windows 组件”中 Windows 安装程序在移除 Windows 10 v1809 64 位源操作系统的所有组件时将失败的 Bug。
++ 修复功能“移除 Windows 组件”中在 Windows 10 v1809 源操作系统的组件移除后，再集成累积更新时，Windows 安装程序将失败的 Bug。
++ 修复功能“移除 Windows 组件”中移除 Edge 浏览器应用时移除 Windows To Go 而不是 Windows 10 v1809 源操作系统的 Windows Reader（PDF）的 Bug。
++ 更新“移除 Windows 组件”功能，以支持移除适用于 Windows 10 v1809 源操作系统的相机条形码扫描仪和目视控制系统应用。
++ 更新“移除 Windows 组件”功能，以支持移除 Windows 10 for Windows 10 v1903 源操作系统。
++ 更新“使用程序包列表移除 Windows 组件”功能，以支持 Windows 10 v1809/v1903 源操作系统的 ToolkitHelper.exe 方法。
++ 更新“应用调整”功能，包括禁用 Cortana 的改进，禁用自动驱动程序安装，禁用自动 Windows 升级调整。
++ 在自定义定制->应用调整菜单下新增“禁用 Windows Defender”调整项。
++ 在自定义定制->应用调整菜单下新增“禁用 Windows Update”调整项。
++ 在自定义定制->应用调整菜单下新增“禁用用于 Microsoft 更新的 Windows 预留存储空间”调整项。
++ 更新功能“WIM 管理器->转换版本”以支持 Windows 10 客户端/Server v1903 源操作系统。
+
+v9.2
++ 使用 Windows 10 Insider Preview WADK（v10.0.18356.1）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip 命令行最新版本更新工具箱的 Bin 文件夹。
++ 修复“集成 Windows 语言包”功能中为集成非针对 Windows Server 2008 R2 源操作系统的 WinPE-Setup-Server-Package 添加 WinPE-Setup-Server-Package 的 Bug。
++ 更新“集成 WHD 更新包”功能，其中包含针对 Windows 10 Redstone 1 x86 源操作系统的累积更新集成修复程序（感谢 MDL 会员：abbodi1406）。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 Redstone 5 源操作系统所有语言（感谢 MDL 会员：kusosaito）。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 Redstone 5 源操作系统的“FaceRecognition”、“GameExplorer”、“LocationService”组件。
++ 修复“移除 Windows 组件”功能中 SFC /SCANNOW 为某些组件移除产生错误的 Bug。
++ 修复“移除 Windows 组件”功能中的错误，其中移除 Internet Explorer 在设置 -> 默认应用程序部分中破坏设置默认浏览器应用。
+
+v9.1
++ 使用 Windows 10 Insider Preview WADK（v10.0.18309.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip 命令行最新版本更新工具箱的 Bin 文件夹。
++ 使用 NSudo 最新版本更新工具箱的 Bin 文件夹。
++ 修复与语言功能包集成和本地化资源文件提取相关的功能“集成语言包”中的 Bug。
++ 使用 Windows 10 Redstone 5 / Server 2019 / Server v1809 语言包 CAB 文件新增适用于 MSMG 工具箱的 Microsoft Windows 语言包（感谢 MDL 会员：roedel、windows builder）。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 3.5 包，面向 Windows 10 Redstone 5 源操作系统。
++ 使用 Windows 10 Redstone 10.0.14393.0 Win32 计算器基础和 MUI 包文件更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 更新“Microsoft Windows 盲文辅助”功能，以支持 Windows 10 Redstone 5 源操作系统。
++ 使用 Windows 10 Redstone 5 - Windows 盲文辅助 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包。
++ 更新“Open Secure Shell（SSH）”功能以支持 Windows 10 Redstone 5 源操作系统。
++ 使用 Windows 10 Redstone 5 - Open Secure Shell（SSH）客户端和服务器 CAB 文件更新适用于 MSMG 工具箱的 Open Secure Shell（SSH）包。
++ 修复“集成默认 Metro 应用程序”功能中 Windows 10 Redstone 5 源操作系统的依赖包文件集成失败的 Bug。
++ 使用 Windows 10 Redstone 5 - Windows To Go 基础和 MUI CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows To Go 包。
++ 使用 Windows 10 Redstone 5 - 多媒体限制编解码器库和 MUI CAB 文件更新适用于 MSMG 工具箱的多媒体限制编解码器包。
++ 使用 Windows 10 Redstone 5 - 适用于 Linux 的 Windows 子系统（WSL）基础和 MUI CAB 文件更新适用于 MSMG 工具箱的适用于Windows 的 Linux 子系统（WSL）包。
++ 新增“集成 Windows 便携设备”功能，面向 Windows 10 Redstone 5‘N’版源操作系统。
++ 使用 Windows 10 Redstone 5 - 便携设备基础和 MUI CAB 文件新增适用于 MSMG 工具箱的 Windows 便携设备包。
++ 更新“集成 WHD 更新包”功能以集成 .NET 累积更新。
++ 更新“移除Windows组件”功能，并移除 Windows 10 Redstone 5 非 LTSC（en-GB/en-US）版本的合并 Edge + EdgeDevTools + WindowsReaderPDF 组件。
++ 更新“移除 Windows 组件”功能以移除轻松访问主题、MultiPoint Connector、适用于 Windows 10 Redstone 5（en-GB/en-US）源操作系统的 Windows 混合现实。
++ 修复“移除 Windows 组件”功能中移除 UnifiedTelemetryClient 组件将破坏驱动程序通过适用于 Windows 10 Redstone 5（en-GB/en-US）源操作系统的 Windows 更新安装的 Bug。
++ 修复“移除 Windows 组件”功能中移除 AdobeFlashForWindows 组件将通过适用于 Windows 10 Redstone 5（en-GB/en-US）源操作系统的 Windows 更新重新安装的 Bug。
++ 在自定义定制 -> 调整菜单下新增调整“禁用自动 Windows 升级”。
+
+v9.0
++ 使用 NSudo 最新版本更新工具箱的 Bin 文件夹。
++ 更新“集成 Microsoft Win32 计算器”功能以支持 Windows 10 Threshold 1/2、Redstone 1/2/3/4/5、Server 2016/2019 源操作系统。
++ 使用 Windows 10 Redstone 10.0.14393 Win32 计算器 32 位基础和（en-GB + en-US）CAB 文件更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 更新“集成默认 Metro 应用”功能以支持 Windows 10 Redstone 5/Server 2019 源操作系统。
++ 使用 Windows 10 Redstone 5 Appx 文件更新适用于 MSMG 工具箱的默认 Metro 应用包。
++ 更新 ToolKitHelper.exe 以禁用 WinSXS 清理以支持 Windows 10 Redstone 5/Server 2019 源操作系统的 Microsoft PSFX 更新格式。
++ 使用 Windows 10 Redstone 5 企业版（N）LSTC 2019 源操作系统的单独菜单更新“移除 Windows 组件”功能。
++ 更新“移除 Windows 组件”功能，以移除 Windows 10 Redstone 5（en-GB/en-US）源操作系统的更多组件。
+
+Windows 应用
+============
+
+  3DViewer                  -  混合现实查看器应用 | 依赖于：WindowsMixedReality
+  AdvertisingXaml           -  Advertising Xaml
+  Alarms                    -  闹钟和时钟应用
+  BingWeather               -  天气应用 | 依赖于：AdvertisingXaml
+  Calculator                -  计算器应用
+  Camera                    -  相机应用
+  CommunicationsApps        -  Windows 日历和邮件应用 | 依赖于：AdvertisingXaml
+  DesktopAppInstaller       -  桌面应用安装程序
+  FeedbackHub               -  反馈中心应用
+  GetHelp                   -  获取帮助应用
+  Getstarted                -  使用技巧应用
+  HEIFImageExtension        -  HEIF 图像扩展插件
+  Maps                      -  地图应用 | 依赖于：MapsControl
+  Messaging                 -  消息应用
+  MixedRealityPortal        -  混合现实门户应用
+  OfficeHub                 -  我的 Office 应用
+  OfficeOneNote             -  OneNote 应用
+  OneConnect                -  移动套餐应用
+  Paint3D                   -  画图 3D 应用
+  People                    -  人脉应用 | 依赖于：PeopleExperienceHost
+  Photos                    -  照片应用
+  Print3D                   -  Print 3D 应用
+  ScreenSketch              -  截图和草图应用
+  SkypeApp                  -  Skype 应用
+  SolitaireCollection       -  Solitaire Collection 应用 | 依赖于：XboxGameCallableUI
+  SoundRecorder             -  录音机应用
+  StickyNotes               -  Sticky Notes 应用 | 依赖于：AdvertisingXaml、Store、XboxGameCallableUI
+  VP9VideoExtensions        -  VP9 视频扩展插件
+  WalletService             -  电子钱包服务应用
+  WebMediaExtensions        -  Web 媒体扩展插件
+  WebpImageExtensions       -  Webp 图像扩展插件
+  YourPhone                 -  你的手机应用
+  ZuneMusic                 -  Groove 音乐应用
+  ZuneVideo                 -  电影和电视应用
+
+系统应用
+===========
+
+  AADBrokerPlugin           -  AAD Broker 插件
+  AssignedAccessLockApp     -  指定访问锁定应用
+  BioEnrollment             -  生物注册应用
+  ContentDeliveryManager    -  Content Delivery Manager
+  FileExplorer              -  文件资源管理器应用
+  LockApp                   -  锁屏应用
+  MapsControl               -  地图控件
+  OneDrive                  -  OneDrive 桌面客户端
+  ParentalControls          -  家长控制应用
+  PeopleExperienceHost      -  People Experience 主机
+  PPIProjection             -  连接应用
+  QuickAssist               -  快速助手应用
+  RetailDemoContent         -  零售演示内容
+  SecureAssessmentBrowser   -  Take Test 应用
+  SettingSync               -  设置同步
+  SkypeORTC                 -  Skype ORTC
+
+高级 Windows 组件
+===========================
+
+  AdobeFlashForWindows      -  适用于 Windows 的 Adobe Flash
+  AssignedAccess            -  分配的访问权限
+  CEIP_SQM                  -  客户体验改善计划（CEIP）
+  Cortana                   -  Cortana、开始菜单和设置搜索应用
+  DeviceLockdown            -  设备锁定（嵌入式体验）
+  Edge                      -  Edge 浏览器应用
+  EdgeDevToolsClient        -  Edge 开发者工具客户端 | 依赖于：Edge
+  FirstLogonAnimation       -  首次登录动画
+  HomeGroup                 -  家庭组
+  InternetExplorer          -  Internet Explorer
+  KernelDeBugging           -  内核调试 | 依赖于：WindowsErrorReporting
+  Paint                     -  画图
+  RemoteAssistance          -  远程协助
+  SmartScreen               -  SmartScreen 应用
+  SnippingTool              -  截图工具
+  Store                     -  Microsoft Store 应用
+  SystemRestore             -  系统恢复
+  UnifiedTelemetryClient    -  统一遥测客户端（Asimov）| 依赖于：WindowsErrorReporting
+  WindowsDefender           -  Windows Defender 应用
+  WindowsErrorReporting     -  Windows 错误报告
+  WindowsMediaPlayer        -  Windows Media Player
+  WindowsPhotoViewer        -  Windows 照片查看器
+  WindowsReaderPDF          -  Windows 阅读器（PDF）| 依赖于：Edge
+  WindowsSubsystemForLinux  -  适用于 Linux 的 Windows 子系统
+  WindowsToGo               -  Windows To Go
+  WinSAT                    -  Windows 系统评估工具
+  XboxApp                   -  Microsoft Xbox 应用 | 依赖于：XboxGameCallableUI
+  XboxGameCallableUI        -  Xbox Game Callable UI
+  XboxIdentityProvider      -  Xbox Identity Provider | 依赖于：XboxApp
+
+v8.9
++ 使用 Windows 10 Insider Preview WADK（v10.0.18272.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 NSudo 最新版本更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 Redstone 5/Server 2019/Server v1809 源操作系统。
++ 更新功能“集成语言包”以支持 Windows 10 Redstone 5/Server 2019/Server v1809 源操作系统。
++ 使用 Windows 10 Redstone 5/Server 2019/Server v1809 语言包（en-GB + en-US）CAB 文件添加适用于 MSMG 工具箱的 Microsoft Windows 语言包。
++ 修复“集成语言包”功能中本地化资源文件的提取失败的 Bug。
++ 更新“集成 Microsoft .NET Framework 3.5”功能以支持 Windows 10 Redstone 5/Server 2019/Server v1809 源操作系统。
++ 更新“集成 Microsoft Edge”功能，以支持 Windows 10 Redstone 5 源操作系统。
++ 使用 Windows 10 Redstone 5  -  Edge 浏览器基础和 MUI x64 CAB 文件添加适用于 MSMG 工具箱的 Microsoft Edge 浏览器包（感谢 MDL 会员：abbodi1406）。
++ 更新“集成 Windows 重复数据移除”功能以支持 Windows 10 Redstone 5 源操作系统。
++ 使用 Windows 10 Redstone 5  -  Windows 重复数据移除功能基础和（en-GB + en-US）CAB 文件添加适用于 MSMG 工具箱的 Microsoft Windows 重复数据移除包。
++ 更新“集成 Windows To Go”功能以支持 Windows 10 Redstone 5 源操作系统。
++ 使用 Windows 10 Redstone 5  -  Windows 重复数据移除基础和（en-GB + en-US）CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows To Go 包。
++ 更新“集成多媒体受限编解码器”功能，以支持 Windows Server 2019 源操作系统。
++ 使用 Windows 10 Redstone 5  - 多媒体限制编解码器基础和（en-GB + en-US）CAB 文件添加适用于 MSMG 工具箱的多媒体限制编解码器包。
++ 更新“集成适用于 Windows 的 Linux 子系统（WSL）”功能，以支持 Windows Server 2019/server v1809 源操作系统。
++ 使用 Windows 10 Redstone 5  -  适用于 Linux 的 Windows 子系统（WSL）基础和（en-GB + en-US）CAB 文件更新适用于 MSMG 工具箱的适用于 Linux 的 Windows 子系统（WSL）包。
++ 更新“集成 Microsoft DaRT 工具”功能，以支持 Windows 10 Redstone 5/Server 2019/Server v1809 源操作系统。
++ 使用 Windows 10 Redstone 5（10.0.17763.1）调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10 RS5）。
+* 将“移除默认 Metro 应用”和“移除 Windows 组件”功能组合为单一的“移除 Windows 组件”。
+- 暂时移除适用于 Windows 7 -  Windows 10 Redstone 4 源操作系统的功能“移除 Windows 组件”。
++ 更新“移除 Windows 组件”功能，以移除 Windows 10 Redstone 5（en-GB/en-US）源操作系统的以下组件。
+
+Windows 应用
+============
+
+  3DViewer                  -  混合现实查看器应用 | 依赖于：WindowsMixedReality
+  AdvertisingXaml           -  Advertising Xaml
+  Alarms                    -  闹钟和时钟应用
+  BingWeather               -  天气应用 | 依赖于：AdvertisingXaml
+  Calculator                -  计算器应用
+  Camera                    -  相机应用
+  CommunicationsApps        -  Windows 日历和邮件应用 | 依赖于：AdvertisingXaml
+  DesktopAppInstaller       -  桌面应用安装程序
+  FeedbackHub               -  反馈中心应用
+  GetHelp                   -  获取帮助应用
+  Getstarted                -  使用技巧应用
+* HEIFImageExtension        -  HEIF 图像扩展插件
+  Maps                      -  地图应用 | 依赖于：MapsControl
+  Messaging                 -  消息应用
+  MixedRealityPortal        -  混合现实门户应用
+  OfficeHub                 -  我的 Office 应用
+  OfficeOneNote             -  OneNote 应用
+  OneConnect                -  移动套餐应用
+  Paint3D                   -  画图 3D 应用
+  People                    -  人脉应用 | 依赖于：PeopleExperienceHost
+  Photos                    -  照片应用
+  Print3D                   -  Print 3D 应用
+  ScreenSketch              -  截图和草图应用
+  SkypeApp                  -  Skype 应用
+  SolitaireCollection       -  Solitaire Collection 应用 | 依赖于：XboxGameCallableUI
+  SoundRecorder             -  录音机应用
+  StickyNotes               -  Sticky Notes 应用 | 依赖于：AdvertisingXaml、Store、XboxGameCallableUI
+  VP9VideoExtensions        -  VP9 视频扩展插件
+  WalletService             -  电子钱包服务应用
+  WebMediaExtensions        -  Web 媒体扩展插件
+  WebpImageExtensions       -  Webp 图像扩展插件
+  YourPhone                 -  你的手机应用
+  ZuneMusic                 -  Groove 音乐应用
+  ZuneVideo                 -  电影和电视应用
+
+系统应用
+===========
+
+  AADBrokerPlugin           -  AAD Broker 插件
+  AssignedAccessLockApp     -  指定访问锁定应用
+  BioEnrollment             -  生物注册应用
+  ContentDeliveryManager    -  Content Delivery Manager
+* Cortana                   -  Cortana、开始菜单和设置搜索应用
+  Edge                      -  Edge 浏览器应用
+  EdgeDevToolsClient        -  Edge 开发者工具客户端 | 依赖于：Edge
+  FileExplorer              -  文件资源管理器应用
+  LockApp                   -  锁屏应用
+  MapsControl               -  地图控件
+  OneDrive                  -  OneDrive 桌面客户端
+  ParentalControls          -  家长控制应用
+  PeopleExperienceHost      -  People Experience 主机
+  PPIProjection             -  连接应用
+  QuickAssist               -  快速助手应用
+  RetailDemoContent         -  零售演示内容
+  SecureAssessmentBrowser   -  Take Test 应用
+  SettingSync               -  设置同步
+  SkypeORTC                 -  Skype ORTC
+  SmartScreen               -  SmartScreen 应用
+  Store                     -  Microsoft Store 应用
+  WindowsDefender           -  Windows Defender 应用
+  WindowsReaderPDF          -  Windows 阅读器（PDF）| 依赖于：Edge
+  XboxApp                   -  Microsoft Xbox 应用 | 依赖于：XboxGameCallableUI
+  XboxGameCallableUI        -  Xbox Game Callable UI
+  XboxIdentityProvider      -  Xbox Identity Provider | 依赖于：XboxApp
+
+高级 Windows 组件
+===========================
+
+  AdobeFlashForWindows      -  适用于 Windows 的 Adobe Flash
+  CEIP_SQM                  -  客户体验改善计划（CEIP）
+  HomeGroup                 -  家庭组
+  KernelDeBugging           -  内核调试 | 依赖于：WindowsErrorReporting
+  Paint                     -  画图
+  RemoteAssistance          -  远程协助
+  SnippingTool              -  截图工具
+  SystemRestore             -  系统恢复
+  UnifiedTelemetryClient    -  统一遥测客户端（Asimov）| 依赖于：WindowsErrorReporting
+  WindowsPhotoViewer        -  Windows 照片查看器
+  WindowsSubsystemForLinux  -  适用于 Linux 的 Windows 子系统
+  WindowsToGo               -  Windows To Go
+
+* 仅限 32-位
+
+> 将转换版本功能移动到工具 -> WIM 管理器，并更名为“升级版本”。
++ 使用针对 Windows 10 Redstone 4/5 源操作系统的优化排除列表更新 Wimscript.ini 文件。
++ 优化工具箱代码（感谢 MDL 会员 Kenafri）。
+
+v8.8
++ 使用 Windows 10 Redstone 5 Insider Preview WADK（v10.0.17733.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 Redstone 4 ARM64 源操作系统。
++ 更新工具箱的集成功能以支持 Windows 10 Redstone 4 ARM64 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 3.5 包，面向 Windows 10 Redstone 4 ARM64（v10.0.17134.1）源操作系统。
++ 修复“移除 Windows 组件”功能中移除 Microsoft 遥测组件跳过 Windows 10 Redstone 3 源操作系统的 Bug。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7.2 包（Windows 7/ThinPC/Server 2008R2）。
++ 更新工具箱的移除功能以支持 Windows 10 Redstone 4 ARM64 源操作系统。
++ 使用对 Windows 10 Redstone 3 和 4 源操作系统的改进更新“移除 Windows 组件”功能。
+
+v8.7
++ 使用 Windows 10 Redstone 5 Insider Preview WADK（v10.0.17713.1000）工具集更新工具箱的 Bin 文件夹。
++ 新增“集成 Microsoft .NET Framework 4.7.2”功能，面向 Windows 7/ThinPC/Server 2008R2、Windows 8.1/Server 2012R2、Windows 10 Redstone 1,2,3/Server 2016/Server v1709 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7.2 包（Windows 8.1/Server 2012R2、Windows 10 Redstone 1、2、3/Server 2016/Server v1709）。
++ 使用 Windows Server v1803  - 重复数据移除 MUI CAB 文件更新适用于 MSMG 工具箱的重复数据移除包。
++ 更新“集成 Microsoft Edge 浏览器”功能以支持 Windows Server v1803。
++ 使用 Windows 10 Redstone 4 - Edge 浏览器基础和 MUI x64 CAB 文件更新MSMG 工具箱的 Microsoft Edge 浏览器包。
++ 更新“集成 Windows To Go 工作区”功能以支持 Windows 10 Redstone 4 源操作系统。
++ 使用 Windows 10 Redstone 4 WinToGo 基础和 MUI x86/x64 CAB 文件更新适用于 MSMG 工具箱的 WTG 包。
++ 更新“集成 Microsoft Windows 多媒体受限编解码器”功能以支持 Windows Server v1803。
++ 使用 Windows 10 Redstone 4 - Windows 多媒体受限编解码器库和 MUI x64 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 多媒体受限编解码器包。
++ 更新“集成 Microsoft Windows 系统恢复”功能以支持 Windows Server v1803。
++ 使用 Windows 10 Redstone 4 - Windows 系统恢复基础和 MUI MUI x64 CAB 文件更新 MSMG 工具箱的 Microsoft Windows 系统恢复包。
++ 更新“集成适用于 Windows 的 Linux 子系统（WSL）”功能以支持 Windows Server v1803。
++ 使用 Windows 10 Redstone 4 - 适用于 Windows 的 Linux 子系统（WSL）基础和 MUI x64 CAB 文件更新适用于 MSMG 工具箱的适用于 Windows 的 Linux 子系统（WSL）包。
++ 新增“集成 Microsoft Office 桌面 UWP 应用”功能，面向 Windows 10 Redstone 4 源操作系统。 （感谢 MDL 会员：aalanfox2000）。
++ 更新“集成 WHD 更新包”功能，以便在 Windows 8.1/Server 2012 R2 源操作系统跳过集成 Microsoft .NET Framework 4.7.2（KB4054566）。
++ 新增单独的应用应用程序列表模板，面向每个源操作系统。
++ 使用 Windows 10 Redstone 4 源操作系统的改进更新“移除 Windows 组件”功能。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 Redstone 3 源操作系统的 Microsoft 遥测组件。
++ 更新 ToolKitHelper.exe 以移除 Windows 10 Redstone 3 源操作系统的以下组件。
+
+--- “指定访问锁定”应用
+--- 客户体验改善计划（CEIP）
+--- 内核调试
+--- 快速助手应用
+--- 统一遥测客户端（Asimov）
+--- Windows 错误报告
+--- Xbox Game Callable UI
+
++ 更新 ToolKitHelper.exe 以移除 Windows 10 Redstone 4 源操作系统的以下组件。
+
+--- “指定访问锁定”应用
+--- Bio Enrollment 应用
+--- 客户体验改善计划（CEIP）
+--- Content Delivery Manager
+--- Cortana 应用
+--- Edge 浏览器应用
+--- 文件资源管理器应用
+--- 全息首次运行应用
+--- 内核调试
+--- 锁屏应用
+--- OneDrive 桌面客户端
+--- Parental Controls 应用
+--- People Experience 主机
+--- 快速助手应用
+--- 连接应用
+--- 零售演示内容
+--- Take Test 应用
+--- 设置 Sync
+--- Skype ORTC
+--- SmartScreen 应用
+--- Microsoft Store 应用
+--- Unified Telemetry Client（Asimov）
+--- Windows Defender 应用
+--- Windows 错误报告
+--- Microsoft Xbox 应用
+--- Xbox Game Callable UI
+
++ 更新 ToolKitHelper.exe 以移除以下 Windows 10 Redstone 4 组件（en-GB，x86/x64）源操作系统。
+
+---  混合现实查看器应用
+---  广告 XAML
+---  闹钟和时钟应用
+---  天气应用
+---  计算器应用
+---  相机应用
+---  日历和邮件应用
+---  桌面应用安装器
+---  反馈中心应用
+---  获取帮助应用
+---  使用技巧应用
+---  地图应用
+---  消息应用
+---  我的 Office 应用
+---  OneNote 应用
+---  移动套餐应用
+---  画图 3D 应用
+---  人脉应用
+---  照片应用
+---  Print 3D 应用
+---  Skype 应用
+---  Solitaire Collection 应用
+---  录音机应用
+---  Sticky Notes 应用
+---  钱包服务应用
+---  Web 媒体扩展应用
+---  Groove 音乐应用
+---  电影和电视应用
+
+v8.6
++ 使用 Windows 10 Redstone 5 Insider Preview WADK（v10.0.17661.1000）工具集更新工具箱的 Bin 文件夹。
++ 用工具箱的 Bin 文件夹中的先前版本替换 Resource Hacker 二进制文件以修复集成 Metro 皮肤的 Bug。
++ 更新“集成Windows重复数据移除”功能以支持Windows 10 Redstone 4源操作系统。
++ 使用 Windows 10 Redstone 4 - 重复数据移除基础和 en-US MUI CAB 文件更新适用于 MSMG 工具箱的重复数据移除包。（感谢 MDL 会员：abbodi1406、Moderate）。
+
+v8.5
++ 修复“移除 Windows 组件”功能中 Windows Defender 组件由于 Windows 10 RS4 Core 版本的例外而导致失败的 Bug。
+
+v8.4
++ 使用 Windows 10 Redstone 4 WADK（v10.0.17134.1）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip 命令行工具最新版本更新工具箱的 Bin 文件夹。
++ 使用 Resource Hacker 最新版本更新工具箱的 Bin 文件夹。
++ 更新ToolKit以支持Windows 10 Redstone 4（v10.0.17134.1）源操作系统。
++ 修复“从 DVD ISO 镜像中提取源”功能中当 ISO 映像包含 Install.esd 映像时，工具箱错误地报告提取失败的 Bug。
++ 新增适用于 MSMG 工具箱的 Windows 10 Redstone 4（v10.0.17134.1）语言包（Win_LP + FOD + WinPE_LP）。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 3.5 包，面向 Windows 10 Redstone 4（v10.0.17134.1）源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包，面向 Windows 10 Redstone 4（v10.0.17134.1）源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 媒体功能包，面向 Windows 10 Redstone 4（v10.0.17134.1）源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft 远程服务器管理工具箱（RSAT）（Windows 10 RS4）包。
++ 新增适用于 MSMG 工具箱的 Open Secure Shell（SSH）包，面向 Windows 10 Redstone 4（v10.0.17134.1）源操作系统。
++ 使用 Windows 10.0.17134.1 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10 RS4）。
++ 更新“移除 Windows 组件”功能以移除 Microsoft 遥测、People Experience 主机、Smartscreen、适用于 Windows 10 Redstone 4 源操作系统的 Windows Defender 组件。
+
+v8.3
++ 使用 Windows 10 Redstone 4 WADK（v10.0.17133.1）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip 命令行工具最新版本更新工具箱的 Bin 文件夹。
++ 使用 NSudo 最新版本更新工具箱的 Bin 文件夹。
++ 使用 Resource Hacker 最新版本更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 Redstone 4 源操作系统。
++ 更新“集成 Windows 功能”功能以支持 Windows 10 Redstone 4 源操作系统。
++ 更新“转换 Windows 应用商店 ESD 映像为 WIM 映像”功能以支持组合版本映像。
++ 新增适用于 MSMG 工具箱的 Windows 10 Redstone 4 语言包（Win_LP + FOD + WinPE_LP）。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 3.5 包，适用于 Windows 10 Redstone 4 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包，适用于 Windows 10 Redstone 4 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 媒体功能包，面向 Windows 10 Redstone 4 源操作系统。
++ 新增适用于 MSMG 工具箱的 Open Secure Shell（SSH）包，面向 Windows 10 Redstone 4 源操作系统。
++ 更新“集成 Microsoft DaRT 工具”功能，以显示有关 Microsoft DaRT 8.1/10 安全问题的警告对话框。
++ 使用 Windows 10.0.17133.1 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10 RS4）。
++ 更新“集成 Windows 更新”功能以在集成更新后更新映像信息。
++ 更新“集成 WHD 更新包”功能以在集成更新后更新映像信息。
++ 更新“集成 WHD 更新包”功能以跳过集成适用于 Windows 8.1/Server 2012 R2 源操作系统的 Microsoft .NET Framework 4.7.1（KB4033369）。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 Redstone 4 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 Redstone 4 源操作系统。
++ 修复“移除 Windows 组件”功能中工具箱试图移除 Windows 10 32 位源操作系统的 WOW64 组件的 Bug。
++ 使用更好的 XML 编辑更新 ToolKitHelper.exe，面向 Windows 10 源操作系统更新的集成。
+
+v8.2
++ 更新“集成 WHD 更新包”功能，以支持将最新 Windows 更新集成到 Windows 10 Threshold 1（非 LTSB 版）源操作系统。
++ 更新“集成 WHD 更新包”功能，以支持将最新 Windows 更新集成到 Windows 10 Threshold 2（非教育/非企业版）源操作系统。
++ 更新“集成 WHD 更新包”功能，以支持将更新集成到 Windows 10 专业工作站版。
++ 更新 ToolKitHelper.exe 以移除 Windows 10 Redstone 3 源操作系统的更多组件。
+
+v8.1
++ 使用 Windows 10 Redstone 4 Insider Preview WADK（v10.0.17095.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 7-zip 命令行最新版本更新工具箱的 Bin 文件夹。
++ 使用 NSudo 的最新版本更新工具箱的 Bin 文件夹。
++ 修复“将 ESD 映像转换为 WIM 映像”功能中验证检查不起作用的 Bug。
++ 修复“将 WIM 映像转换为 ESD 映像”功能中验证检查不起作用的 Bug。
++ 修复“将 WIM 映像转换为 ESD 映像”功能中转换正在复制索引的 Bug。
++ 使用新的压缩 CAB 文件更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7.1 包（Windows 8.1/Server 2012R2，Windows 10/Server 2016/Server v1709）。
++ 使用 Windows 10 Redstone 3  - 重复数据移除 38 MUI CAB 文件更新适用于 MSMG 工具箱的重复数据移除包（感谢 MDL 会员：xinso）。
++ 修复适用于 MSMG 工具箱的 Microsoft DirectX 9.0c 包中 DirectX 9.0c 包 32 位注册表文件中存在 Typo 错误。 （感谢 MDL 会员：George King）。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 Redstone 4 Insider Preview 源操作系统。
++ 修复“移除 Windows 组件”功能中移除 Microsoft 遥测服务在 Windows 10 Threshold 2 源操作系统的入门阶段中断操作系统安装的 Bug。
++ 使用针对 Windows 10 Redstone 3 源操作系统的 Hyper-V 移除的简化顺序更新“移除 Windows 组件”功能（感谢 MDL 会员：xinso）。
+> 移动组件“Windows People Experience 主机”以移除高级 Windows 组件。
++ 将组件“Microsoft 遥测服务”更名为“Windows Content Delivery Manager”以避免混淆 Windows 10 Redstone 3 源操作系统，因为只有 Windows Content Delivery Manager 留在该部分中用于移除。
++ 更新“移除 Windows 组件”功能，以移除 Windows 10 Redstone 3 源操作系统的所有语言的“Windows Defender、Windows People Experience 主机、Windows SmartScreen”组件。
++ 更新“移除 Windows 组件”功能以卸载任何放弃的映像注册表配置单元，在卸载源映像时导致访问被拒绝错误。
++ 修复“将源文件夹复制到 USB 闪存驱动器”功能中 Echo 命令文本被垃圾值损坏的错误（感谢 MDL 会员：Spookievision）。
++ 修复“将源文件夹复制到 USB 闪存驱动器”功能中显示 ^＆ 在 Echo 命令中没有字符符号的显示的错误（感谢 MDL 会员：Spookievision）。
++ 更新工具箱的调试信息以显示多索引图像服务模式的映像调试信息（感谢 MDL 会员：Kenafri）。
++ 修正其他几个错误（感谢 MDL 会员：Kenafri）。
+
+v8.0
++ 使用 Windows 10 Redstone 4 Insider Preview WADK（v10.0.17040.1000）工具集更新工具箱的 Bin 文件夹。
++ 使用 zh-CN 主机操作系统时，更新工具箱以使用简体中文 DOS 代码页。
++ 为丢失的包文件添加更好的错误处理。
+- 由于 DISM 问题，移除在 Windows 7 主机操作系统上维护 Windows 10 源操作系统的支持。
++ 更新“集成 Windows 语言包”功能以支持 Windows 10 Redstone 3 源操作系统。
++ 更新“集成 Windows 语言包”功能以支持 Windows Server Core 源操作系统（感谢 MDL 会员：Kenafri）。
++ 新增适用于 MSMG 工具箱的 Windows 10 Redstone 2 语言包（Win_LP + FOD + WinPE_LP）。
++ 新增适用于 MSMG 工具箱的 Windows 10 Redstone 3 语言包（Win_LP + FOD + WinPE_LP）。
++ 更新“集成 Microsoft .NET Framework 4.6.2”功能以集成用于 Windows 10 Threshold 1 源操作系统的 KB4051600 更新。
++ 更新“集成 Microsoft .NET Framework 4.6.2”功能以集成用于 Windows 10 Threshold 2 源操作系统的 KB4054057 更新。
++ 使用 KB4051600、KB4054057 更新更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6.2 包。
++ 新增“集成 Microsoft .NET Framework 4.7.1”功能，面向 Windows 7/ThinPC/Server 2008R2、Windows 8.1/Server 2012R2、Windows 10/Server 2016/Server v1709 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7.1 包（Windows 7/ThinPC/Server 2008R2、Windows 8.1/Server 2012R2、Windows 10/Server 2016/Server v1709）。
++ 修复集成菜单中没有显示集成用于 Windows 10 Redstone 1 源操作系统的 Microsoft Edge 和 Microsoft .NET Framework 4.7 的 Bug。
++ 更新“集成 Windows 重复数据移除”功能以集成 Windows 10 Redstone 3 - 重复数据移除 MUI CAB 文件。
++ 使用针对 fssmres.dll 的修复更新“集成 Windows 重复数据移除”功能（感谢 MDL 会员：abbodi1406）。
++ 修复“集成 Windows 重复数据移除”功能中的错误，其中 Windows 10 的验证检查阻止 Windows 8.1 源操作系统的重复数据移除集成。
++ 使用 Windows 10 Redstone 3 - 重复数据移除 MUI CAB 文件更新适用于 MSMG 工具箱的重复数据移除包。
++ 更新“集成 Microsoft 远程服务器管理工具包（RSAT）”功能以支持 Windows 10 v1609 和 v1709 RSAT。
++ 更新“集成 Microsoft 远程服务器管理工具包（RSAT）”功能以支持多索引集成（感谢 MDL 会员：Kenafri）。
++ 修复“集成 Microsoft DaRT 工具”功能中重新进入集成 DaRT 工具菜单将复制 DaRT 包源路径变量值的 Bug。
++ 修复“集成 Microsoft 游戏”功能中与 Microsoft 游戏浏览器 快捷方式创建相关的的错误（感谢MDL成员：Kenafri）。
++ 修复“集成 Microsoft 游戏”功能中与 Microsoft 游戏本地化快捷方式创建相关的的错误（感谢 MDL 会员：Kenafri）。
++ 修复“集成 WHD 更新包”功能中 IsRecoveryImageSelected 的验证错误地检查 IsBootImageSelected 的 Bug。
++ 使用服务器核心版修复更新功能“集成自定义默认用户帐户图片”（感谢 MDL 会员：Kenafri）。
++ 修复“集成自定义 Windows 恢复映像”功能中 IsRecoveryImageSelected 的验证错误地检查 IsBootImageSelected的错误（感谢 MDL 会员：Kenafri）。
+> 将“移除默认 Metro 应用关联 XML 文件”功能移至自定义菜单。
+> 将“移除默认 Metro 应用”功能中的 Xbox Live 应用程序（Xbox.TCUI）移动到应用商店应用，因为它是 Windows 10 Redstone 3 源操作系统的设置应用程序中的 Windows 应用商店修复/恢复功能所必需的。
++ 修复“移除默认 Metro 应用”功能中的错误，移除除商店以外的所有应用程序将破坏 Windows 应用中的 Windows 应用修复/还原功能，适用于 Windows 10 Redstone 3 源操作系统。
++ 更新“移除 Windows 组件”功能以移除更多用于 Windows 10 Redstone 3 源操作系统的 WOW64 子包。
+- 移除“移除 Windows 组件”功能中的 XboxGameCallableUI 组件，因为它与 Windows 10 Redstone 3 源操作系统的 Xbox Live 应用（Xbox.TCUI）相关。
++ 更新移除高级 Windows 组件菜单下“移除 Windows 组件”功能以移除 Windows 照片查看器组件。
+> 将调整“启用并将 Windows 照片查看器设置为默认查看器”移至自定义 - >调整菜单。
++ 在自定义定制 -> 调整菜单下添加一个调整“通过 Windows 更新禁用自动驱动程序更新”。
++ 在自定义定制 -> 调整菜单下新增一个调整“隐藏任务栏任务视图图标”。
++ 在自定义定制 -> 调整菜单下新增一个调整“强制 .NET 程序以使用最新的 .NET Framework”。
++ 修复功能“WIM 管理器 -> 更名”中更名 WIM 映像索引将使用空字符串设置映像名称和描述的 Bug。
++ 移除在工具箱脚本中加载的这些注册表安装点，因为这些函数已在 ToolKitHelper.exe 中完成。
+
+... [HKEY_LOCAL_MACHINE\TK_COMPONENTS]        ->（%windir%\System32\Config\COMPONENTS）
+... [HKEY_LOCAL_MACHINE\TK_DRIVERS]           ->（%windir%\System32\Config\DRIVERS）
+... [HKEY_LOCAL_MACHINE\TK_SCHEMA]            ->（%windir%\System32\SMI\Store\Machine\SCHEMA.DAT）
+
+v7.9
++ 修复在 amd64/x64 主机操作系统上脚本 Start.cmd 运行失败的问题。
+
+v7.8
++ 使用 Windows 10 Redstone 3 RTM WADK（v10.0.16299.15）工具集更新工具箱的 Bin 文件夹。
++ 更新工具箱以使用 NSudo 作为受信任的安装程序运行。
++ 在工具箱的 Bin 文件夹中添加 NSudo Executable。
++ 将工具箱帮助程序（Windows 组件移除引擎）添加到工具箱的 Bin 文件夹。
++ 更新“集成 Windows 盲文辅助功能”功能以支持 Windows 10 Redstone 3 源操作系统。
++ 使用 Windows 10 Redstone 3 - Windows 盲文辅助 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包。
++ 更新“集成 Windows 重复数据移除”功能以支持 Windows 10 Redstone 3 源操作系统。
++ 使用 Windows 10 Redstone 3 - 重复数据移除基础和 en-US MUI CAB 文件更新适用于 MSMG 工具箱的重复数据移除包。 （感谢 MDL 会员：abbodi1406、Moderate）。
++ 新增“集成 Open Secure Shell（SSH）”功能，面向 Windows 10 Redstone 3 源操作系统。
++ 新增适用于 MSMG 工具箱的 Open Secure Shell（SSH）包。
++ 更新“集成 Microsoft 远程服务器管理工具包（RSAT）”功能以支持 Windows 10 Redstone 3 源操作系统。
++ 更新适用于 MSMG 工具箱的 Microsoft 远程服务器管理工具包（RSAT）（Windows 10 RS1）包。
++ 新增适用于 MSMG 工具箱的 Microsoft 远程服务器管理工具包（RSAT）（Windows 10 RS3）包。
++ 更新“集成 Microsoft Windows 媒体功能包”功能以支持 Windows 10 Redstone 3 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 媒体功能包（Windows 10 RS3）。
++ 更新“集成 DaRT 工具”功能，以便为每个 Windows 10 分支集成单独的调试工具。
++ 使用 Windows 10.0.26624.0 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10 TH1）。
++ 使用 Windows 10.1.10586.212 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10 TH2）。
++ 使用 Windows 10.1.14393.795 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10 RS1）。
++ 使用 Windows 10.1.15063.468 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10 RS2）。
++ 使用 Windows 10.1.16299.15 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10 RS3）。
++ 修复“集成 Microsoft 游戏”功能中 Microsoft FreeCell 游戏快捷方式创建被错误地创建为 Microsoft Chess Titans 的 Bug。
++ 新增“集成 Microsoft Win32 计算器 Metro 皮肤”功能，面向 Windows 10/Server 2016 源操作系统。
++ 使用适用于 Windows 10/Server 2016 源操作系统的新外观更新“集成 Windows 照片查看器 Metro 皮肤”功能。
++ 使用适用于 Windows 10/Server 2016 源操作系统的新外观更新“集成 Windows Media Player Metro 皮肤”功能。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 Redstone 3 源操作系统。
++ 更新“移除默认 Metro 应用”功能，以便在 Windows 10 Redstone 3 源操作系统中移除 Print3D 和 View3D 应用时从 Windows 资源管理器导航窗格中移除 3D 对象。
++ 新增“使用应用列表移除默认 Metro 应用”功能。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 Redstone 3 源操作系统。
++ 更新“移除 Windows 组件”功能，以便为以下 Windows 10 Redstone 3 源操作系统组件使用新组件移除引擎。
+
+... Microsoft Xbox Game Callable UI
+... Windows Defender
+... Windows SmartScreen
+... Windows People Experience 主机
+
++ 通过正确命名用于工具箱内部使用并已修改的映像注册表安装点新增新的注册表安装点
+
+... [HKEY_LOCAL_MACHINE\TK_COMPONENTS]        ->（%windir%\System32\Config\COMPONENTS）
+... [HKEY_LOCAL_MACHINE\TK_DEFAULT]           -> [HKEY_USERS\.Default]（%windir%\System32\Config\default）
+... [HKEY_LOCAL_MACHINE\TK_DRIVERS]           ->（%windir%\System32\Config\DRIVERS）
+... [HKEY_LOCAL_MACHINE\TK_NTUSER]            -> [HKEY_CURRENT_USER]（%userprofile%\ntuser.dat）
+... [HKEY_LOCAL_MACHINE\TK_SCHEMA]            ->（%windir%\System32\SMI\Store\Machine\SCHEMA.DAT）
+... [HKEY_LOCAL_MACHINE\TK_SOFTWARE]          -> [HKEY_LOCAL_MACHINE\SOFTWARE]（%windir%\System32\Config\SOFTWARE）
+... [HKEY_LOCAL_MACHINE\TK_SOFTWARE\Classes]  -> [HKEY_CLASSES_ROOT]（%windir%\System32\Config\SOFTWARE）
+... [HKEY_LOCAL_MACHINE\TK_SYSTEM]            -> [HKEY_LOCAL_MACHINE\SYSTEM]（%windir%\System32\Config\SYSTEM）
+
++ 更新工具箱包注册表项以反映工具箱的新注册表安装点。
+-  移除不需要的包文件。
+
+v7.7
++ 使用 Windows 10 Redstone 3 Insider Preview WADK（v10.0.16288.1）工具集更新工具箱的 Bin 文件夹。
++ 更新“转换源文件”功能，将 Windows 10 Redstone 3 Insider Preview 家庭版转换为专业工作站版。
++ 更新“集成 Windows 语言包”功能以跳过集成语言功能 - 不支持语言的语音包。
++ 使用 KB4040973 更新更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7 包（Windows 7/Server 2008 R2）（感谢 MDL 会员：abbodi1406）。
++ 更新“集成 Microsoft Win32 计算器”功能以支持 Windows 10 Redstone 2 32-位源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Win32 计算器包（Windows 10 Redstone 2 32-位）。
++ 修复“集成 Windows 系统还原”功能中验证检查使用 [ar-SA] 语言而不是映像默认安装语言的错误（感谢 MDL 会员：Kenafri）。
++ 更新“集成 Microsoft 游戏”功能以支持具有文件夹 ACL/权限错误修复的新游戏包。
++ 新增适用于 MSMG 工具箱的 Microsoft 游戏包含文件夹 ACL/权限错误修复。
++ 使用包含文件夹 ACL/权限错误修复更新 MSMG 工具箱的“Microsoft Windows 侧边栏”包，面向 Windows 8.1 和 Server 2012 R2/Windows 10 和 Server 2016 源操作系统。
++ 修复“集成 WHD 更新包”功能中文件管理 API 菜单丢失的错误（感谢 MDL 会员：Kenafri）。
++ 更新应用菜单以显示动态菜单。
++ 新增一个应用菜单选项，使用 /StartComponentCleanup /ResetBase 参数为 Windows 10/Server 2016 源操作系统执行映像清理。
++ 改进的映像重建源映像（感谢 MDL 会员：abbodi1406）。
++ 新增导入调整的选项 - 为 Windows 10/Server 2016 源操作系统启用完整的 DISM 清理映像重置基础。
++ 更新“WIM 管理器”功能清理选项以支持 /CheckHealth 和 /ScanHealth 参数。
++ 修正几个小错误（感谢 MDL 会员：Kenafri）。
+
+v7.6
++ 使用 Windows 10 Redstone 3 Insider Preview WADK（v10.0.16257.1000）工具集更新工具箱的 Bin 文件夹（感谢 MDL 会员：orion2015、roedel）。
++ 使用 WimLib-Imagex v1.12.0 文件更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 Redstone 3 Insider Preview Build 10.0.16257.1 源操作系统。
++ 更新“集成 Windows 语言包”功能以支持包含由于累积更新集成而更新的 Service包Build 版本 Windows 10/Server 2016 源操作系统映像。
++ 修复“集成 Windows 语言包”功能中语言功能包的集成使用 en-GB 语言作为默认值的 Bug。
++ 修复“集成默认 Metro 应用”功能中所有应用程序的集成都跳过商店应用程序的 Bug。
++ 更新“集成默认 Metro 应用”功能以反映较新的应用程序。
++ 更新适用于 MSMG 工具箱的 Microsoft 默认 Metro 应用包。
++ 使用 Windows 10.0.15063.468 调试工具更新用于 MSMG 工具箱的 Microsoft DaRT 包（Windows 10）。
+> 移动 Cortana 和搜索应用程序组件移除到移除高级 Windows 组件部分。
++ 更新“移除默认 Metro 应用”功能以清理 StartMenu Broken/Junk Tiles（感谢 MDL 会员：GodHand）。
++ 更新“移除 Windows 组件”功能以移除 Windows 7/Server 2008 R2/Windows 8.1/Server 2012 R2/Windows 10/Server 2016 源操作系统的 Windows 搜索组件。
++ 修复“移除 Windows 组件”功能中未移除适用于 Windows 10 企业版 2015/2016 LTSB 源操作系统的联系人应用程序组件的 Bug。
++ 更新“移除 Windows 组件”功能以移除适用于 Windows 10 Redstone 3 Insider Preview 源操作系统的 Hyper-V 组件。
++ 新增“从 XML 导入自定义开始菜单布局”功能用于 Windows 8.1/Server 2012 R2/Windows 10/Server 2016 源操作系统。
++ 在自定义菜单下添加“应用调整”功能。
+> 将“集成 Fraunhofer MP3 专业编解码器调整”功能移动到应用调整菜单。
++ 新增导入调整的选项 - 禁用 Cortana 但保留搜索功能，面向 Windows 10 源操作系统。
+> 将移除第三方应用的“禁用下载和安装第三方应用程序”功能移动到“应用调整”菜单。
++ 修复功能“WIM 管理器”中映像清理由于无效的函数调用而无效的 Bug。
+
+v7.5
++ 更新工具箱以支持 Windows 10/Server 2016 源操作系统映像，由于累积更新的集成而更新服务包内部版本。
++ 更新“集成 Microsoft .NET Framework 3.5”功能以集成适用于 Windows 10 Redstone 3 Insider Preview Build 16215 源操作系统的 Microsoft .NET Framework 3.5 组件。
++ 使用新的 CAB 压缩文件更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7 包（Windows 8.1/Server 2012 R2）。
++ 使用新的 CAB 压缩文件更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7 包（Windows 10 RS1/Server 2016）。
++ 使用新的应用程序依赖包集成更新“集成默认 Metro 应用”功能。
++ 使用新修复更新适用于 MSMG 工具箱的 Windows 侧边栏包（感谢 MDL 会员：Kenafri）。
++ 修复“移除默认 Metro 应用”功能中在移除所有应用程序和移除除应用商店应用外所有应用程序确认查询消息被错放的 Bug。
++ 更新“移除默认 Metro 应用”功能以移除用于 Windows 10 Redstone 3 Insider Preview Build 16215 源操作系统的获取帮助、Print 3D 和 Xbox TCUI 应用。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 Redstone 3 Insider Preview Build 16215 源操作系统。
+
+v7.4
++ 修复“集成 Windows 语言包”功能中 Lang.ini 的更新由于无效的映像装载路径而失败的 Bug。
++ 修复“集成 Microsoft .NET Framework 3.5”功能中工具包由于 Windows 10 源操作系统的映像服务包内部版本的更改而无法找到所需的包文件的 Bug。
++ 更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7 包（Windows 7 / Server 2008 R2），在安装操作系统后使用 Auto MOFs Compilation 和 Fresh NativeImages（感谢 MDL 会员：abbodi1406）。
++ 使用改进的 Windows 边栏 EXE 和 DLL 注册更新功能“集成 Windows 边栏”（感谢 MDL 会员：Kenafri）。
++ 更新适用于 MSMG 工具箱的 Windows 侧边栏包以移除非工作小工具（货币、股票、天气）。
++ 使用确认 Y/N 查询更新“移除默认 Metro 应用”功能，以便在选择移除所有应用程序菜单后继续进行。
++ 使用确认 Y/N 查询更新“移除 Windows 组件”功能以在移除所有 Windows 组件菜单被选择时进一步继续。
++ 更新“应用并保存对源映像的更改”功能，以执行额外的映像清理以移除临时文件/文件夹。
++ 使用正确名称修改映像注册表安装点
+
+... [HKEY_LOCAL_MACHINE\TK_HKLM_SOFTWARE]          -> [HKEY_LOCAL_MACHINE\SOFTWARE]（%windir%/system32/config/software）
+... [HKEY_LOCAL_MACHINE\TK_HKLM_SOFTWARE\Classes]  -> [HKEY_CLASSES_ROOT]（%windir%/system32/config/software）
+... [HKEY_LOCAL_MACHINE\TK_HKLM_SYSTEM]            -> [HKEY_LOCAL_MACHINE\SYSTEM]（%windir%/system32/config/system）
+... [HKEY_LOCAL_MACHINE\TK_HKCU]                   -> [HKEY_CURRENT_USER]（%userprofile%/ntuser.dat）
+... [HKEY_LOCAL_MACHINE\TK_HKU_DEFAULT]            -> [HKEY_USERS\.Default]（%windir%/system32/config/default）
+
++ 在工具 -> 选项菜单下添加加载/卸载映像注册表的选项。
+
+v7.3
++ 使用 Windows 10 Redstone 3 Insider Preview WADK（v10.0.16190.0）工具集更新工具箱的 Bin 文件夹。
++ 修复“从 DVD 中选择源文件”功能中的错误，其中源映像信息的显示未正确显示映像描述。
++ 更新“集成 Microsoft .NET Framework 4.7”功能以支持 Windows 7/Server 2008 R2 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7 包（Windows 7/Server 2008 R2）（感谢 MDL 会员：abbodi1406）。
++ 更新适用于 MSMG 工具箱的 Microsoft DirectX 9.0c 包，修复文件夹权限和 Office 受保护的视图问题（感谢 MDL 会员：AeonX）。
++ 修复“集成 Windows 侧边栏”功能中 Windows 侧边栏集成不适用于某些语言的 Bug。
+
+v7.2
++ 更新“从源 DVD 中选择源文件”功能，并选择用于安装的 Windows 安装启动和 Windows 恢复映像。
++ 修复“从 DVD ISO 映像中提取源文件”功能中某个条件中的语法错误导致错误的问题。
++ 修复“从 OEM IMG 映像中提取源文件”功能中某个条件中的语法错误导致错误的问题。
++ 更新“集成 Windows 语言包”功能，以根据是否选择 Windows 安装启动和 Windows 恢复映像来集成 WinPE 语言包。
++ 更新“集成 Windows 驱动程序”功能，以根据是否选择 Windows 安装启动和 Windows 恢复映像来集成 WinPE 驱动程序。
++ 刷新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6.2 包。
++ 新增“集成 Microsoft .NET Framework 4.7”功能，面向 Windows 7/Server 2008 R2/Windows 8.1/Server 2012 R2/Windows 10 Redstone 1/Server 2016 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 4.7 包。
++ 修复功能“集成 Microsoft 默认 Metro 应用”中的错误，选择返回菜单会尝试集成某些用于 Windows 10 RS2/RS3 源操作系统的应用。
++ 更新“集成 Microsoft DaRT 工具”功能，根据是否选择 Windows 安装启动和 Windows 恢复映像来集成 DaRT 工具。
++ 更新“集成 Microsoft DaRT 工具”功能以从安装映像复制 FMAPI.dll 而不是 FMAPI CAB 包。
++ 使用新修复更新“集成 Windows 侧边栏”功能（感谢 MDL 会员：Kenafri）。
++ 新增适用于 MSMG 工具箱的 Windows 侧边栏包（感谢 MDL 会员：Kenafri）。
+- 去除针对 Windows 10 源操作系统的功能集成 WHD 常规更新检查 Windows 10 服务堆栈更新的限制。
++ 更新“集成 WHD 常规更新”功能，根据是否选择 Windows 安装引导和 Windows 恢复映像来集成 WHD 常规更新。
++ 修复“集成终端服务器补丁”功能中的错误，其中验证检查路径指向错误的文件夹。
++ 新增“集成 Windows 照片查看器 Metro 皮肤”功能用于 Windows 10/Server 2016 源操作系统。
++ 新增“集成 Windows Media Player Metro 皮肤”功能用于 Windows 10/Server 2016 源操作系统。
++ 修复移除菜单中菜单无法正常运行 Windows Server 2016 源操作系统的 Bug。
++ 更新“移除默认 Metro 应用”功能，拆分桌面应用安装程序，Xbox 和应用商店的移除。
++ 更新“移除默认 Metro 应用”功能，改进画图 3D 应用的移除与更多调整以移除使用画图 3D 进行编辑右键单击上下文菜单快捷方式以获取更多格式（感谢 MDL 会员：Zanza-kun）。
++ 更新“移除 Windows 组件”功能，将 Windows Delivery Manager 组件移至 Windows 10 源操作系统的 Microsoft 遥测服务中。
++ 修复“WIM 管理器”功能中更名 WIM 映像索引描述字符串如果有空格时将被截断的 Bug。
+
+v7.1
++ 修复“移除 Windows 组件”功能中移除 Windows Defender 组件会对 Windows 10 Redstone 2 源操作系统提示文件/文件夹移除错误的 Bug。
+
+v7.0
++ 重新添加对 Windows 10 Threshold 2 源操作系统的支持。
++ 使用 Windows 10 Redstone 2 RTM WADK（v10.0.15063.0）工具集更新工具箱的 Bin 文件夹。
++ 当选择多索引服务模式时，将功能“从源 DVD 中选择源文件”更新为仅从安装映像的第一个索引安装恢复映像。
++ 改进显示源映像列表屏幕。
+> 将这些功能从源文件菜单移动到转换菜单
+
+... 将应用商店 ESD 映像转换为 WIM 映像
+... 将 ESD 映像转换为 WIM 映像
+... 将 MCT 映像转换为 WIM 映像
+... 将 WIM 映像转换为 ESD 映像
+
++ 更新“转换源文件”功能以支持 Windows 7 客户端源操作系统。
++ 更新“转换源文件”功能以支持 Windows 8.1/Server 2012 R2 源操作系统。
++ 更新“转换源文件”功能以支持 Windows 10 Redstone 2 源操作系统。
++ 更新“Windows 语言包”功能，以为 Windows 启动，安装和恢复映像完全集成多语言用户界面（MUI）包。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 多语言用户界面（MUI）包。
++ 更新“集成 Microsoft Edge 浏览器”功能以支持 Windows Redstone 2 源操作系统。
++ 使用 Windows 10 Redstone 2 - Edge 浏览器基础和 MUI x86/x64 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Edge 浏览器包。
++ 更新“集成 Windows 重复数据移除”功能以支持 Windows 10 Threshold 2/Redstone 2 源操作系统。
++ 使用 Windows 10 Threshold 2 更新适用于 MSMG 工具箱的重复数据移除包 - 重复数据移除库和 de-DE、en-US、es-ES、fr-FR、it-IT、ja-JP、ko-KR、pt-BR、ru-RU、tr-TR、zh-CN、zh-TW MUI CAB 文件。 （感谢 MDL 会员：abbodi1406，Moderate）。
++ 使用 Windows 10 Redstone 2 更新适用于 MSMG 工具箱的重复数据移除包 - 重复数据移除基础和 MUI CAB 文件（感谢 MDL 会员：abbodi1406、Moderate）。
++ 修复适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6.2 包（Windows 10）中需要进行文件名更正的 Bug。
++ 更新适用于 MSMG 工具箱的 Microsoft ThinPC 附加组件包。
++ 新增“集成 Microsoft Windows 媒体功能包”功能，面向 Windows 7 K、KN/Windows 8.1 N、KN/Windows 10 N、KN、GN 版源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 媒体功能包。
+- 从“集成 WHD 额外更新”功能中移除“集成 Microsoft Windows Media 功能”功能。
++ 新增“集成 Microsoft 远程服务器管理工具包（RSAT）”功能用于 Windows 7/ 8.1/10 专业版/企业版/旗舰版源操作系统。
++ 新增 MSMG 工具箱 Microsoft 远程服务器管理工具包（RSAT）包。
+- 从集成 WHD 附加更新功能中移除集成远程服务器管理工具包（RSAT）功能。
++ 新增“集成 Windows 盲文辅助”功能，面向 Windows 10 Redstone 2 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft Windows 盲文辅助包。
++ 使用 Windows 10 Redstone 2 - 适用于 Windows 的 Linux 子系统（WSL）基础和 MUI CAB 文件更新适用于 MSMG 工具箱的适用于 Windows 的 Linux 子系统（WSL）包。
++ 更新“集成 Microsoft Win32 计算器”功能以支持 Windows 10 Threshold 2/Redstone 2 源操作系统。
++ 使用 Windows 10 Redstone 2 - Microsoft Win32 计算器基础 64 位和 MUI 32/64位 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 使用 Windows 10 Redstone 2 - Windows 多媒体受限编解码器库和 MUI 32/64 位 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 多媒体受限编解码器包。
++ 更新“集成 Windows To Go 工作区”功能以支持 Windows 10 Redstone 2 源操作系统。
++ 使用 Windows 10 Redstone 2 - Windows To Go 工作区基础和 MUI 32/64 位 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows To Go 工作区包。
++ 使用 Windows 10 Redstone 2 - Windows 系统恢复基础和 MUI 64 位 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 系统恢复包。
++ 更新“集成 Microsoft 默认 Metro 应用”功能以支持 Windows 10 Threshold 2/Redstone 2 源操作系统。
++ 更新“集成 Microsoft DaRT 工具”功能，以支持 Windows 10 Threshold 2/Redstone 2 源操作系统。
++ 使用更新的崩溃分析器所需的 Windows 10 Redstone 2 RTM 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 将功能“集成 WHD 更新”更名为“集成 WHD 更新包”。
++ 更新“集成 WHD 更新包”功能以支持 Windows 10 Threshold 2/Redstone 2 源操作系统。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 Threshold 2 源操作系统。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 Redstone 2 源操作系统。
++ 更新“移除 Windows 组件”功能以移除 Windows 7/Server 2008 R2/Windows 8.1/Server 2012 R2/Windows 10/Server 2016 源操作系统的 Windows Media Player 组件。
++ 更新“移除 Windows 组件”功能以移除 Microsoft 地图，Windows 10 Redstone 1/2 源操作系统的游戏组件。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 Redstone 2 源操作系统的 Windows 混合现实组件。
++ 更新“移除 Windows 组件”功能以使用 Microsoft Cortana，适用于 Windows 10 源操作系统的搜索组件合并 Windows Delivery Manager。
++ 在“应用”菜单中更名以下这些菜单
+
+... 应用并保存对源映像的更改
+... 放弃更改并卸载源映像
+... 重建源映像
+
++ 更新“应用和保存对源映像的更改”功能，仅使用 ResetBase 执行映像组件清理，以便在多重索引维护模式下安装映像第一索引。
++ 更新“应用并保存对源映像的更改”功能，将更新后的恢复映像从安装映像第一索引复制到多重索引服务模式下安装映像中的其余索引，以减少整体安装映像大小。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v6.9
++ 使用 Windows 10 Redstone 2 WADK（v10.0.15052.0）工具集更新工具箱的 Bin 文件夹。
++ 新增适用于“从DVD ISO映像提取源”功能的验证提取用于验证检查。
++ 新增适用于“从 OEM IMG 镜像中提取源”功能的验证提取用于验证检查。
++ 修复“移除 Windows 组件”功能中移除高级 Windows 组件菜单不适用于 Windows Server 2016 源操作系统的 Bug。
++ 修复“应用源文件”功能中 WIM 映像组件清理被错误地应用于 Windows 7/Server 2008 R2/ThinPC 源操作系统的 Bug。
++ 更新“格式化 USB 闪存盘”功能，改进 USB 闪存盘检查（感谢 MDL 会员：Psylow）。
+
+v6.8
++ 使用 Windows 10 Redstone 2 WADK（v10.0.15042.0）工具集更新工具箱的 Bin 文件夹。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 Redstone 2（创建者更新）发行版本 Build 15046 源操作系统。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 Redstone 2（创建者更新）发行版本 Build 15046 源操作系统。
++ 更新“移除 Windows 组件”功能以移除用于 Windows 10 Redstone 2（创意者更新）发行版本 Build 15046 源操作系统的 Microsoft 生物识别组件。
+
+v6.7
++ 使用 Windows 10 Redstone 2 WADK（v10.0.15021.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新“集成重复数据移除”功能，以在 Windows 10 源操作系统上集成重复数据移除更新包。
++ 使用重复数据移除更新包更新适用于 MSMG 工具箱的重复数据移除包（感谢 MDL 会员：abbodi1406）。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 Redstone 2（创建者更新）版本 Build 15031 源操作系统。
++ 修复工具箱中的许多显示错误（感谢 MDL 成员 Kenafri）。
++ 优化工具箱代码（感谢 MDL 成员 Kenafri）。
+
+v6.6
++ 修复“集成 .NET Framework 3.5”功能中当选择多个索引时，工具箱无法集成 .NET Framework 3.5 的 Bug。
++ 修复“集成 Windows 计算器”功能中工具箱将提示只读安装错误的 Bug。
++ 修复“移除默认 Metro 应用”功能中选择“移除应用”菜单中的“返回”菜单不适用于 Windows 10 Redstone 1 源操作系统的 Bug。
++ 修复工具箱中的小错误（感谢 MDL 成员 Kenafri）。
+
+v6.5
++ 使用 WimLibImagex 最新二进制文件更新工具箱的 Bin 文件夹。
++ 添加针对服务器核心版检测的修复程序（感谢 MDL 成员 Kenafri）。
++ 修复“集成 .NET Framework 3.5”功能中工具箱无法在包文件夹中找到 .NET Framework 3.5 源文件的 Bug。
++ 使用适用于 Windows 10 源操作系统的正确版本和更简单的命名更新 Microsoft .NET Framework 3.5 包。
++ 修复“集成 Internet Explorer 11 更新”功能中未正确提取 Internet Explorer 11 更新的 Bug。
++ 添加“集成 Windows 管理框架（WMF）5.1”功能。
++ 新增适用于 MSMG 工具箱的 Windows Management Framework 5.1 包，面向 Windows 7/Server 2008 R2/ThinPC/Windows 8.1/Server 2012 R2 源操作系统。
+- 移除“集成 Windows Management Framework 3.0，4.0 和 5.0”功能。
+- 移除适用于 MSMG 工具箱的 Windows Management Framework 3.0、4.0 和 5.0 包。
++ 更新功能“集成WHD更新”以反映WHD修补程序存储库更新列表。
++ 更新“移除 Windows 组件”功能，以在 Windows 10 源操作系统中移除 Microsoft 遥测服务组件时移除“dmwappushsvc”服务。
++ 更新“移除 Windows 组件”功能以移除适用于 Windows 10 Redstone 2 创意者更新预览版源操作系统的 Microsoft OneDrive 组件。
++ 修复工具箱中的小错误（感谢 MDL 成员 Kenafri）。
+- 移除冗余代码。
+
+v6.4
++ 更新“集成 Microsoft .Net Framework 3.5”功能以提高集成速度（感谢 tito 和 xinso）。
++ 更新“集成 WHD 常规更新”功能，以提高 Windows 10 源操作系统的集成速度（感谢 tito 和 xinso）。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 从“集成 WHD 更新”功能移动选项“使用 ResetBase 进行 WIM 组件清理”到“应用源文件”。
++ 更新“移除默认 Metro 应用程序”功能，当在 Windows 10 源操作系统中移除除应用商店以外的所有应用程序时，合并 Windows 应用商店和 Xbox 应用移除以修复应用商店不工作。
++ 更新“移除默认 Metro 应用程序”功能以移除用于 Windows 10 Redstone 2 创意者更新预览版源操作系统的 Microsoft Xbox 语音到文本覆盖应用程序。
++ 更新“移除 Windows 组件”功能，在 Windows 10 Redstone 2 创意者更新预览版源操作系统的“移除高级 Windows 组件”部分中将 Windows Defender 组件和 Windows Defender 应用程序组件合并。
++ 更新“移除 Windows 组件”功能以移除 Windows Defender 应用lication Guard Inbox 组件，面向 Windows 10 Redstone 2 创意者更新预览版源操作系统。
++ 新增“使用包列表移除 Windows 组件”功能。
++ 修复工具箱中的小错误（感谢 MDL 成员 Kenafri）。
+
+v6.3
++ 使用 Windows 10 Redstone 2 WADK（v10.0.14986.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新工具箱以支持泄露版 Windows 10 Redstone 2 创意者更新预览版 Build 10.0.14997.1001 源操作系统。
++ 更新“转换源文件”功能以支持 Windows 2008 R2 源操作系统。
++ 更新“转换源文件”功能以添加原始 WIM 映像标识、版本、名称、描述、显示名称和显示说明。
++ 修复“集成 Microsoft Edge 浏览器应用”功能中注册表调整以启用在企业版 S，企业版 SN，Server 2016 上集成累积更新将 64 位注册表项应用到 32 位操作系统的 Bug。
++ 修复工具箱的驱动程序和更新文件夹结构错误。
++ 更新“移除 Windows 组件”功能，以修复在移除 Windows Bio Metrics 组件时的事件日志错误。
++ 更新“移除 Windows 组件”功能以移除 Windows Defender 应用组件，面向 Windows 10 Redstone 2 创意者更新预览版源操作系统。
+
+v6.2
++ 新增功能“集成 Internet Explorer 11”和语言包用于 Windows 7/Server 2008 R2/ThinPC 源操作系统。
++ 新增适用于 MSMG 工具箱的 Internet Explorer 11 包，其中包含用于 Windows 7/Server 2008 R2/ThinPC 源操作系统的 MUI 文件。
++ 新增功能“集成 Microsoft .NET Framework 4.6.2 组件”和语言包用于 Windows 8.1/Server 2012 R2/Windows 10 TH1/TH2 源操作系统。
++ 新增适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6.2 组件包，其中包含用于 Windows 8.1/Server 2012 R2/Windows 10 TH1/TH2 源操作系统的 MUI 文件。
++ 为 Windows 7/Server 2008 R2/ThinPC/Windows 8.1/Server 2012 R2 源操作系统新增“集成 Windows Management Framework 3.0、4.0 和 5.0”功能。
++ 新增适用于 MSMG 工具箱的 Windows Management Framework 3.0、4.0 和 5.0 包用于 Windows 7/Server 2008 R2/ThinPC/Windows 8.1/Server 2012 R2 源操作系统。
++ 新增“集成远程桌面协议 8 和 8.1”功能用于 Windows 7/Server 2008 R2/ThinPC 源操作系统。
++ 新增适用于 MSMG 工具箱远程桌面协议 8 和 8.1 包用于 Windows 7/Server 2008 R2/ThinPC 源操作系统。
++ 使用 Tweak 更新功能“集成 Microsoft Edge 浏览器应用程序”以使用 Windows 10 源操作系统的最新 Windows 累积更新启用更新 Edge 组件（感谢 MDL 成员 xinso）。
+- 从集成 WHD 附加和额外更新功能中移除集成 Internet Explorer 11，Microsoft .NET Framework 4.6.2，远程桌面协议8/8.1，Windows Management Framework 3.0/4.0/5.0。
++ 使用 Tweak 更新“集成 WHD 安全更新”功能以调整 Microsoft Windows 遥测客户端，面向 Windows 7/Server 2008 R2/ThinPC/Windows 8.1/Server 2012 R2 源操作系统。
++ 刷新 Windows To Go，Windows 经典计算器，Windows 重复数据移除，Microsoft DaRT 工具，Microsoft .NET Framework 3.5 组件包以与即将推出的 MSMG 工具箱 GUI 文件夹结构相匹配。
++ 更新“移除默认 Metro 应用”功能以移除用于 Windows 10 Redstone 2 创意者更新预览版源操作系统的 Microsoft 3D 查看器，Wallet，Xbox Game Overlay 应用。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v6.1
++ 使用 Windows 10 Redstone 2 WADK（v10.0.14965.1001）工具集更新工具箱的 Bin 文件夹。
++ 新增新功能“集成 Windows 多媒体限定编解码器”用于 Windows Server 2016 源操作系统。
++ 使用基础包和 MUI CAB 包文件添加适用于 MSMG 工具箱的 Windows 多媒体限定编解码包（感谢 MDL 成员 xinso）。
++ 更新“移除默认 Metro 应用”功能为适用于 Windows 10  Redstone 2 创意者更新预览源操作系统的 Microsoft 画图 3D 预览应用。
++ 更新“移除 Windows 组件”功能以移除用于 Windows 10 Redstone 2 创意者更新预览版源操作系统的 Windows Flight Signing，Windows 桌面文件浏览器应用组件。
+
+v6.0
++ 修复工具箱中选择 Windows Server Core 版源操作系统时，工具箱会崩溃的 Bug。
++ 修复工具箱中工具箱将跳转到Windows Server Core 版源操作系统的错误菜单的 Bug。
++ 更新功能“转换源”以支持Windows Server 2016 Core 版源操作系统。
++ 更新工具箱以支持 Windows 10 Redstone 2 技术预览版源操作系统。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持最新的 Windows 10 Redstone 2 技术预览版源操作系统 ESD 加密密钥。
++ 更新“移除 Windows 组件”功能以支持 Windows Server Core 版源操作系统。
++ 更新“移除 Windows 组件”功能以移除生物识别、Xbox 和游戏相关服务。
+
+v5.9
++修复“集成自定义默认帐户图片”功能中工具箱复制 Windows Server 2008 R2 Core 版源操作系统中存在的默认帐户图片的错误（感谢 MDL 成员 Kenafri）。
++修复“集成 Microsoft Edge 浏览器”功能中工具箱错误地集成 64 位 Microsoft Edge 浏览器程序包到 Windows 10 企业版 2016 LTSB 32 位源操作系统的 Bug。
++更新“移除 Windows 组件”功能以移除 Windows 10 Redstone 2 技术预览版源操作系统的 Windows Defender 组件。
+
+v5.8
++更新“集成 Microsoft Edge 浏览器”功能以支持 Windows 10 企业版 2016 LTSB 源操作系统。
++更新“集成 WHD 更新”功能，使用 Resetbase 为 Install.wim WIM 映像添加组件存储清理。
++更新“移除 Windows 组件”功能以移除 OneDrive 组件的 Post-Component Removal Clean-up （WinSXS 文件夹清理），因为它导致映像损坏。
+
+v5.7
++ 使用修复不匹配的索引更新适用于 MSMG 工具箱的 Microsoft DirectX 9.0c 包。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 Redstone 2 技术预览版源操作系统的 Windows People Experience 主机组件。
+
+v5.6
++ 更新“集成重复数据移除”功能，以集成 Windows Server 2016 RTM Build 10.0.14393 重复数据移除 MUI 包（Windows 10 Redstone 64 位客户端源操作系统）。
++ 使用 Windows Server 2016 RTM Build 10.0.14393 重复数据移除 MUI CAB 包文件更新适用于 MSMG 工具箱的重复数据移除包（感谢 MDL 会员：abbodi1406）。
++ 使用新的 Direct DISM 捕获方法更新适用于 MSMG 工具箱的 Microsoft DirectX 9.0c 包。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 修复“移除 Windows 组件”功能中移除 Microsoft 地图组件将在 Windows 10 64 位源操作系统上跳过 WOW64 包的 Bug。
++ 更新“移除 Windows 组件”功能，为移除零售演示和 OneDrive 程序包新增 Post-Component Removal Clean-up 功能。
+
+v5.5
++ 更新“移除 Windows 组件”功能以移除 Windows 联系支持和 Windows 快速帮助应用组件，面向 Windows 10 企业版 N 2016 LTSB Build 10.0.14393 源操作系统。
+
+v5.4
++ 修复“移除 Windows 组件”功能中与移除 Windows 组件菜单中的缺少/不匹配的菜单项相关的 Bug。
++ 使用 Post-Component Removal Clean-up Routine 更新“移除 Windows 组件”功能。
+
+v5.3
++ 在工具箱的 Bin 文件夹中添加 WimLibImagex。
++ 更新工具箱以支持 Windows 10 企业版 2016 LTSB Build 10.0.14393 源操作系统。
++ 更新工具箱以支持 Windows 10 Redstone 2 技术预览版源操作系统。
++ 更新“转换源文件”功能，以更新 WIM 映像显示名称和显示说明。
++ 更新“转换源文件”功能，以支持 Windows 10 Redstone Build 10.0.14393 源操作系统。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 Redstone 2 技术预览版源操作系统 ESD 加密密钥。
++ 使用最新更新和修补程序更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6 组件包（感谢 MDL 成员 abbodi1406）。
++ 更新“集成 Microsoft Win32 计算器”功能以支持 Windows 10 Redstone 2 技术预览版源操作系统。
++ 使用 Windows 10 Redstone RTM Build 10.0.14393 Win32Calc 32 位基础和 MUI CAB 包文件更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 新增“集成 Windows 系统还原”功能用于 Windows Server 2008 R2/Windows Server 2012 R2 /Windows Server 2016 源操作系统。
++ 使用 Windows Server 2008 R2/Windows Server 2012 R2/Windows Server 2016 64 位系统还原包和 MUI CAB 包文件新增适用于 MSMG 工具箱的 Windows 系统还原包。
++ 新增“集成 Microsoft Edge 浏览器”功能，面向 Windows Server 2016 源操作系统。
++ 使用 Windows 10 Redstone Build 10.0.14393 32 位和 64位 Microsoft Edge 浏览器基础包和 MUI CAB 包文件新增适用于 MSMG 工具箱的 Microsoft Edge 浏览器包。
++ 更新适用于 MSMG 工具箱的适用于 Linux 的 Windows 子系统（WSL）包，移除不需要的额外包。
++ 更新“集成默认 Metro 应用”功能以支持 Windows 10 Redstone RTM Build 10.0.14393 源操作系统。
++ 使用原始文件/文件夹 ACL 权限修复适用于 MSMG 工具箱的 Microsoft DirectX 9.0c 包。
++ 使用原始文件/文件夹 ACL 权限修复适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 修复“集成 WHD 更新”功能中 Windows 8.1 检查嵌入式版本的版本特定更新集成失败的错误（感谢 MDL 成员 Kenafri）。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 更新“移除默认 Metro 应用”功能以在移除 3D Builder 应用程序时右键单击“使用 3D Builder 选项进行 3D 打印”上下文菜单。
++ 更新“移除默认 Metro 应用”功能以移除用于 Windows 10 Redstone RTM Build 10.0.14393 源操作系统的第三方应用程序下载链接。
++ 更新“移除默认 Metro 应用”功能，以便在移除 Windows 应用商店应用时禁用“使用应用商店查找应用打开”提示。
++ 更新“移除默认 Metro 应用”功能，以便在移除第三方应用程序时禁用自动下载和安装第三方 Metro 应用程序。
++ 修复“移除 Windows 组件”功能中对 Windows 7/Server 2008R2 组件无法移除 Windows 组件的错误（感谢 MDL 成员 xinso）。
++ 修复“移除 Windows 组件”功能中移除 Cortana 和搜索组件会在多重索引服务模式下发现注册表项未找到的 Bug。
++ 更新“移除 Windows 组件”功能以支持 Windows 10 Redstone 2 技术预览源操作系统。
++ 更新“移除 Windows 组件”功能，以便在移除 Microsoft Biometrics Services 组件时移除 Microsoft Biometrics Services 注册表项。
++ 更新“移除 Windows 组件”功能以在移除 Microsoft 遥测服务组件时移除 Microsoft 遥测服务组件。
++ 更新“移除 Windows 组件”功能以在移除 Windows Defender 组件时禁用 Windows Update 提供 Windows Defender 定义更新。
++ 更新“移除 Windows 组件”功能，面向从 Windows 10 源操作系统的 Microsoft 遥测服务中分离的 Windows 地理位置组件。
++ 更新“移除 Windows 组件”功能以移除适用于 Windows 8.1/Server 2012 R2 - Windows 10/Server 2016 源操作系统的 Windows 组件。
++ 更新“移除 Windows 组件”功能以移除 Windows 家庭组组件，面向 Windows 8.1/Server 2012 R2 - Windows 10/Server 2016 源操作系统。
++ 更新“移除 Windows 组件”功能以移除 Windows 7/8.1/10 源操作系统的 Windows 家长控制组件。
++ 更新“移除 Windows 组件”功能以移除 Windows 7 源操作系统的 Windows 系统还原组件。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 源操作系统的 Windows Metro 游戏组件。
++ 更新“移除 Windows 组件”功能，以便在移除 Windows 应用商店客户端组件时禁用“在商店中查找应用打开”提示。
++ 优化工具箱代码（感谢 MDL 成员 Kenafri）。
+- 移除冗余代码。
+
+v5.2
++ 使用 Windows 10 Redstone WADK（v10.0.14393.0）工具集更新工具箱的 Bin 文件夹。
++ 使用 Windows 10 Redstone .NET Framework 3.5 CAB 文件更新适用于 MSMG 工具箱的 Microsoft .NET Framework 3.5 包。
+* “集成 Windows Linux 子系统”功能已更名为“集成 Windows 子系统 Linux（WSL）”。
+
+v5.1
++ 更新工具箱以支持 Windows 10 Redstone RTM Build 10.0.14393 客户端和 Server 2016 Build 10.0.14393 源操作系统。
+- 移除对 Windows 10 Threshold 2 Build 10.0.10586 源操作系统的支持。
++ 修复工具箱中的几个错误。
++ 使用最新更新和修补程序更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6 组件包（感谢 MDL 成员 abbodi1406）。
++ 更新“集成 Microsoft Win32 计算器”功能以集成 Windows 10 Redstone RTM Build 10.0.14393 Win32Calc 程序包（Windows 10 Redstone 源操作系统）。
++ 使用 Windows 10 Redstone RTM Build 10.0.14393 Win32Calc 64 位 CAB 包和带有 MUI 文件的 32 位 .tpk 工具箱包更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 为 Windows Server 2016 源操作系统添加“集成 Windows Linux 子系统”功能（感谢 MDL 成员 TS）。
++ 为 Windows Server 2016 源操作系统新增带有 MUI 文件的 Windows Linux 子系统 CAB 程序包（感谢 MDL 成员 TS）。
++ 更新“集成重复数据移除”功能，以集成 Windows Server 2016 RTM Build 10.0.14393 重复数据移除程序包（Windows 10 Redstone 64 位客户端源操作系统）。
++ 使用 Windows Server 2016 RTM Build 10.0.14393 重复数据移除 CAB 包文件更新适用于 MSMG 工具箱的重复数据移除包（感谢 MDL 会员：abbodi1406）。
++ 更新“集成 Windows 到工作区”功能，以集成 Windows 10 Redstone RTM Build 10.0.14393 WinToGo 程序包（Windows 10 Redstone 源操作系统）。
++ 更新“集成 Windows To Go 工作区”功能，将 Windows To Go 工作区集成到 Windows Server 2016 源操作系统。
++ 使用带有 MUI 文件的 Windows 10 Redstone RTM Build 10.0.14393 企业版 WinToGo CAB 包更新适用于 MSMG 工具箱的 WTG 包。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 更新“移除 Windows 组件”功能以支持 Windows Server 2016 Build 10.0.14393 源操作系统。
++ 更新“移除 Windows 组件”功能以移除适用于 Windows 10 Redstone RTM Build 10.0.14393 客户端源操作系统 Windows Take 应用。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v5.0
++ 更新工具箱以支持在工具箱的运行时文件夹名称中带空格。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 Redstone Build 10.0.14393 ESD 加密密钥。
++ 修复“移除默认 Metro 应用”功能中用户选择要移除的 Metro 应用程序时，工具箱将终止的 Bug。
+
+v4.9
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 Redstone 技术预览版 Build 10.0.14388 ESD 加密密钥。
++ 修复“移除默认 Metro 应用”功能中第 3 方应用链接的移除因单索引服务模式而失败的 Bug。
++ 更新“移除 Windows 组件”功能以在 Windows Defender 组件下移除 Windows Defender 高级威胁防护（Windows 10 Redstone 技术预览版 Build 10.0.14388 源操作系统）。
+
+v4.8
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 Redstone 技术预览版 Build 10.0.14379 ESD 加密密钥。
++ 修复“集成 WHD 额外更新”功能中额外更新源文件夹指向错误的位置的错误（仅限 Windows 10 源操作系统）。
++ 修复“集成 WHD 额外更新”功能中跳过集成 WMF 3、4、5 集成 64 位 Windows 7 源操作系统的子程序包的 Bug。
++ 更新“移除 Windows 组件”功能以移除 Microsoft 地图组件（Windows 10 源操作系统）。
+
+v4.7
++ 更新工具箱的 Bin 文件夹中的 Dism++CUI.exe。
++ 更新工具箱以支持 Windows 10 Redstone 1 技术预览版 Build 10.0.14372 源操作系统。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 Redstone 技术预览版 Build 10.0.14372 ESD 加密密钥。
++ 修改 WHD 更新文件夹结构以支持 Windows 10 Threshold 1 源操作系统。
++ 修复适用于 MSMG 工具箱的 Microsoft Win32 计算器包中的 Bug。
+
+v4.6
++ 将 Dism++CUI.exe 添加到工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 Redstone 1 技术预览版 Build 10.0.14367 源操作系统。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 Redstone 技术预览版 Build 10.0.14367 ESD 加密密钥。
++ 更新“集成 Microsoft Win32 计算器”功能以集成 Windows 10 Threshold 2 企业版 LTSB（10.0.10537.0）64 位 en-US Win32Calc 程序包，适用于 Windows 10 Threshold 2 64 位 en-US 源操作系统。
++ 使用 Windows 10 Threshold 2 企业版 LTSB（10.0.10537.0）64 位 en-US Win32Calc CAB 程序包更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 更新“集成 Microsoft Win32 计算器”功能以集成 Windows 10 Redstone 1 企业版 S（10.0.14352.1002）用于 Windows 10 Redstone 1 64 位源操作系统的 64 位 Win32Calc 程序包。
++ 使用 Windows 10 Redstone 1 企业版 S（10.0.14352.1002）64 位 Win32Calc CAB 程序包更新适用于 MSMG 工具箱的 Microsoft Win32 计算器包。
++ 修复“集成 WHD 更新”功能中的几个错误。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 改进“集成 WHD 常规更新”功能避免每次更新时更新工具箱脚本，通过为 Windows 10 源操作系统的每个更新使用专用文件夹结构。
++ 更新功能“移除默认 Metro 应用”以移除适用于 Windows 10 Redstone 1 技术预览版源操作系统的 Microsoft Connect 应用（感谢 MDL 会员 expert）。
++ 修复“移除默认 Metro 应用”功能中移除默认 Metro 应用菜单包含重复菜单项的 Bug。
++ 更新“WIM 管理器”功能以将驱动器/文件夹捕获到 WIM 映像文件。
++ 更新“WIM 管理器”功能以将 WIM 映像应用于驱动器/文件夹。
++ 更新“WIM 管理器”功能以执行清理和重置 WIM 映像文件基础。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v4.5
++ 更新工具箱以支持 Windows 10 Redstone 1 技术预览版 Build 10.0.14352 源操作系统。
++ 使用最新更新和修补程序更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6 组件包（感谢 MDL 成员 abbodi1406）。
++ 更新“集成 WHD 更新”功能以支持适用于 Windows 7 SP1 源操作系统的便捷汇总更新（KB3125574）。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 更新“移除默认 Metro 应用”功能，改进启用的注册表设置，并在移除默认照片 Metro 应用时将 Windows 照片查看器设置为默认照片查看器。
++ 更新“移除 Windows 组件”功能，将组件 Microsoft Edge 浏览器应用、Windows Defender、Windows Defender 服务器和 AntiMalware 移动到移除高级 Windows 组件菜单。
++ 更新“移除 Windows 组件”功能以移除 Microsoft Internet Explorer 组件。
+
+v4.4
++ 更新工具箱以支持 Windows 10 Redstone 1 技术预览版 Build 10.0.14342 源操作系统。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 更新“移除默认 Metro 应用”功能以在移除默认音乐和视频 Metro 应用时将 Windows Media Player 设置为默认音频/视频播放器。
++ 更新“移除默认 Metro 应用”功能以在移除默认照片 Metro 应用时启用并将 Windows 照片查看器设置为默认照片查看器。
++ 更新“移除默认 Metro 应用”功能，重新添加移除“除应用商店以外的所有 Metro 应用”，“所有 Bing Metro 应用”，“所有在线 Metro 应用”的选项，适用于 Windows 10 Redstone 1 技术预览版源操作系统。
++ 修复“制作 DVD ISO 镜像”功能中的错误，当 ISO 卷标设置为空白时，工具箱会生成损坏的 ISO 镜像。
+
+v4.3
++ 更新工具箱以支持 Windows 10 Redstone 1 技术预览版 Build 10.0.14332 源操作系统。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 Redstone 技术预览版 ESD 加密密钥。
++ 更新适用于 MSMG 工具箱的 Microsoft 游戏包以支持 Windows 10 Redstone 技术预览版源操作系统（感谢 MDL 成员 hb860）。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
+- 从“移除默认 Metro 应用”功能中移除“移除除应用商店以外的所有应用”和“移除所有在线应用”选项，以便为 Windows 10 Redstone 1 技术预览版源操作系统提供空间。
++ 更新“移除默认 Metro 应用”功能以移除 Microsoft Sticky Notes、OneConnect、商店购买应用、反馈中心应用，适用于 Windows 10 Redstone 1 技术预览版源操作系统。
++ 更新“移除 Windows 组件”功能，将 Windows 地理位置包添加到 Microsoft 遥测服务组件移除。
+- 移除冗余代码。
+
+v4.2
++ 更新工具箱以自动提示管理员权限的 UAC 提示（感谢 MDL 成员 - westyles）。
++ 更新工具箱以自动重新调整尺寸工具箱窗口大小为 80x25（感谢 MDL 成员 - westyles）。
++ 更新工具箱以支持 Windows 10 Redstone 1 技术预览版 Build 10.0.14316 源操作系统。
++ 修复“转换源文件”功能中的错误，如果源操作系统是 Windows Embedded 8.1 Industry 专业版/企业版，那么工具箱控件将跳转到集成菜单（感谢 MDL 成员 Kenafri）。
++ 使用最新更新和修补程序更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6 组件包（感谢 MDL 成员 abbodi1406）。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 更新“移除默认 Metro 应用”功能以移除用于 Windows 10 Redstone 1 技术预览版源操作系统的 Microsoft Xbox Identity Provider 应用。
++ 更新“移除 Windows 组件”功能，以移除适用于 Windows 10 Redstone 1 技术预览版源操作系统的 Microsoft Windows Quick Assist 包组件。
++ 优化工具箱代码（感谢 MDL 成员 Kenafri）。
+- 移除冗余代码。
+
+v4.1
++ 使用 Windows 10 Redstone WADK（v10.0.14295.1000）工具集更新工具箱的 Bin 文件夹。
++ 更新“集成 Windows 语言包”功能，以支持将 Windows 语言包集成到 Windows 安装程序启动和恢复（WinPE）WIM 映像。
++ 更新“集成 Windows 驱动程序”功能，以支持将 Windows 驱动程序集成到 Windows 安装程序启动和恢复（WinPE）WIM 映像。
++ 使用包含 Crash Analyzer 所需的 Windows 10 Redstone 技术预览版调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 修复“集成 Windows 更新”功能中工具箱将在集成 Windows 更新后立即终止的 Bug。
++ 修复“集成 WHD 更新”功能中选择多重索引模式时，DISM 会导致源映像文件损坏错误的 Bug。
+
+v4.0
++ 新增 PDF 格式 MSMG 工具箱用户指南/文档。
++ 改进“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能以支持 Windows 10 Redstone 技术预览版 ESD 加密密钥。
++ 改进“将 ESD 映像转换为 WIM 映像”功能。
++ 更新“转换源文件”功能以支持将 Windows 10 家庭单语言版转换为 Windows 10 企业版。
++ 更新“转换源文件”功能以支持将 Windows 10 企业版转换为 Windows 10 教育版。
++ 更新“转换源文件”功能以支持将 Windows 10 企业版 N 转换为 Windows 10 教育版 N。
++ 更新“转换源文件”功能以支持将 Windows Server 2016 标准版转换为 Windows Server 2016 数据中心版。
++ 修复“集成 Windows 语言包”功能中工具箱将在 Windows 语言包集成后立即终止的 Bug。
++ 更新“Microsoft .Net Framework 3.5”功能以首先在 <DVD\sources\sxs> 文件夹中搜索，如果找不到，则 <Packs\NetFX35\<OS>\<Arch>> 为存储 Microsoft. Net Framework 3.5 源文件的文件夹。
++ 使用最新更新和修补程序更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6 组件包（感谢 MDL 成员 abbodi1406）。
++ 使用 KB3137923，KB3138865 更新包 CAB 文件更新适用于 MSMG 工具箱的 Microsoft 重复数据移除包（仅限 Windows 8.1 64 位客户端源操作系统 - 感谢 MDL 成员 abbodi1406）。
++ 使用包含 Crash Analyzer 所需的 Windows 10 Redstone Technical Preview 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 修复“移除 Windows 组件”功能中移除 Cortana 和搜索组件将移除子包而不是主包（仅限 Windows 10 源操作系统）的 Bug。
++ 更新“移除 Windows 组件”功能以支持 Windows Server 2016 Technical Preview 5 源操作系统。
++ 更新“移除 Windows 组件”功能以在 Cortana 和搜索组件被移除时隐藏任务栏搜索图标（仅限 Windows 10 源操作系统）。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 Threshold 2/Redstone 1 技术预览版/Server 2016 技术预览版源操作系统的部分 Xbox 组件。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 Threshold 2（2016 年二月刷新版）源操作系统的 Microsoft 会员中心应用组件。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v3.9
++ 新增在 Windows 7 主机操作系统上维护 Windows 10 源操作系统的支持（感谢 MDL 成员 abbodi1406、Xinso）。
++ 使用 KB3127060更新包 CAB 文件更新适用于 MSMG 工具箱的重复数据移除包（仅限 Windows 8.1 64 位客户端源操作系统 - 感谢 MDL 成员 abbodi1406）。
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
+- 由于一个 Bug，暂时移除适用于 Windows 7 / Server 2008 R2 源操作系统的“移除 Windows 组件”功能下移除 Microsoft Hyperometrics、Microsoft Hyper-V 组件的选项。
++ 修复功能“移除 Windows 组件”中的错误工具包试图移除 Windows 10 Threshold 1 企业版 N LTSB 源操作系统中不存在的组件。
+
+v3.8
++ 更新功能“集成WHD更新”以反映WHD修补程序存储库更新列表。
++ 更新“移除默认 Metro 应用”功能以移除第三方 Metro 应用链接（感谢 MDL 成员 Xinso）。
++ 更新“移除 Windows 组件”功能以移除 Microsoft 生物识别技术，面向 Windows 7/Server 2008 R2 源操作系统的 Microsoft Hyper-V 组件。
++ 更新“移除 Windows 组件”功能以移除 Windows 10/Server 源操作系统的 Windows 嵌入功能组件。
++ 修复“移除 Windows 组件”功能中工具包试图移除 Windows 10 Threshold 1 企业版 LTSB 32 位源操作系统中不存在的组件的 Bug。
++ 修复“移除 Windows 组件”功能中工具包无法移除 Windows 10 Redstone 技术预览版源操作系统的 Windows Defender 组件的错误（感谢 MDL 成员 abbodi1406）。
+
+v3.7
++ 为工具箱新增 Windows 10 Redstone 1 Technical Preview 操作系统支持。
++ 当主机操作系统是 Windows 7/Server 2008 R2 操作系统时，为“从 <DVD> 文件夹中选择源”功能新增警告消息以显示“无法为 Windows 10 源操作系统映像提供服务”消息。
++ 更新功能“集成 WHD 更新”以反映 WHD Hotfix Repository 更新列表。
++ 新增对集成 Windows 10 Threshold 1/Threshold 2 动态、OOBE、安装媒体更新的支持。
++ 为“移除 Windows 组件”功能新增警告对话框。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 Redstone 1 技术预览版源操作系统的“移除所有组件”下的“Windows 会员中心”和“Windows Flight Signing”组件。
++ 修复“WIM 工具”功能中的一个 Bug，即将 Wim 图像索引导出到同一个 Wim 图像，会产生错误。
++ 在工具箱的工具 -> 选项菜单下新增启用/禁用工具箱信息/警告对话框的选项。
++ 在工具箱的工具 -> 选项菜单下新增启用/禁用工具箱日志生成的选项。
+
+v3.6
++ 更新“集成 WHD 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 修复“制作 DVD ISO 映像”功能中工具箱会在 Windows 7 32 位源操作系统下提示错误 - “缺少源操作系统文件”的 Bug。
+
+v3.5
++ 更新“移除 Windows 组件”功能以移除 Windows Content Delivery Manager 组件（仅限 Windows 10 Threshold 1/Threshold 2 源操作系统）。
+
+v3.4
++ 修复工具箱的 WIM 管理器菜单中选择“返回”选项将终止工具箱的 Bug。
++ 修复工具箱选项菜单中选择“返回”选项将终止工具箱的 Bug。
++ 更新“集成WHD更新”功能以反映WHD修补程序存储库更新列表。
++ 更新“移除 Windows 组件”功能以移除 Windows Content Delivery Manager 组件（仅限 Windows 10 Threshold 2 源操作系统）。
++ 修复“制作 DVD ISO 镜像”功能中当源安装映像是拆分映像（.swm）时，工具箱会提示错误的 Bug。
++ 修复“WIM 管理器”功能中导出 WIM 映像的选项将创建没有 .wim 扩展名的新 WIM 映像文件的 Bug。
++ 更新“WIM 管理器”功能以将拆分的 WIM 图像合并为单个 WIM 图像。
+
+v3.3
++ 新增适用于 Windows 10 Threshold 2 RTM 的 WADK RTM（v10.0.10586.0）工具到工具箱的 Bin 文件夹。
++ 从工具箱的 Bin 文件夹中移除 wimtweak35.exe 和 wimtweak40.exe，而工具包现在使用直接注册表方法取消隐藏 Windows 组件以进行移除（感谢 MDL 成员 lite8）。
++ 改进工具箱启动屏幕信息。（感谢 MDL 会员 Xinso 或 ELtie）
++ 改进显示 WIM 映像信息屏幕以显示更多索引。
+- 在每个功能处理结束屏幕中去除蜂鸣声。
++ 使用 SetACL.exe 而不是 Takeown.exe 和 icalcs.exe 命令修复使用非英语源操作系统获取文件所有权的 Bug。
++ 将 TakeFileOwnerShip 和 Take文件夹OwnerShip 函数合并到 TakeFile文件夹OwnerShip 中。
++ 新增新功能 TakeFilesOwnerShip 功能以获取一组文件的所有权。
++ 更新函数 TakeRegistryOwnerShip 以使用 n:S-1-5-32-544 帐户（感谢 MDL 成员 abbodi1406）。
++ 为避免用户混淆更名以下主菜单项：
+
+... 选择源文件 - 源文件
+... 应用源文件 - 应用
+... 选择目标 - 目标
+
++ 更新“转换源 WIM 版本”功能以支持 Windows 10 单语言版/N 版。
++ 合并集成基本功能和集成旧式功能菜单到集成 Windows 功能中。
++ 为避免用户混淆更名以下功能：
+
+... 集成 Windows 安全更新和修复程序 - 集成 Windows 更新
+... Microsoft .Net Framework 3.5 组件 - Microsoft .Net Framework 3.5
+... Microsoft .Net Framework 4.6 组件 - Microsoft .Net Framework 4.6.1
+... Windows 计算器 - Microsoft Win32 计算器
+... Windows To Go 工作区功能 - Windows To Go 工作区
+... Fraunhofer MP3 Professional 编解码器 - Fraunhofer MP3 Professional 编解码器调整
+... Windows 媒体中心通用激活令牌 - Windows 8.1 媒体中心通用激活令牌
+... 适用于 Windows 8.1 自动激活的预激活数据 - Windows 8.1 预激活数据和令牌
+
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 Threshold 2 RTM ESD 加密密钥。
++ 更新“集成 .NET Framework 3.5”功能以使用 <Packs\NetFX35> 文件夹中的文件，而不是 <DVD\sources\sxs>。
++ 更新“集成 .NET Framework 3.5”功能以支持 Windows 10 Threshold 2 RTM 操作系统。
++ 使用 Windows 10 Threshold 2 .NET Framework 3.5 CAB 文件更新适用于 MSMG 工具箱的 Microsoft .NET Framework 3.5 包。
+- 移除“集成 .Net Framework 4.6.1 语言包”功能中的“选择语言”菜单。
++ 更新“集成 .Net Framework 4.6.1 语言包”功能，以直接从 WHD Repo 中的语言包文件中提取 CAB 文件。
++ 更新“集成 Microsoft Win32 计算器”功能以支持 Windows 10 Threshold 2 RTM 源操作系统（感谢 MDL 成员 abbodi1406、Xinso）。
++ 使用 KB3100527 更新包 CAB 文件更新适用于 MSMG 工具箱的重复数据移除包（仅限 Windows 8.1 64 位客户端源操作系统 - 感谢 MDL 成员 abbodi1406）。
++ 使用 Windows Server 2016 Technical Preview 4 重复数据移除基础和 MUI CAB 文件更新适用于 MSMG 工具箱的重复数据移除包（仅限 Windows 10 Threshold 2 64 位客户端源操作系统 - 感谢 MDL 会员：Moderate、abbodi1406）。
++ 更新“集成 Windows To Go 工作区”功能，以使用适用于 Windows 10 Threshold 2 RTM 源操作系统的原始 Windows To Go 工作区 CAB 文件。
++ 使用 Windows 10 Threshold 2 RTM Enterprise Windows To Go 工作区 CAB 文件更新适用于 MSMG 工具箱的 Windows To Go 工作区包。
++ 使用更新的崩溃分析器所需的 Windows 10 Threshold 2 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 更新“集成 Windows 更新”功能，以便为 Windows 更新和 WHD 更新使用单独的源文件夹（Windows 更新：<Updates>，WHD 更新 <Packs>\<WHD>）。
++ 更新“集成 Windows 更新”功能以仅为这些映像集成 WHD 基准更新：
+
+... 集成到 Windows 安装程序引导映像
+... 集成到 Windows 安装程序安装和 WinRE 映像
+... 集成到 Windows 安装程序引导，安装和 WinRE 映像
+
++ 更新“集成 Windows 更新”功能以反映 WHD Hotfix Repository 更新列表。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 计算器，Windows 应用商店应用程序（仅限 Windows Server 2016 TP4 源操作系统）。
++ 更新“移除 Windows 组件”功能，以移除 Windows 10 Threshold 2 RTM 源操作系统中存在的其他 Cortana 组件。
++ 更新“移除 Windows 组件”功能以移除 BioMetrics 和 Hyper-V 组件（仅限 Windows 8.1/Server 2012 R2-Windows 10/Server 2016 源操作系统）。
++ 新增新的子菜单“移除高级 Windows 组件”以移除 Windows 组件功能。
+> 将组件 Windows 手动设置功能，Windows 应用商店客户端，Windows 系统还原移至“移除高级 Windows 组件”。
++ 更新“制作 DVD ISO 镜像”功能以使用源 <DVD> 文件夹中的“bootsect.exe”和“efisys.bin”文件而不是工具箱的 Bin 文件夹。
+- 在“制作 DVD ISO 镜像”功能中移除选择 BIOS/UEFI 引导类型的选项，工具箱将使用双模式来创建 ISO 映像。
++ 新增新主菜单项“工具”并将主菜单项“调试”和“选项”移动到“工具”主菜单。
++ 新增“WIM 管理器”功能来显示，移除，更名，拆分，导出 WIM 映像索引。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v3.2
++ 重新排序工具箱的选择源文件主菜单的子菜单项。
++ 改进“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能。
++ 修复“将源 WIM 图像转换为 ESD 图像”功能中的几个错误。
++ 修复“将源 ESD 图像转换为 WIM 图像”功能中的几个错误。
++ 使用最新更新和修补程序更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6 组件包（感谢 MDL 成员 abbodi1406）。
++ 修复“集成 Microsoft DaRT 工具”功能中的错字错误。
++ 更新“移除 Windows 组件”功能以保留文件“gatherosstate.exe”，移除“Windows 手动设置功能”组件（仅限 Windows 10 源操作系统）。
++ 修复“移除 Windows 组件”功能中当选择移除所有组件选项时，Windows 10 源操作系统的工具箱跳过系统还原组件移除的 Bug。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v3.1
++ 对工具箱的最终用户许可协议进行更改。
++ 将 ResourceHacker.exe 添加到工具箱的 Bin 文件夹。
++ 现在 MSMG 工具箱使用带有 .tpk 扩展名的工具箱程序包文件 Microsoft DISM ESD 格式。
++ 现在工具箱程序包的集成与 Microsoft 原始包集成过程相同。
++ 使用工具箱的新 .tpk 格式更新 Microsoft .NET Framework 4.6 组件、WTG、DaRT、DirectX 9.0c、游戏、补充工具栏、WMC 通用令牌包。
++ 对工具箱的包环境变量名称进行更改。
++ 更新工具箱以支持 Windows 10 Threshold 2 技术预览版 Build 10565 源操作系统。
++ 更新工具箱以支持 Windows Server 2016 技术预览版 3 Build 10537 源操作系统。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持更新的 Windows 10 ESD 加密密钥。
++ 新增“将 Microsoft 媒体创建工具（MCT）图像转换为 WIM 图像”功能。
++ 修正工具箱的转换源主菜单中的 Bug。
++ 修复“集成 Windows 驱动程序”功能的空目录的错误验证（感谢 MDL 成员 Kenafri）。
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD Hotfix Repository 更新列表。
++ 使用最新更新和修补程序更新适用于 MSMG 工具箱的 Microsoft .NET Framework 4.6 组件包（感谢 MDL 成员 abbodi1406）。
++ 更新“集成重复数据移除功能”功能以集成 KB3094197 更新包（仅限 Windows 8.1 64 位客户端源操作系统 - 感谢 MDL 成员 abbodi1406）。
++ 使用 KB3094197 更新程序包 CAB 文件更新适用于 MSMG 工具箱的重复数据移除功能包（仅限 Windows 8.1 64 位客户端源操作系统 - 感谢 MDL 成员 abbodi1406）。
++ 使用 Windows 10 企业版（LTSB）RTM Build 10.0.10240.16384 Windows 计算器 MUI 包 CAB 文件更新适用于 MSMG 工具箱的 Microsoft Windows 计算器包。
++ 修复“集成 Microsoft DaRT 工具”功能中 winpeshlp.ini 文件的创建已损坏的 Bug。
++ 更新“集成 Microsoft 游戏”功能以修补文件 gameux.dll.mui 与缺少 Windows 7 游戏本地化字符串。
++ 更新“集成 Microsoft 游戏”功能以支持 Windows Server 2008 R2/2012 R2/2016 TP3 源操作系统。
++ 使用 Windows XP Pinball 和 Carioca Rummy 游戏的高质量图标更新适用于 MSMG 工具箱的 Microsoft 游戏包。
++ 使用 Windows 7 游戏本地化字符串资源文件更新适用于 MSMG 工具箱的 Microsoft 游戏包。
++ 使用 Microsoft Server 2008 R2、2012 R2、2016 TP3 英文版 Microsoft 游戏 Essential 文件更新适用于 MSMG 工具箱的 Microsoft 游戏包。
++ 移除 Microsoft 终端服务器修补程序注册表文件，因为工具箱现在使用 Reg.exe 集成调整。
++ 从工具箱程序包中移除 Fraunhofer MP3 Professional Codec 文件夹，因为工具箱现在使用 Reg.exe 来集成调整。
++ 修复功能“集成自定义用户帐户图片”的空目录的错误验证（感谢 MDL 成员 Kenafri）。
++ 修复功能“集成自定义系统覆盖文件”的空目录的错误验证（感谢 MDL 成员 Kenafri）。
++ 修复功能“移除默认 Metro 应用”中的错误，其中非英语主机操作系统上应用移除过程失败。
++ 修复“移除默认 Metro 应用”功能中应用移除过程试图移除 Windows 10‘N’版中不存在的应用的 Bug。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 10 Threshold 2 技术预览版 Build 10565 Metro 应用（消息、Office Sway、电话、无线网络）。
++ 更新“移除 Windows 组件”功能，并对已经移除或不存在的组件进行错误处理。
++ 修复“移除 Windows 组件”功能中组件移除过程在非英语主机操作系统上失败的 Bug。
++ 修复“移除 Windows 组件”功能中组件移除过程试图移除 Windows 10‘N’版中不存在的程序包的 Bug。
++ 更新“移除 Windows 组件”功能以支持 Windows Server 2008 R2/2012 R2/2016 TP3 源操作系统。
++ 更新“移除 Windows 组件”功能以移除 Windows Server 2008 R2 组件（Windows Defender 服务器）。
++ 更新“移除 Windows 组件”功能以移除 Windows Server 2016 技术预览版 3 组件（Windows 预发布服务器，Microsoft 反恶意软件扫描界面，Windows Defender 服务器）。
++ 更新“移除 Windows 组件”功能以移除 Windows 10 Threshold 2 技术预览版 Build 10565 应用组件（Microsoft 会员指向，Skype 视频）。
++ 更新“移除 Windows 组件”功能，将组件“移除 Windows 安装程序升级功能”更名为“Windows 手动设置功能”。
++ 更新“移除 Windows 组件”功能，合并 Cortana 和搜索组件（仅限Windows 10 源操作系统）。
++ 更新“移除 Windows 组件”功能，将 Microsoft OneCore 疑难解答、Microsoft Windows DiagTrack、Windows 预发布客户端组件合并到 Microsoft 遥测服务（仅限 Windows 10 源操作系统）。
++ 修复“制作用于刻录到 DVD 光盘的 DVD ISO 映像”功能中 ISO 映像创建因 Install.esd 源映像文件而失败的 Bug。
++ 将“同步源 Boot.wim 和 Install.wim 更名为 USB 闪存驱动器”功能更名为“同步源启动并将映像安装到 USB 闪存驱动器”。
++ 修复“同步源启动并将映像安装到 USB 闪存驱动器”功能中同步源映像因 Install.esd 源映像文件失败的 Bug。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v3.0
++ 将工具箱的 Bin 文件夹中的文件 WimTweak.exe 更名为 WimTweak35.exe。
++ 重新编译 WimTweak.exe（install_wim_tweak.exe）源到 Microsoft .NET Framework 4.0 Runtime Executable 并将其更名为 WimTweak40.exe。
++ 将文件 WimTweak40.exe 添加到工具箱的 Bin 文件夹。
++ 工具箱现在使用 Windows 7 主机操作系统上的 WimTweak35.exe 和 Windows 8.x/10 主机操作系统上的 WimTweak40.exe 来移除 Windows 组件功能。
++ 更新“将 Windows Store ESD 映像转换为 WIM 映像”功能，以支持更新的 Windows 10 ESD 加密密钥。
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD 修补程序存储库更新列表。
+- 移除“安装 Microsoft .NET Framework 3.5 组件”功能。
++ 更新“集成 Microsoft 默认 Metro 应用”功能，以支持 Windows 10 默认 Metro 应用的集成（感谢 MDL 成员 abbodi1406）。
++ 使用适用于 Windows 10 RTM 的 Microsoft DaRT 10 工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包（感谢 MDL 成员 EF1、Murphy）。
++ 修复“移除默认 Metro 应用”功能中的几个错误。
++ 修复“移除 Windows 组件”功能中的几个错误。
++ 更新“移除 Windows 组件”功能，拆分 Microsoft Windows Cortana 和搜索组件（仅限 Windows 10 源操作系统）。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v2.9
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD 修补程序存储库更新列表。
++ 使用 Windows 10 企业版 RTM Build 10.0.10240.16384 WinToGo MUI 文件更新适用于 MSMG 工具箱的 WTG 包。
++ 修复“安装 Microsoft .NET Framework 3.5 组件”功能中安装 .NET Framework 3.5 组件无法在 Windows 10 主机操作系统上设置变量 IsNetFx35Installed=1 的 Bug。
++ 修复“集成自定义默认帐户图片”功能中空文件夹的错误检查失败的 Bug。
++ 使用清洁界面和改进的组件移除速度更新“移除 Windows 组件”功能。
++ 更新“移除 Windows 组件”功能以移除 Microsoft Windows Cortana 和搜索（仅限 Windows 10 源操作系统）。
++ 更新“移除 Windows 组件”功能以移除 Microsoft Xbox（仅限 Windows 10 源操作系统）。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v2.8
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD 修补程序存储库更新列表。
++ 更新“移除 Windows 组件”功能以移除 Microsoft Edge 浏览器应用（仅限 Windows 10 源操作系统）。
++ 更新“移除 Windows 组件”功能以移除 Microsoft 遥测客户端（仅限 Windows 10 源操作系统）。
++ 更新“移除 Windows 组件”功能以移除 Microsoft 预发布客户端（仅限 Windows 10 源操作系统）。
++ 更新“移除 Windows 组件”功能以移除 Windows 零售演示脱机内容（仅限 Windows 10 源操作系统）。
+
+v2.7
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持更新的 Windows 10 ESD 加密密钥。
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD 修补程序存储库更新列表。
+
+... 支持集成 Windows 10 WHD 基线更新。
+... 支持集成 .NET Framework 4.6 组件（Windows 8.1/Server 2012 R2 源操作系统）。
+... 支持集成 .NET Framework 4.6 组件语言包（Windows 8.1/Server 2012 R2 源操作系统）。
+
++ 修复“集成 Windows 设备驱动程序”功能中在非英语主机操作系统上检查空文件夹的错误失败的 Bug。
++ 使用 Windows RTM Build 10.0.10240.16384 .NET Framework 3.5 CAB 文件更新适用于 MSMG 工具箱的 .NET Framework 3.5 包。
++ 移除“集成 Microsoft .NET Framework 4.5.2 组件”功能。 
++ 新增“集成 Microsoft .NET Framework 4.6 组件”功能用于 Windows 7/Thin PC/Server 2008 R2 源操作系统（感谢 MDL 成员 abbodi1406）。
++ 通过移除不支持的 Windows 10 技术预览版 Build 10.0.10074.0 重复数据移除英文文件，更新 MSMG 工具箱的重复数据移除功能包。
+> 将功能“集成 Microsoft 计算器”移动到“集成 Microsoft Windows 计算器”以集成基本功能菜单。
++ 更新“集成 Microsoft Windows 计算器”功能以使用 Windows 10 企业版（LTSB）RTM Build 10.0.10240.16384 Windows 计算器程序包。
++ 使用 Windows 10 企业版（LTSB）RTM Build 10.0.10240.16384 更新适用于 MSMG 工具箱的 Microsoft Windows 计算器包 Windows 计算器英语 [en-US] 包 CAB 文件。
++ 使用 Windows 10 企业版 RTM Build 10.0.10240.16384 WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包（感谢 MDL 会员的 Kenafri 和 Moderate）。
++ 更新“集成 Microsoft DaRT 工具”功能以支持 Windows 10 DaRT 工具（目前使用相同的 Windows 8.1 DaRT 工具，但使用 Windows 10 调试工具）。
++ 使用更新的崩溃分析器所需的 Windows 8.1/10 调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 包。
++ 修复“集成 Microsoft 游戏”功能中的一个 Bug，“集成 Windows 7 游戏”选项导入错误的注册表文件。
++ 新增“移除默认 Metro 应用”功能的选项以移除“所有 Metro 应用（商店除外）”（Windows 10 源操作系统）。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v2.6
++ 加入用于 Windows 10 RTM 的 WADK RTM（v10.0.10240.16384）工具到工具箱的 Bin 文件夹。
++ 由于 Windows 7 主机操作系统上的兼容性问题，将 Windows 8.1 的 WADK（v6.3.9600.17029）工具重新添加到工具箱的 BIN 文件夹。
++ 对工具箱进行更改以使用 DISM v6.3.9600.17029 在 Windows 7 主机操作系统上维护 Windows 7/8.x 源 WIM 映像。
++ 对工具箱进行更改以使用 DISM v10.0.10240.16384 在 Windows 8.x/10 主机操作系统上维护 Windows 7/8.x/10 源 WIM 映像。
++ 更新工具箱以支持 Windows 10 技术预览版 Build 10.0.10166.0 源操作系统。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持更新的 Windows 10 技术预览版 ESD 的加密密钥。
++ 使用最新更新和修补程序更新 MSMG 工具箱的 Microsoft .NET Framework 4.5.2 包（感谢 MDL 成员 abbodi1406）。
+-  在功能“移除 Windows 组件”中移除对 Windows 10 技术预览版源操作系统的这些组件移除（Checkpoint、F5、Juniper、SonicWALL VPN 插件）的支持。
++ 简化“格式化 USB 闪存驱动器”功能，只有两个选项 BIOS、BIOS/UEFI。
+
+v2.5
++ 对工具箱进行更改以使用 DISM v10.0.10075.0 在 Windows 7/8.x 主机操作系统上维护 Windows 7/8.x/10 源 WIM 映像。
++ 对工具箱进行更改以使用内置 DISM 可执行文件在 Windows 10 技术预览版主机操作系统上维护 Windows 7/8.x/10 源 WIM 映像。
++ 更新工具箱以支持 Windows 10 技术预览版 Build 10.0.10147.0 源操作系统。
++ 在工具箱的选择源文件主菜单项中新增“将 Windows WIM 映像转换为 ESD 映像”功能。
++ 新增新主菜单项“转换”到转换源 WIM 版本，具有以下子菜单/功能：
+
+	-->（仅限 Windows 8.1 源操作系统）
+			将Core 版转换为专业版
+			将Core 版转换为专业版（含媒体中心）
+			将专业版转换为专业版（含媒体中心）
+
+	-->（仅限 Windows 10 源操作系统）
+			将家庭版转换为教育版
+			将专业版转换为教育版
+			将专业版转换为企业版
+
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD Hotfix Repository 更新列表。
+-  移除“集成 Windows 8.1 媒体中心加载项”功能。
+-  在“集成 Windows 媒体中心通用激活令牌”功能中移除对 Windows 10 技术预览版源操作系统的支持。
++ 更新“集成自定义默认用户帐户图片”功能，以支持 Windows 10 技术预览版 Build 10.0.10147.0 源操作系统。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 技术预览版 Build 10.0.10147.0 源操作系统。
+-  在“移除默认 Metro 应用”功能中移除这些 Windows 10 默认 Metro 应用（Microsoft Connectivity Store、Windows 阅读列表、Windows 扫描）。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 10 技术预览版默认 Metro 应用（Microsoft 应用连接器、Microsoft Office Hub、Microsoft Windows Phone）。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v2.4
++ 更新工具箱以支持 Windows 10 技术预览版 Build 10.0.10135.0 源操作系统。
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD Hotfix Repository 更新列表。
++ 修复“集成 Windows 安全更新和修补程序”功能中错误地使用 %WimIndexInstallType% 而不是 %WimIndexEdition% 的 Bug。
++ 使用 Windows 10 企业技术预览版 Build 10.0.10135.0 WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 技术预览版 Build 10.0.10135.0 源操作系统。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 10 技术预览版默认 Metro 应用（Microsoft Skype 应用）。
++ 更新“移除 Windows 组件”功能以移除 Checkpoint、F5、Juniper、SonicWALL VPN 插件（仅限 Windows 8.1/10 源操作系统）。
++ 更新“移除 Windows 组件”功能以移除 Windows 诊断跟踪功能（仅限 Windows 10 源操作系统）。
+
+v2.3
++ 更新工具箱以支持 Windows 10 技术预览版 Build 10.0.10130.0 源操作系统。
++ 更新“集成 WHD 基线更新”功能（已移除 KB2959977）。
++ 使用 Windows 10 企业技术预览版 Build 10.0.10130.0 WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包（感谢 MDL 成员 Kenafri）。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 技术预览版 Build 10.0.10130.0 源操作系统。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 10 技术预览版默认 Metro 应用（Microsoft 3D Builder、Microsoft Connectivity Store）。
+- 在“移除默认 Metro 应用”功能中移除这些 Windows 10默认 Metro 应用（Microsoft Bing 美食、Microsoft Bing 健康、Microsoft 音乐预览、Microsoft 阅读器、Microsoft 视频预览、Microsoft  Xbox Live 游戏）。
+- 在“移除默认 Metro 应用”功能中，从“实验应用”菜单中移除这些 Windows 10 默认 Metro 应用（Microsoft AAD Broker 插件、Microsoft Cortana、Microsoft 会员中心、Microsoft 反馈、Windows 默认锁屏）。
++ 更新“移除 Windows 组件”功能以移除 Windows 联系支持，Windows 反馈（仅限 Windows 10 源操作系统）。
+
+v2.2
++ 新增新的用于 Windows 10 技术预览版工具的 WADK RC 到工具箱的 Bin 文件夹。
++ 更新“集成重复数据移除功能”功能，支持重复数据移除 MUI 文件（仅限 Windows 8.1 64 位客户端源操作系统）。
++ 使用 Windows 8.1 重复数据移除 MUI 文件更新 MSMG 工具箱的重复数据移除功能包。
++ 使用 Windows 10 技术预览版 Build 10.0.10074.0 的重复数据移除英文文件更新适用于 MSMG 工具箱的重复数据移除功能包。
++ 使用 Windows 10 企业技术预览版 Build 10.0.10074.0 WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包（感谢 MDL 成员 Kenafri）。
++ 使用缺少的 Windows 8.1 企业版 WinToGo MUI 文件更新适用于 MSMG 工具箱的 WTG 包。
+
+v2.1
++ 更新工具箱以支持 Windows 10 技术预览版 Build 10.0.10061.0 源操作系统。
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD 修补程序存储库更新列表。
++ 更新“集成 WHD 基线更新”功能（将 KB3012199 替换为 KB3021910）。
++ 使用 Windows 10 企业技术预览版 Build v10.0.10061.0 WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包（感谢 MDL 成员 Kenafri）。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 技术预览版 Build 10.0.10061.0 源操作系统。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 10 技术预览版默认 Metro 应用（Microsoft 人脉、Microsoft 视频预览）。
++ 更新“移除 Windows 组件”功能以移除 Windows 系统还原（仅限 Windows 8.1/Windows 10 源操作系统）。
+
+v2.0
++ 更新工具箱以支持 Windows Server 2008 R2/2012 R2/2016 Core 版。
++ 更新工具箱以支持 Windows 10 技术预览版 Build 10.0.10056.0 源操作系统。
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD 修补程序存储库更新列表。
++ 修复功能“集成 Windows 安全更新和修补程序”中缺少变量声明的 Bug。
++ 更新“集成 WHD 基线更新”功能，以便将 WHD 基线更新集成到一次引导，安装和 WinRE 映像。
++ 更新“集成 WHD 附加更新”功能以集成远程桌面协议 8.1 功能，而不是 8.0 和 8.1。
++ 更新“集成 WHD 附加更新”功能，以便为 Windows Thin PC 源操作系统集成（Internet Explorer 11、远程桌面协议 8.1）。
++ 更新“集成 WHD 附加更新”功能，以集成 Windows 7 / Windows 8.1 源操作系统的 Windows 10  升级准备更新。
++ 修复“集成自定义更新”功能中的错误，其中错误地集成 Windows Thin PC 源操作系统的 WHD 常规更新。
++ 新增“集成 Microsoft .NET Framework 4.5.2 组件”功能用于 Windows 7/Thin PC/Server 2008 R2 源操作系统（感谢 MDL 成员 abbodi1406）。
++ 使用 Windows 10 企业技术预览版 Build v10.0.10049.0（32位）WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包。
++ 使用 Windows 10 企业技术预览版 Build v10.0.10056.0（64位）WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 Technical Preview Build 10.0.10056.0 源操作系统。
++ 更新“移除默认 Metro 应用程序”功能以移除 Windows 10 技术预览版默认 Metro 应用（Microsoft Solitaire Collection Preview、Microsoft 音乐预览）。
+-  在“移除默认 Metro 应用”功能中，从“实验应用”菜单中移除这些 Windows 10 默认 Metro 应用（Microsoft 帐户控制、Microsoft Answer Desk、Microsoft Cloud Experience 主机）。
++ 修复“移除 Windows 组件”功能中组件移除 - 仅 Windows 10 64 位源操作系统需要“Windows Defender WOW64 客户端”的 Bug。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v1.9
++ 为 Windows 10 技术预览工具添加新的 WADK 到工具箱的 Bin 文件夹。
++ 更新工具箱以支持 Windows 10 技术预览版 Build 10.0.10041.0 源操作系统。
++ 对工具箱进行更改，以使用 DISM v10.0.10041.0 来维护 Windows 8.x 和 Windows 10 源 WIM 映像。
++ 修复功能“集成 WHD 附加更新”中集成 Windows Update 满足更新无法集成 WMC 相关更新的 Bug。
++ 使用 Windows 10 企业技术预览版 Build 10.0.10041.0 WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包。
++ 修正“整合微软游戏”功能中 Microsoft Sudoku 游戏缺少 MUI 没有使用“en-US”作为后备 MUI 的 Bug。
++ 使用 Microsoft Pinball MUI 文件更新适用于 MSMG 工具箱的 Microsoft 游戏包（感谢 MDL 成员 Kenafri）。
++ 更新“集成 Microsoft 游戏”功能以集成 Microsoft Pinball MUI 文件。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 技术预览版 Build 10.0.10041.0 源操作系统。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 10 技术预览版默认 Metro 应用（Microsoft 帐户）。
+> 在“移除默认 Metro 应用”功能中移动这些 Windows 10 默认 Metro 应用（Microsoft AAD Broker 插件、Microsoft 帐户控制、Microsoft Answer Desk、Microsoft Cloud Experience 主机、Microsoft Cortana、Microsoft 入门、Microsoft Insider Hub、Microsoft 反馈、Windows 默认锁屏）到新的子菜单 - “实验应用程序”。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v1.8
++ 适用于 Windows 7-10 / Server 2008 R2-2012 R2 的 MSMG 工具箱更名为 MSMG 工具箱。
++ 修复 MSMG 工具箱函数“启动”中的工具箱无法显示非英语主机操作系统的主机操作系统语言错误。
++ 更新适用于 MSMG 工具箱的 Microsoft DirectX 9.0c 包以支持动态注册表路径条目。
++ 更新适用于 MSMG 工具箱的 Microsoft 游戏包以支持动态注册表路径条目。
++ 修复功能“集成 Microsoft 游戏”中的一个 Bug，其中游戏资源管理器开始菜单快捷方式未被复制时选定的游戏被集成。
++ 修复功能“集成 Microsoft 游戏”中的一个 Bug，当所选游戏被集成时，framescard.dll 文件未被复制。
++ 更新 MSMG 工具箱的 Microsoft Windows 侧边栏包，以支持动态注册表路径条目。
++ 更新适用于 MSMG 工具箱的 Fraunhofer MP3 Professional 编解码器包，以支持动态注册表路径条目。
++ 更新“移除 Windows 组件”功能以移除 Windows Defender（仅限 Windows 8.1/Windows 10 源操作系统）。
++ 更新“移除 Windows 组件”功能以移除 Windows Embedded Lockdown Manager（ELM）（仅限 Windows 8.1 Update 3 源操作系统）。
++ 更新“移除 Windows 组件”功能，一次移除所有 Windows 组件。
++ 新增“格式化 USB 闪存驱动器”功能的验证检查，以验证是否存在指定的 USB 闪存驱动器。
++ 为工具箱的函数 ListDisks 添加一些本地化字符串
++ 为工具箱的函数 Make文件夹OwnerShip 添加一些本地化字符串
++ 修复工具箱语义错误。
+
+v1.7
++ 添加适用于新 WADK 的 Windows 10 技术预览版工具到工具箱的 Bin 文件夹。
++ 对工具箱进行更改以使用 DISM v6.3.9600.17029 来维护 Windows 7 源 WIM 映像。
++ 对工具箱进行更改，以使用 DISM v10.0.9933.0 来维护 Windows 8.x 和 Windows 10 源 WIM 映像。
++ 更新工具箱的“启动”功能以在工具箱的启动屏幕中显示主机操作系统语言信息。
++ 更新 ESDDecrypt.exe 程序为最新版本。
++ 更新工具箱以支持 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 新增“从 DVD 驱动器复制源”功能的验证检查，以检查源 <DVD> 文件夹是否为空。
++ 新增“从 DVD ISO 映像中提取源”功能的验证检查，以检查源 <DVD> 文件夹是否为空。
++ 新增“从 OEM IMG 图像中提取源”功能的验证检查，以检查源 <DVD> 文件夹是否为空。
++ 新增“从 DVD 驱动器复制源”功能的验证检查，以检查指定的 DVD 驱动器是否包含有效的 Windows 安装映像。
++ 新增“从 DVD ISO 映像中提取源”功能的验证检查，以检查指定的 DVD ISO 映像文件是否存在。
++ 添加“从 OEM IMG 映像中提取源文件”功能的验证检查，以检查指定的 OEM IMG 映像文件是否存在。
++ 修复“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能中 EI.cfg 文件写入将 ProfessionalWMC 指定为所有版本的版本 ID的 Bug。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 修复“集成 Windows 安全更新和修补程序”功能中的错误，其中多索引服务模式缺少检查 WIM 体系结构的代码。
++ 更新“集成 Windows 安全更新和修补程序”功能以反映 WHD 修补程序存储库更新列表。
++ 修复“集成 WHD 基线更新”功能中未正确检测到 WinRE WIM 映像架构的 Bug。
++ 更新“集成 WHD 其他更新”功能，以集成 NFS、SUA、Virtual PC（仅限 Windows 7 / Server 2008 R2 源操作系统）。
++ 更新“安装Microsoft .NET Framework 3.5 组件”功能，不再要求检查 .NET Framework 3.5 组件。
++ 修复“集成 Microsoft .NET Framework 3.5 组件”功能中的错误，其中集成失败的 Windows 10 技术预览版源操作系统。
++ 更新“集成 Windows 媒体中心附加功能”功能，以支持 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 更新“集成 Windows 重复数据移除功能”功能以支持 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 更新功能“集成 Windows To Go 工作区功能”以支持 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 修复“集成 Microsoft DaRT 工具”功能中未正确检测到 WinRE WIM 映像文件路径的 Bug。
++ 新增“集成 Microsoft 计算器”功能用于 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 修复 MSMG 工具箱的 Microsoft 游戏包中的注册表文件名错误。
++ 从适用于 MSMG 工具箱的 Microsoft 游戏包中移除 32 位注册表文件中的 64 位注册表项。
++ 修复“集成 Microsoft 游戏”功能中的一个 Bug，其中多索引服务模式缺少检查 WIM 架构的代码。
++ 使用 Tinker、Hold'Em 游戏 MUI 文件更新适用于 MSMG 工具箱的 Microsoft 游戏包（感谢 MDL 成员 ElDiabl0）。
++ 更新“集成 Microsoft 游戏”功能以集成 Tinker、Hold'Em 游戏 MUI 文件。
++ 更新“集成 Microsoft 游戏”功能，以移除非 Windows 媒体中心版源操作系统的 Windows 媒体中心游戏快捷方式链接。
++ 更新“集成 Windows 侧边栏功能”功能以移除非 Windows 媒体中心版源操作系统的Windows 媒体中心小工具。
++ 更新“集成 Windows 媒体中心通用激活令牌”功能以支持 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 更新“集成自动激活的预激活详细信息”功能以支持 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 修复“集成自定义 Windows 恢复环境（WinRE）”功能中的错误，其中未正确检测到 WinRE WIM 映像体系结构。
++ 更新“移除默认 Metro 应用”功能以支持 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 10 技术预览版默认 Metro 应用（Microsoft AAD Broker 插件、Microsoft Answer Desk、Microsoft Content Delivery Manager、Microsoft Getstarted、Microsoft Windows 照片、Microsoft Windows 相机、Microsoft Windows 地图、Microsoft Windows 应用商店、Microsoft XboxApp）。
++ 更新“移除 Windows 组件”功能以移除用于 Windows 10 技术预览版 Build 10.0.9926.0 源操作系统的 Microsoft OneDrive（桌面）。
++ 修复“格式化 USB 闪存驱动器”功能中的错误，其中工具箱功能“ListDisks”无法显示非英语主机操作系统上可用的可移动磁盘列表。
++ 在 MSMG 工具箱主菜单中添加新的隐藏功能“调试”，以便在主菜单屏幕中按下字母“D”时显示工具箱的全局变量信息进行故障排除。
++ 修复工具箱函数“Importreg2wim”中 endlocal 变量未定义的 Bug。
+
+v1.6
++ 更新工具箱，可一次为所有 WIM 索引提供服务。
++ 修复“集成 WHD 常规更新”功能中已更新的 Windows Update 客户端 .CAB 文件未集成的 Bug。
++ 修复“集成 .NET Framework 3.5 组件”功能中未正确设置 SxS 文件夹路径的 Bug。
++ 修复“集成重复重复数据移除功能”功能中 setlocal 和 endlocal 变量未定义的 Bug。
++ 修复“集成 WinToGo 工作区功能”功能中 setlocal 和 endlocal 变量未定义的 Bug。
++ 修复“集成 Microsoft DaRT 工具”功能中工具箱标题缺少错误验证检查的 Bug。
++ 将功能“集成 Microsoft Legacy 游戏”更名为“集成 Microsoft 游戏”。
++ 将适用于 MSMG 工具箱的 Microsoft Windows Legacy 游戏包更名为适用于 MSMG 工具箱的 Microsoft 游戏包。
++ 更新“集成 Microsoft 游戏”功能，并提供选择所选游戏进行集成的选项。
++ 修复“集成 Microsoft 游戏”功能中带有移除单词的注释行导致无效的驱动器错误的 Bug。
++ 修复“集成 Windows 侧边栏”功能中文件夹路径双引号丢失的 Bug。
++ 修复工具箱语义错误。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v1.5
++ 更新MSMG 工具箱的 TakeFileOwnerShip 和 Take文件夹OwnerShip 功能，使用“S-1-5-32-544”组而非“Everyone”来支持多语言 Windows 主机操作系统。
+> 将功能“集成Windows 8.1 / Server 2012 R2 Update 1”移至“集成 Windows 安全和修补程序”。
++ 将功能“集成 Windows 8.1 / Server 2012 R2 Update 1”更名为“集成 WHD 基准更新”。
++ 将功能“集成 Windows 其他更新”更名为“集成 WHD 其他更新”。
++ 将功能“集成 Windows 常规更新”更名为“集成 WHD 常规更新”。
++ 将功能“集成 Windows 热修补程序更新”更名为“集成 WHD 热修补程序更新”。
++ 将功能“集成 Windows 安全更新”更名为“集成 WHD 安全更新”。
++ 将功能“集成 Windows 额外更新”更名为“集成 WHD 额外更新”。
++ 更新“集成 WHD 基线更新”功能以支持带有更新刷新 IR5  Build 6.3.9600.17415 的 Windows 8.1。
++ 修复“安装 .NET Framework 3.5 组件”功能中 Windows 10 技术预览版操作系统的安装无法正常运行的 Bug。
++ 修复“集成 .NET Framework 3.5 组件”功能中集成在 Windows 10 技术预览版操作系统中无法正常运行的 Bug。
++ 使用 Windows 10 企业技术预览版 Build 9901 WinToGo 64 位文件更新适用于 MSMG 工具箱的 WTG 包。
++ 修复“集成 Microsoft Legacy 游戏功能”中使用 Windows 10 技术预览版操作系统时，集成无法正常工作的 Bug。
+
+v1.4
++ 更新 MSMG 工具箱最终用户许可协议。
++ 修复工具箱启动功能中 Microsoft .NET Framework 组件的检测不能正常工作的 Bug。
++ 改进 MSMG 工具箱用于集成和移除主菜单项的动态菜单系统。
++ 修复“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能中 ESD 文件验证检查不能正常工作的 Bug。
++ 更新“将 Windows 应用商店 ESD 映像转换为 WIM 映像”功能，以支持 Windows 10 技术预览版 ESD 映像。
++ 更新“集成 Windows 8.1 / Server 2012 R2 Update 1”功能（移除 KB2975061、KB2989647、KB2966870、KB2989647，新增 KB3000850、KB3014442、KB3003057）。
++ 更新“集成 Windows 8.1 / Server 2012 R2 Update 1”功能以支持 Windows 8.1 应用商店更新的 IR4 Build 17056 映像。
++ 更新“集成 Windows 安全和修补程序”功能，以反映 WHD Hotfix Repository 更新列表。
++ 修复“安装 .NET Framework 3.5 组件”功能中源操作系统验证检查未正常工作的 Bug。
++ 修复“集成 .NET Framework 3.5 组件”功能中源操作系统验证检查未正常工作的 Bug。
+- 由于每个预览版本中的 SXS 文件夹中的更改，从适用于 MSMG 工具箱的 Microsoft .NET Framework 3.5 多合一包中移除 Windows 10 .NET Framework 3.5 组件源文件。
++ 修复“集成 Windows 媒体中心附加功能”功能中使用有效的 Windows 专业版零售映像验证源 WIM 映像失败的 Bug。
++ 修复“集成 Windows 媒体中心附加功能”功能中重新安装源 WIM 映像后未更新 WIM 映像信息的 Bug。
++ 使用更新的 abbodi1406 重复数据移除包更新“集成重复数据移除功能”功能。
++ 使用 abbodi1406 重复数据移除包文件更新MSMG 工具箱的重复数据移除功能包。
++ 使用 Windows 10 企业技术预览版 Build 9879 WinToGo 文件更新适用于 MSMG 工具箱的 WTG 包。
++ 更新“集成自定义 UxTheme 补丁”功能，以支持 Windows 8.1 / Server 2012 R2 / Windows 10 技术预览版操作系统。
++ 修复“集成自定义默认帐户图片”功能中当源操作系统是Windows 7时，文件的所有权失败的 Bug。
++ 新增新菜单项“移除 Windows 组件”到移除主菜单项。
+> 将功能“移除默认 Metro 应用”（OneDrive，相机和应用商店）移至功能“移除 Windows 组件”。
++ 修复功能“移除默认 Metro 应用”中未显示适用于 Windows 10 源操作系统的工具箱标题的 Bug。
++ 更新“移除默认 Metro 应用”功能以移除 Windows 10 默认 Metro 应用（Microsoft Insider Hub、Windows Shell 体验主机、Windows 默认锁屏）。
++ 添加“移除 Windows 安装程序升级功能”功能。
+
+v1.3
++ 适用于 Windows 7-8.1 / Server 2008 R2-2012 R2 的 MSMG 工具箱已更名为 Windows 7-10 / Server 2008 R2-2012 R2。
++ MSMG 工具箱现在使用 Windows 8.1 / Server 2012 R2 / Windows 技术预览版主机操作系统的内置 DISM 可执行文件。
++ 修复工具箱的启动功能中 Microsoft .NET Framework 组件的检测失败的 Bug。
++ 新增对 Windows 10 技术预览版操作系统的工具箱支持。
++ 修复“集成 Windows 安全更新和修补程序”功能中 Internet Explorer 11 支持包未正确集成的 Bug。
++ 新增“集成 Windows 设备驱动程序”功能的验证检查，以检查驱动程序文件夹是否为空。
++ 更新“安装 .NET Framework 3.5 组件”功能，以支持 Windows 10 主机操作系统。
++ 更新“集成 .NET Framework 3.5 组件”功能，以支持 Windows 10 源操作系统。
++ 更新“集成重复数据移除功能”功能，以支持 Windows 10 源操作系统。
++ 更新 MSMG 工具箱的重复数据移除功能包，并支持 Windows Server 技术预览版英文版重复数据移除包。
++ 更新“集成 WinToGo 工作区功能”功能，以支持 Windows 10 源操作系统。
++ 使用 Windows 10 技术预览企业版英文版 WinToGo 文件更新 WinToGo 功能包文件夹。
++ 修复功能“集成 Microsoft DaRT 工具”中 DaRT 语言菜单选择值被错误地分配的 Bug。
++ 更新“集成 Microsoft DaRT 工具”功能，以支持 Windows 10 源操作系统。
++ 修复功能“集成 Windows 边栏功能”中 Echo 命令重定向使用 SetupComplete.cmd 文件的硬代码路径的 Bug。
++ 为 Windows 7 源操作系统添加更多用户帐户图片头像。
++ 更新功能“集成自定义默认用户帐户图片”，以支持 Windows 10 源操作系统。
++ 更新“移除默认 Metro 应用程序”功能，以支持 Windows 10 主机操作系统。
++ 新增“移除默认 Metro 应用程序”功能的选项以移除默认 Metro 应用（Microsoft Cloud Experience Host、Microsoft Cortana、Microsoft 反馈）。
++ 修复工具箱语义错误。
++ 优化工具箱代码。
+- 移除冗余代码。
+
+v1.2
++ 使用更新的 DISM 程序包更新 MSMG 工具箱的 BIN 文件夹。
++ 添加一项功能“从 OEM IMG 映像中提取源文件”。
+* 使用选择源菜单合并 ESD 映像菜单项中的选择源文件。
++ 在“集成 Windows 安全更新和热修补程序”功能中为 WinPE 更新添加 WIM 映像组件清理任务。
++ 修复“集成 Windows 媒体中心附加功能”功能中在 Windows 8.1 专业版 64 位 VL 版本上的零售版的源操作系统验证检查中字符‘>’被错误地使用而不是‘|’的错字错误。
++ 修复“集成 Windows 媒体中心附加功能”功能中在 Windows 8.1 专业版 64 位 VL 版本上零售版的源操作系统验证检查失败的 Bug。
++ 修复“移除默认 Metro 应用程序”功能中默认 Metro 应用程序（文件管理器 / OneDrive /照片、相机、商店）版本检查失败的 Bug。
+
+v1.1
++ 在 MSMG 工具箱的启动窗口中新增主机操作系统信息。
++ 修复工具箱启动功能中的错误，其中 Windows 7 主机操作系统上的 Microsoft .NET Framework 组件检测失败。
+- 移除 MSMG 工具箱中的 WADK 8.1 工具 Build 17031 包，以避免 Windows 7 主机操作系统的用户混淆。
++ 工具箱集成菜单界面完全重新设计，带有简化菜单，便于操作。
++ 工具箱集成菜单项现在包括：
+
+	Windows 8.1 / Server 2012 R2 Update 1（仅限 Windows 8.1 / Server 2012 R2 源操作系统）
+	Windows 语言包
+    Windows 安全更新和热修复更新
+	Windows 设备驱动
+	Windows Essentials 功能
+	-->（仅限 Windows 8.1 / Server 2012 R2 源操作系统）
+			Microsoft .NET Framework 3.5 组件
+			Windows 媒体中心附加功能
+			Windows 重复数据移除功能
+			Windows To Go 工作区功能
+			Microsoft 默认 Metro 应用
+			Microsoft DaRT 8.1 工具
+	-->（仅限 Windows 7 / Thin PC / Server 2008 R2 源操作系统）
+			Microsoft DirectX 9.0c 组件
+			Microsoft Legacy 游戏
+			Microsoft DaRT 7.0 工具
+			Windows Thin PC 附加功能（仅限 Windows Thin PC 源操作系统）
+			Windows Legacy Features（仅限 Windows 8.1 / Server 2012 R2 源操作系统）
+			Microsoft DirectX 9.0c 组件
+			Microsoft Legacy 游戏
+			Windows 侧边栏功能
+			Windows 自定义功能
+			Windows 媒体中心通用激活令牌（仅限 Windows 8.1 源操作系统）
+			用于自动激活的预激活详细信息
+			Microsoft 终端服务器补丁
+			Fraunhofer MP3 Professional 解码器
+			自定义主题 UxTheme 补丁（仅限 Windows 7 / Thin PC / Server 2008 R2 源操作系统）
+			自定义 Windows 恢复环境（WinRE）
+			自定义默认用户账户图片
+			自定义系统覆盖文件
+		
++ 新增“从 DVD 驱动器复制源文件”功能。
++ 新增“从 ISO 映像中提取源文件”功能。
++ 新增“将 ESD 映像转换为 WIM 映像”功能。
++ 在选择源功能中新增输入索引编号的验证检查。
++ 新增集成语言包，功能包，Windows 更新功能的 MS 指南说明。
++ 更新“集成 Windows 8.1/Server 2012 R2 Update 1”功能（将 KB2969339 替换为 KB2975061，添加 KB2989647）。
++ 更新“集成 Windows 8.1/Server 2012 R2 Update 1”功能，动态选择 Windows 8.1 RTM/Update 1 源的基线或基线补充更新。
++ 新增“集成 Windows 安装媒体更新”功能。
++ 现在工具箱将从 Boot.wim 和 Install.wim 中提取 Windows 安装程序媒体更新文件到 DVD 文件夹。
+- 移除 MSMG 工具箱的 Windows 8.1/Server 2012 R2 Update 1 安装 DVD 媒体包。
++ 更新功能“集成Windows安全更新和热修复”以支持WHD下载器存储库文件夹结构。
++ 修复“集成 Windows 媒体中心附加功能”功能中检查源 WIM 映像版本跳过 Windows 专业版 VL 的 Bug。
++ 新增“集成默认 Metro 应用”功能。
+- 移除适用于 MSMG 工具箱的 Microsoft Internet Explorer 11 包，因为工具箱现在支持 WHD Downloader Repository 文件夹结构。
++ 修复“集成 Microsoft DaRT 工具”功能中语言菜单选择无法正常工作的 Bug。
++ 将功能“集成 Windows Vista 和 7 游戏包”更名为“集成 Microsoft Legacy 游戏包”。
++ 更新 MSMG 工具箱的 Microsoft Legacy 游戏包，支持 Microsoft Carioca Rummy、Sudoku、Thinker Level Editor。
++ 更新“集成 Windows 侧边栏功能”功能，以将脚本 SetupComplete.cmd 文件写入到安装 DVD <$oem$\$$\Setup\scripts> 文件夹。
++ 新增“集成自定义 UxTheme 补丁”功能，（仅限 Windows 7/Thin PC/Server 2008 R2 源操作系统）。
++ 更新“移除默认 Metro 应用”功能，并更新默认 Metro 应用程序的版本检查。
++ 在 MSMG 工具箱的主菜单中新增新菜单项“选项”。
++ 新增“更改 MSMG 工具箱颜色设置”功能。
++ 修复工具箱语义错误。
+- 移除冗余代码。
+
+v1.09
++ 发布针对 Windows 7-8.1/Server 2008 R2-2012 R2 的 MSMG 工具箱的源代码。
++ 现在，工具箱将作为批处理命令脚本文件和非打包的 EXE 分发。
++ 更改转换 Windows 8.1 应用商店更新 ESD 映像为 WIM 映像方法，使用直接导出方法而不再是 VHD 应用和捕获方法。
++ 更新“集成 Windows 8.1/Server 2012 R2 Update 1”功能（将 KB2919442 替换为 KB2969339，添加 KB2966870）。
++ 使用 Internet Explorer 11 更新更新适用于 MSMG 工具箱的 Internet Explorer 11 包。
++ 使用故障分析器所需的调试工具更新适用于 MSMG 工具箱的 Microsoft DaRT 7/8.1 工具包。
++ 更新适用于 MSMG 工具箱的 Microsoft DaRT 7/8.1 工具包，支持（es-ES、it-IT、ja-JP、ko-KR、pt-BR、zh-CN、zh-TW）语言。
++ 为功能添加语言选择菜单 - “集成 Microsoft DaRT 工具”。
++ 使用 KB2919355 更新包更新适用于 MSMG 工具箱的重复数据移除功能包。
++ 为功能新增 MUI 语言支持 - “集成 Windows Vista 和 Windows 7 游戏包”。
++ 为 MSMG 工具箱更新 Windows Vista 和 Windows 7 游戏包，支持所有可用语言（HoldEm，Pinball 和 Tinker Games 除外）。
++ 将 Vista 小工具（联系人，便笺，股票）添加到功能 - “集成 Windows 边栏功能”。
++ 使用 Vista 小工具（联系人，便笺，股票）更新适用于 MSMG 工具箱的 Windows 边栏包。
++ 为功能添加 MUI 语言支持 - “集成 Windows 边栏功能”。
++ 更新适用于 MSMG 工具箱的 Windows 边栏包，支持所有可用语言（Vista 小工具（联系人，便笺，股票）的中文（台湾）语言除外）。
++ 修复功能中的 Bug - “集成 Windows 边栏功能”，货币和天气小工具无法正常工作。
++ 修复功能中的 Bug - “制作 ISO 镜像”，当源 DVD 文件夹为空时，工具箱会提示拒绝访问权限错误。
++ 修复功能中的 Bug - “将源文件复制到 USB 闪存驱动器”，当源 DVD 文件夹为空时，工具箱会提示拒绝访问权限错误。
++ 修复功能中的 Bug - “同步源 Boot.wim 和 Install.wim WIM 映像到 USB 闪存驱动器”，当源 DVD 文件夹为空时，工具箱会提示拒绝访问权限错误。
+- 移除清理工具，因为它内置工具箱。
+
+v1.08
++ 添加更新包 KB2959977 到功能 - “集成 Windows 8.1/Server 2012 R2 Update 1”中。
++ 添加 MUI 语言支持到功能 - “集成 Microsoft DaRT 工具”中。
++ 更新适用于 MSMG 工具箱的 Microsoft DaRT 7/8.1 工具包，支持（de-DE、fr-FR、ru-RU）语言。
++ 添加 MUI 语言支持到功能 - “集成 Windows To Go 工作区功能”中。
++ 更新适用于 MSMG 工具箱的 Windows To Go 工作区功能包，并支持所有可用语言。
++ 修复工具箱语义 Bug。
+
+v1.07
++ 新增对解密已加密的 Windows 应用商店更新 ESD 映像格式的支持，同时选择源文件。
++ 更新适用于 MSMG 工具箱的 .NET Framework 3.5 包，含 .NET Framework 3.5 语言包。
+
+v1.06
++ 修复 64 位主机操作系统体系结构被工具箱检测为 32 位的 Bug。
+
+v1.05
++ 工具箱现已更名为适用于 Windows 7-8.1/Server 2008 R2-2012 R2 的 MSMG 工具箱。
++ 工具箱现在支持 Windows 7 SP1，Windows Thin PC 和 Windows Server 2008 R2 操作系统。
++ 工具箱界面完全重新设计，带有简化菜单，易于操作。
++ 工具箱主菜单项包括：
+
+...选择源文件
+...集成
+...移除
+...自定义
+...应用源文件
+...选择目标
+
++ 工具箱现在在选择源文件时可安装 Boot.wim、Intall.wim 和 WinRE.wim WIM 映像。
++ 工具箱现在在安装源文件时将显示所选源 WIM 映像的完整 WIM 信息。
++ 如果找不到 WIM 映像，工具箱现在将会检测是否存在 Windows 8.1 应用商店更新 ESD 映像。
++ 工具箱现在提供应用/放弃/重新构建源 WIM 映像的选项。
++ 新增“将 Windows 8.1 商店更新的 DVD ESD 映像转换为 WIM 映像”功能。
++ 添加更好的方式来显示可用于服务的 WIM 映像列表。
++ 为工具箱添加动态菜单以根据操作系统选择显示菜单。
++ 为选择/未应用源文件时锁定菜单等操作添加错误消息。
++ 为 MSMG 工具箱增加最终用户许可协议（EULA）。
++ 在工具箱的每个操作结束时添加声音效果。
+- 移除功能 - “集成 Windows 8.1/Sever2012 R2 GA 更新”。
++ 新增“集成 Windows 8.1/Server 2012 R2 Update 1”功能。
++ 新增“集成 Windows 安全更新和热修复”功能（Windows 7/Thin PC/Server 2008 R2 操作系统）。
++ 新增“集成 Windows 语言包”功能。
++ 新增“集成 Windows 设备驱动程序”功能（Windows 7/Thin PC/Server 2008 R2 操作系统）。
++ 新增“集成 Internet Explorer 11 带企业模式”功能（仅限 Windows 7/Thin PC/Server 2008 R2 源操作系统）。
++ 新增“集成 Windows Thin PC 附加程序包”功能（仅限 Windows Thin PC 源操作系统）。
++ 新增功能选项 - “集成 Microsoft .NET Framework 3.5 组件”以备份 .NET Framework 3.5 组件文件到 <Packs\NetFX35> 文件夹作为未来集成的源。
++ 新增将 Microsoft .NET Framework 3.5 组件安装到实时系统的功能。
++ 拆分功能 - “集成 Windows 媒体中心加载项”和“集成 Windows 媒体中心通用激活令牌文件”。
++ 新增功能选项 - “集成用于自动激活的预激活令牌”将已激活的 Windows 8.1/Server 2012 R2 令牌文件从实时系统备份到 <Packs\PreAct> 文件夹以供将来集成。
++ 修复 - “集成终端服务器补丁”功能中终端服务器补丁程序注册表设置错误地应用到 HKLM\SOFTWARE 而不是 HKLM\SYSTEM 的 Bug。
++ 新增“集成 Microsoft 终端服务器补丁”功能（Windows 7/Thin PC/Server 2008 R2 操作系统）。
++ 新增“集成 Microsoft DaRT 7 工具”功能（Windows 7/Thin PC/Server 2008 R2 操作系统）。
++ 在 Windows 恢复环境（WinRE）WIM 映像中新增“集成 Microsoft DaRT 7/8.1工具”功能。
++ 将文件 fmapi.dll 添加到 Microsoft DaRT 8.1 工具包以支持 Total Commander。
++ 新增“集成重复数据移除功能”功能（仅限 Windows 8.1 64 位源操作系统）。
++ 新增“集成 Microsoft DirectX 9.0c 组件”功能。
++ 更新 Windows To Go 功能组件文件（Windows 8.1 客户端操作系统）。
++ 更新 Microsoft Windows Vista 和 Windows 7 游戏包文件。
++ 新增“集成 Microsoft Vista 游戏包”功能（仅限 Windows 7 源操作系统）。
++ 新增“集成 Microsoft Vista 和 Windows 7 游戏包”功能（Windows ThinPC 操作系统）。
++ 新增“集成 Windows 边栏”功能（仅限 Windows 8.1 源操作系统）。
+- 移除功能中的高级编解码器选项 - “集成 Fraunhofer IIS MPEG Layer-3 Advanced/Professional 编解码器”。
++ 新增“集成 Fraunhofer IIS MPEG Layer-3 Professional Codec”功能（Windows 7/Server 2008 R2 操作系统）。
++ 修复功能中的一个 Bug - “集成自定义Windows 恢复环境（WinRE）”，其中自定义“Winre.wim”被复制到 Bug的目标文件夹。
++ 新增“集成自定义 Windows 恢复环境（WinRE）”功能（Windows 7/Server 2008 R2 操作系统）。
++ 新增“集成自定义默认用户帐户图片”功能（Windows 7/Thin PC/Server 2008 R2 操作系统）。
++ 新增“集成自定义系统覆盖文件”功能（Windows 7/Thin PC/Server 2008 R2 操作系统）。
++ 更新功能 - “移除默认 Metro 应用”（Windows 8.1/Server 2012 R2 操作系统）。
++ 新增功能选项 - “移除默认 Metro 应用”以移除默认 Metro Windows 应用商店应用程序（Windows Embedded 8.1/Server 2012 R2 操作系统）。
++ 新增功能选项 - “移除默认 Metro 应用”以移除默认设置（Microsoft Office OneNote、Microsoft OneDrive（SkyDrive）和照片、Microsoft Windows 相机、Microsoft Windows 应用商店）Metro 应用。
++ 新增功能选项 - “移除默认 Metro 应用”以移除所有默认 Bing Metro 应用。
++ 新增功能选项 - “移除默认 Metro 应用”以移除所有默认的在线 Metro 应用。
++ 新增功能选项 - “移除默认 Metro 应用程序”以移除除 Windows 应用商店应用外所有的默认 Metro 应用。
++ 修复功能中的 Bug - “制作 DVD ISO 镜像”，其中UEFI PC启动选项不起作用。
++ 修复功能中的 Bug - “制作 DVD ISO 镜像”，其中 ISO 映像卷标签未在 UEFI，UEFI_BIOS 模式下分配。
+- 移除功能中的 UEFI_BIOS PC 启动选项 - “制作 DVD ISO 镜像”。
++ 新增“同步源 Boot.wim 和 Install.wim WIM 映像到 USB 闪存驱动器”功能。
++ 功能中使用的 7-zip Extractor 替换为 PowerShell - “将 ISO 镜像刻录到可启动的 USB 闪存驱动器”以将 ISO 中的内容复制到 USB 闪存驱动器。
++ 修复日志文件的移除问题，现在，当退出工具箱时，日志文件将被移除。
++ 修复工具箱语义 Bug。
+- 移除冗余代码。
+
+v1.04
++ 添加一个选项，询问是否将 WADK 8.1 工具复制到 MSMG 工具箱 Bin\WADK 文件夹（WADK Portable）。
++ 新增“将 Microsoft DaRT 8.1 工具集成到 BOOT.WIM 恢复选项”功能。
++ 新增“集成 Windows To Go 工作区功能”功能。
++ 新增“集成自定义系统文件/文件夹”功能。
++ 修复工具箱启动设置中工具箱 Bug地将 64 位主机操作系统检测为 32 位操作系统的 Bug。
++ 修复 - 在“集成 .NET Framework 3.5 组件”功能中，当工具包在静默模式下使用时，.NET Framework 3.5 组件的集成失败的 Bug。
++ 修复 - 在“集成 Windows 媒体中心加载项”功能中，当源操作系统是 Windows 8.1 / Server 2012 R2 多合一操作系统时，WIM 映像标志和描述的设置失败的 Bug。
++ 修复 - 在“集成自定义 Windows 恢复环境（WinRE）”功能中 winre.wim 复制失败的 Bug。
++ 修复 - 在“导出默认 Metro 应用关联”功能中移除现有 AppsAssoc.xml 文件失败的 Bug。
++ 添加检查以跳过 .NET Framework 3.5 组件集成的步骤（如果它已经集成）。
++ 添加在功能中选择源 WIM 映像索引的选项 - “集成 Windows 媒体中心加载项功能”。
++ 添加对 Windows 媒体中心附加功能集成的检查（如果它已经集成）。
+- 移除功能中其余 WIM 映像索引的选项 - “集成 Windows 媒体中心附加功能”。
++ 添加检查以跳过 Windows 8.1/Server 2012 GA 累积更新的集成（如果它已经集成）。
++ 添加对 CAB 格式的 Windows 8.1/Server 2012 R2 GA 汇总更新的支持。
++ 添加对 Windows 安全更新/热修复 CAB 格式更新的支持。
++ 添加一个选项，面向选择是否在每个功能处理中重建 WIM 映像文件。
+* 合并菜单项 - 将自定义修补程序与主菜单项集成 - 集成自定义程序包。
+> 将启动设置例程移动到工具箱过程的开始。
++ 在工具箱的每个操作开始时新增预清理例程。
+- 移除冗余代码。
+
+v1.03
++ 添加新的主菜单项 - 集成自定义包。
+> 将主菜单项 - 集成自定义修补程序移动到主菜单项 - 集成自定义包。
++ 新增功能“集成 Windows Vista 和 Windows 7 游戏包”。
++ 新增“集成自定义 Windows 恢复环境（WinRE.wim）”功能。
++ 加入新的主菜单项 - 移除/自定义 Metro 应用程序。
++ 新增“移除默认 Metro 应用”功能。
++ 新增“移除默认 Metro 应用关联”功能。
++ 新增“从 XML 文件导入默认 Metro 应用关联”功能。
++ 新增“将默认 Metro 应用关联导出到 XML 文件”功能。
++ 添加缺少终端服务器修补程序注册表设置。
++ 更新的清理工具。
++ 添加更好的显示以显示可用于服务的 WIM 图像列表。
++ 修复当主机操作系统是非英语操作系统时的 Bug - “GA/热修复更新文件夹是空的”。
+
+v1.02
++ 新增“集成驱动程序”功能。
++ 新增“将源文件复制到 USB 闪存盘”功能。
++ 新增“将 ISO 映像刻录到 USB 闪存盘”功能。
++ 新增“格式化 USB 闪存盘”功能。
++ 在制作 DVD ISO 映像功能中新增第三选项引导类型 BIOS 和 UEFI。
+> 将以下菜单项移动到新的主菜单项 - 制作/刻录 ISO 映像。
+
+... 制作 ISO 镜像
+... 刻录 ISO 镜像
+... 将源文件复制到 USB 闪存驱动器
+... 将 ISO 映像刻录到 USB 闪存驱动器
+... 格式化 USB 闪存驱动器
+
+v1.01
++ 添加对 Windows 8.1 RT ARM 操作系统的支持。
++ 添加对集成 Windows 8.1 RT GA 汇总更新的支持。
++ 新增“集成 Windows 安全更新和热修复”功能（x86/x64/ARM）。
++ 在启动设置中增加预清理过程。
++ 对输入/输出文件/文件夹增加 Bug 检查和 Bug 处理。
++ 添加更好的显示以显示可用于服务的 WIM 映像列表。
++ 添加清理工具 v1.0 以卸载已放弃的安装点并清除留在日志和临时文件上。
+- 移除集成的 Flash Player 更新包 KB2889543（由更新包 KB2898108 替代），来自集成 Windows 8.1 和 Server 2012 R2 GA 汇总更新。
+- 移除冗余代码。
+
+v1.00（初始发布）
++ 添加对 Windows 8.1 和 Windows Server 2012 R2 操作系统的支持。
++ 添加自动下载和安装 WADK 8.1（部署工具）（如果尚未安装）。
++ 添加显示详细或简略输出状态的选项。
++ 新增“集成 .NET Framework 3.5 组件”功能。
++ 新增“集成 Windows 媒体中心附加功能”功能。
++ 新增“集成 Windows 8.1 和 Server 2012 R2 GA 汇总更新”(x86/x64）功能。
++ 新增“集成用于自动激活预激活详细信息”功能。
++ 新增“集成自定义补丁”功能。
++ 新增“制作 ISO 镜像”功能。
++ 新增“刻录 ISO 镜像”功能。
