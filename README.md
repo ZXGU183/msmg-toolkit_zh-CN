@@ -21,6 +21,7 @@
 [![GitHub repo forks](https://img.shields.io/github/forks/thecodermehedi/msmg-toolkit?style=flat&logo=github&logoColor=whitesmoke&label=Forks)](https://github.com/thecodermehedi/msmg-toolkit/network)&#160;
 [![GitHub repo watchers](https://img.shields.io/github/watchers/thecodermehedi/msmg-toolkit?style=flat&logo=github&logoColor=whitesmoke&label=Watchers)](https://github.com/thecodermehedi/msmg-toolkit/watchers)&#160;
 [![GitHub repo size](https://img.shields.io/github/repo-size/thecodermehedi/msmg-toolkit?style=flat&logo=github&logoColor=whitesmoke&label=Repo%20Size)](https://github.com/thecodermehedi/msmg-toolkit/archive/refs/heads/main.zip)
+[![Chat on Matrix](https://img.shields.io/badge/Matrix-%23image--tool%3Amozilla.org-06D7A0?logo=matrix)](https://matrix.to/#/#image-tool:mozilla.org)
 
 </div>
 
@@ -50,6 +51,8 @@
 - The ToolkitHelper.exe requires Microsoft .NET Framework 4.8 or 4.9 runtime pack.
 
 ## 👉 Installation
+
+> **提示**：该工具的汉化翻译者活跃于[远景论坛（PCBeta）](https://tieba.baidu.com/f?kw=%E8%BF%9C%E6%99%AF%E8%AE%BA%E5%9D%9B)。要访问[中文版发布在该论坛的主题页](https://i.pcbeta.com/space-uid-4772702.html)，可以通过 [![Chat on Telegram](https://img.shields.io/badge/Telegram-PCBeta%20Bot-2CA5E0?logo=telegram)](https://t.me/pcbeta_bot) 注册该论坛。
 
 ⬇️ **Download the latest version:** <a href="https://raw.githubusercontent.com/thecodermehedi/msmg-toolkit/main/Toolkit_v13.7.7z" download> Toolkit_v13.7.7z </a>
 
@@ -224,6 +227,7 @@
 
 ### 👉 Similar or Related Tools
 
+- [Slimdown10](https://forums.mydigitallife.net/threads/slimdown10_v2-0-2-continued.88599/)
 - [NTLite](https://www.ntlite.com/)
 - [Tiny11Builder](https://github.com/ntdevlabs/tiny11builder)
 - [WinUtil](https://github.com/ChrisTitusTech/winutil)
