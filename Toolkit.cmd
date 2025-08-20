@@ -17159,7 +17159,7 @@ setlocal
 
 cls
 echo.===============================================================================
-echo.                     MSMG 工具箱 - 集成 Windows 图标皮肤
+echo.         MSMG 工具箱 - 集成 Windows 图标皮肤
 echo.===============================================================================
 echo.
 
@@ -17168,24 +17168,42 @@ call :GetImageArchitecture "%InstallWim%", %DefaultIndexNo% >nul
 
 set "Skins=%Skins%\Icons"
 
-:: 检查 Windows 图标皮肤包文件是否存在
-for %%i in (cmd.exe.res, imageres.dll.res, imagesp1.dll.res, mydocs.dll.res, snippingtool.exe.res, shell32.dll.res, taskmgr.exe.res, win32calc.exe.res, zipfldr.dll.res) do (
-	if not exist "%Skins%\%%i" (
-		echo.Windows 图标皮肤包文件“%%i”没有找到……
-		echo.
-		echo.请复制上述文件到 ^<Packs\Skins\Icons^> 文件夹……
-		goto :Stop
-	)
+rem ==> 分开检查文件是否存在 <==
+rem ==> 首先，检查指定要直接覆盖的三个 .mun 文件是否存在。
+for %%i in (imageres.dll.mun, shell32.dll.mun, zipfldr.dll.mun) do (
+    if not exist "%Skins%\%%i" (
+        echo.Windows 图标皮肤包文件“%%i”没有找到……
+        echo.
+        echo.这是直接覆盖所需的文件，请复制到 ^<Packs\Skins\Icons^> 文件夹……
+        goto :Stop
+    )
 )
+
+:: 检查其余需要 ResourceHacker 处理的 .res 文件是否存在
+for %%i in (cmd.exe.res, imageres.dll.res, imagesp1.dll.res, mydocs.dll.res, snippingtool.exe.res, taskmgr.exe.res, win32calc.exe.res, zipfldr.dll.res) do (
+    rem ==> 对于 imageres, shell32, zipfldr，我们检查 .res 文件是为了兼容旧系统版本，如果不存在则跳过检查 <==
+    if "%%i" equ "imageres.dll.res" goto :SkipCheck
+    if "%%i" equ "shell32.dll.res" goto :SkipCheck
+    if "%%i" equ "zipfldr.dll.res" goto :SkipCheck
+
+    if not exist "%Skins%\%%i" (
+        echo.Windows 图标皮肤包文件“%%i”没有找到……
+        echo.
+        echo.请复制上述文件到 ^<Packs\Skins\Icons^> 文件夹……
+        goto :Stop
+    )
+    :SkipCheck
+)
+
 
 echo.-------------------------------------------------------------------------------
 echo.####正在开始集成 Windows 图标皮肤##############################################
 echo.-------------------------------------------------------------------------------
 echo.
-echo.    映像文件名称             ：Install.wim
-echo.    映像索引                 ：%ImageIndexNo%
-echo.    映像体系结构             ：%ImageArchitecture%
-echo.    映像版本                 ：%ImageVersion%.%ImageServicePackBuild%.%ImageServicePackLevel%
+echo.   映像文件名称           ：Install.wim
+echo.   映像索引               ：%ImageIndexNo%
+echo.   映像体系结构           ：%ImageArchitecture%
+echo.   映像版本               ：%ImageVersion%.%ImageServicePackBuild%.%ImageServicePackLevel%
 echo.
 echo.-------------------------------------------------------------------------------
 echo.####正在处理 Windows 图标皮肤资源##############################################
@@ -17199,62 +17217,62 @@ copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\SnippingTool.exe" "%Te
 if exist "%InstallMount%\%DefaultIndexNo%\Windows\System32\win32calc.exe" copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\win32calc.exe" "%Temp%\win32calc.bak" >nul
 
 if "%ImageArchitecture%" equ "x64" (
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\cmd.exe" "%Temp%\cmd_wow64.bak" >nul
-	if exist "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\win32calc.exe" copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\win32calc.exe" "%Temp%\win32calc_wow64.bak" >nul
+    copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\cmd.exe" "%Temp%\cmd_wow64.bak" >nul
+    if exist "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\win32calc.exe" copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\win32calc.exe" "%Temp%\win32calc_wow64.bak" >nul
 )
 
 if "%ImageBuild%" leq "17763" (
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\imageres.dll" "%Temp%\imageres.bak" >nul
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\imagesp1.dll" "%Temp%\imagesp1.bak" >nul
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\mydocs.dll" "%Temp%\mydocs.bak" >nul
-	rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\shell32.dll" "%Temp%\shell32.bak" >nul
-	rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\taskmgr.exe" "%Temp%\taskmgr.bak" >nul
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\zipfldr.dll" "%Temp%\zipfldr.bak" >nul
-	
-	if "%ImageArchitecture%" equ "x64" (
-		copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\imageres.dll" "%Temp%\imageres_wow64.bak" >nul
-		copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\imagesp1.dll" "%Temp%\imagesp1_wow64.bak" >nul
-		copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\mydocs.dll" "%Temp%\mydocs_wow64.bak" >nul
-		rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\taskmgr.exe" "%Temp%\taskmgr_wow64.bak" >nul
-		copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\zipfldr.dll" "%Temp%\zipfldr_wow64.bak" >nul
-	)
-	echo.
-	echo.正在修补 [\Windows\System32\imageres.dll] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imageres.bak", "%Temp%\imageres.dll", "%Skins%\imageres.dll.res" ,,,
-	call :RemoveFile "%Temp%\imageres.bak"
-	echo.正在修补 [\Windows\System32\imagesp1.dll] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imagesp1.bak", "%Temp%\imagesp1.dll", "%Skins%\imagesp1.dll.res" ,,,
-	call :RemoveFile "%Temp%\imagesp1.bak"
-	echo.正在修补 [\Windows\System32\mydocs.dll] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\mydocs.bak", "%Temp%\mydocs.dll", "%Skins%\mydocs.dll.res" ,,,
-	call :RemoveFile "%Temp%\mydocs.bak"
-	rem echo.正在修补 [\Windows\System32\shell32.dll] 文件……
-	rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\shell32.bak", "%Temp%\shell32.dll", "%Skins%\shell32.dll.res" ,,,
-	rem call :RemoveFile "%Temp%\shell32.bak"
-	rem echo.正在修补 [\Windows\System32\taskmgr.exe] 文件……
-	rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\taskmgr.bak", "%Temp%\taskmgr.exe", "%Skins%\taskmgr.exe.res" ,,,
-	rem call :RemoveFile "%Temp%\taskmgr.bak"
-	echo.正在修补 [\Windows\System32\zipfldr.dll] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\zipfldr.bak", "%Temp%\zipfldr.dll", "%Skins%\zipfldr.dll.res" ,,,
-	call :RemoveFile "%Temp%\zipfldr.bak"
+    copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\imageres.dll" "%Temp%\imageres.bak" >nul
+    copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\imagesp1.dll" "%Temp%\imagesp1.bak" >nul
+    copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\mydocs.dll" "%Temp%\mydocs.bak" >nul
+    rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\shell32.dll" "%Temp%\shell32.bak" >nul
+    rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\taskmgr.exe" "%Temp%\taskmgr.bak" >nul
+    copy /y "%InstallMount%\%DefaultIndexNo%\Windows\System32\zipfldr.dll" "%Temp%\zipfldr.bak" >nul
+    
+    if "%ImageArchitecture%" equ "x64" (
+        copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\imageres.dll" "%Temp%\imageres_wow64.bak" >nul
+        copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\imagesp1.dll" "%Temp%\imagesp1_wow64.bak" >nul
+        copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\mydocs.dll" "%Temp%\mydocs_wow64.bak" >nul
+        rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\taskmgr.exe" "%Temp%\taskmgr_wow64.bak" >nul
+        copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\zipfldr.dll" "%Temp%\zipfldr_wow64.bak" >nul
+    )
+    echo.
+    echo.正在修补 [\Windows\System32\imageres.dll] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imageres.bak", "%Temp%\imageres.dll", "%Skins%\imageres.dll.res" ,,,
+    call :RemoveFile "%Temp%\imageres.bak"
+    echo.正在修补 [\Windows\System32\imagesp1.dll] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imagesp1.bak", "%Temp%\imagesp1.dll", "%Skins%\imagesp1.dll.res" ,,,
+    call :RemoveFile "%Temp%\imagesp1.bak"
+    echo.正在修补 [\Windows\System32\mydocs.dll] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\mydocs.bak", "%Temp%\mydocs.dll", "%Skins%\mydocs.dll.res" ,,,
+    call :RemoveFile "%Temp%\mydocs.bak"
+    rem echo.正在修补 [\Windows\System32\shell32.dll] 文件……
+    rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\shell32.bak", "%Temp%\shell32.dll", "%Skins%\shell32.dll.res" ,,,
+    rem call :RemoveFile "%Temp%\shell32.bak"
+    rem echo.正在修补 [\Windows\System32\taskmgr.exe] 文件……
+    rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\taskmgr.bak", "%Temp%\taskmgr.exe", "%Skins%\taskmgr.exe.res" ,,,
+    rem call :RemoveFile "%Temp%\taskmgr.bak"
+    echo.正在修补 [\Windows\System32\zipfldr.dll] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\zipfldr.bak", "%Temp%\zipfldr.dll", "%Skins%\zipfldr.dll.res" ,,,
+    call :RemoveFile "%Temp%\zipfldr.bak"
 
-	if "%ImageArchitecture%" equ "x64" (
-		echo.正在修补 [\Windows\SysWOW64\imageres.dll] 文件……
-		"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imageres_wow64.bak", "%Temp%\imageres_wow64.dll", "%Skins%\imageres.dll.res" ,,,
-		call :RemoveFile "%Temp%\imageres_wow64.bak"
-		echo.正在修补 [\Windows\SysWOW64\imagesp1.dll] 文件……
-		"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imagesp1_wow64.bak", "%Temp%\imagesp1_wow64.dll", "%Skins%\imagesp1.dll.res" ,,,
-		call :RemoveFile "%Temp%\imagesp1_wow64.bak"
-		echo.正在修补 [\Windows\SysWOW64\mydocs.dll] 文件……
-		"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\mydocs_wow64.bak", "%Temp%\mydocs_wow64.dll", "%Skins%\mydocs.dll.res" ,,,
-		call :RemoveFile "%Temp%\mydocs_wow64.bak"
-		rem echo.正在修补 [\Windows\SysWOW64\taskmgr.exe] 文件……
-		rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\taskmgr_wow64.bak", "%Temp%\taskmgr_wow64.exe", "%Skins%\taskmgr.exe.res" ,,,
-		rem call :RemoveFile "%Temp%\taskmgr_wow64.bak"
-		echo.正在修补 [\Windows\SysWOW64\zipfldr.dll] 文件……
-		"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\zipfldr_wow64.bak", "%Temp%\zipfldr_wow64.dll", "%Skins%\zipfldr.dll.res" ,,,
-		call :RemoveFile "%Temp%\zipfldr_wow64.bak"
-	)
+    if "%ImageArchitecture%" equ "x64" (
+        echo.正在修补 [\Windows\SysWOW64\imageres.dll] 文件……
+        "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imageres_wow64.bak", "%Temp%\imageres_wow64.dll", "%Skins%\imageres.dll.res" ,,,
+        call :RemoveFile "%Temp%\imageres_wow64.bak"
+        echo.正在修补 [\Windows\SysWOW64\imagesp1.dll] 文件……
+        "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imagesp1_wow64.bak", "%Temp%\imagesp1_wow64.dll", "%Skins%\imagesp1.dll.res" ,,,
+        call :RemoveFile "%Temp%\imagesp1_wow64.bak"
+        echo.正在修补 [\Windows\SysWOW64\mydocs.dll] 文件……
+        "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\mydocs_wow64.bak", "%Temp%\mydocs_wow64.dll", "%Skins%\mydocs.dll.res" ,,,
+        call :RemoveFile "%Temp%\mydocs_wow64.bak"
+        rem echo.正在修补 [\Windows\SysWOW64\taskmgr.exe] 文件……
+        rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\taskmgr_wow64.bak", "%Temp%\taskmgr_wow64.exe", "%Skins%\taskmgr.exe.res" ,,,
+        rem call :RemoveFile "%Temp%\taskmgr_wow64.bak"
+        echo.正在修补 [\Windows\SysWOW64\zipfldr.dll] 文件……
+        "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\zipfldr_wow64.bak", "%Temp%\zipfldr_wow64.dll", "%Skins%\zipfldr.dll.res" ,,,
+        call :RemoveFile "%Temp%\zipfldr_wow64.bak"
+    )
 )
 
 echo.正在修补 [\Windows\System32\cmd.exe] 文件……
@@ -17265,49 +17283,52 @@ echo.正在修补 [\Windows\System32\SnippingTool.exe] 文件……
 call :RemoveFile "%Temp%\SnippingTool.bak"
 
 if exist "%InstallMount%\%DefaultIndexNo%\Windows\System32\win32calc.exe" (
-	echo.正在修补 [\Windows\System32\win32calc.exe] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\win32calc.bak", "%Temp%\win32calc.exe", "%Skins%\win32calc.exe.res" ,,,
-	call :RemoveFile "%Temp%\win32calc.bak"
+    echo.正在修补 [\Windows\System32\win32calc.exe] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\win32calc.bak", "%Temp%\win32calc.exe", "%Skins%\win32calc.exe.res" ,,,
+    call :RemoveFile "%Temp%\win32calc.bak"
 )
 
 if "%ImageArchitecture%" equ "x64" (
-	echo.正在修补 [\Windows\SysWOW64\cmd.exe] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\cmd_wow64.bak", "%Temp%\cmd_wow64.exe", "%Skins%\cmd.exe.res" ,,,
-	call :RemoveFile "%Temp%\cmd_wow64.bak"
+    echo.正在修补 [\Windows\SysWOW64\cmd.exe] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\cmd_wow64.bak", "%Temp%\cmd_wow64.exe", "%Skins%\cmd.exe.res" ,,,
+    call :RemoveFile "%Temp%\cmd_wow64.bak"
 
-	if exist "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\win32calc.exe" (
-		echo.正在修补 [\Windows\SysWOW64\win32calc.exe] 文件……
-		"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\win32calc_wow64.bak", "%Temp%\win32calc_wow64.exe", "%Skins%\win32calc.exe.res" ,,,
-		call :RemoveFile "%Temp%\win32calc_wow64.bak"
-	)
+    if exist "%InstallMount%\%DefaultIndexNo%\Windows\SysWOW64\win32calc.exe" (
+        echo.正在修补 [\Windows\SysWOW64\win32calc.exe] 文件……
+        "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\win32calc_wow64.bak", "%Temp%\win32calc_wow64.exe", "%Skins%\win32calc.exe.res" ,,,
+        call :RemoveFile "%Temp%\win32calc_wow64.bak"
+    )
 )
 
 if "%ImageBuild%" geq "18363" (
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\imageres.dll.mun" "%Temp%\imageres.bak" >nul
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\imagesp1.dll.mun" "%Temp%\imagesp1.bak" >nul
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\mydocs.dll.mun" "%Temp%\mydocs.bak" >nul
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\shell32.dll.mun" "%Temp%\shell32.bak" >nul
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\taskmgr.exe.mun" "%Temp%\taskmgr.bak" >nul
-	copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\zipfldr.dll.mun" "%Temp%\zipfldr.bak" >nul
-	echo.
-	echo.正在修补 [\Windows\SystemResources\imageres.dll.mun] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imageres.bak", "%Temp%\imageres.dll.mun", "%Skins%\imageres.dll.res" ,,,
-	call :RemoveFile "%Temp%\imageres.bak"
-	echo.正在修补 [\Windows\SystemResources\imagesp1.dll.mun] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imagesp1.bak", "%Temp%\imagesp1.dll.mun", "%Skins%\imagesp1.dll.res" ,,,
-	call :RemoveFile "%Temp%\imagesp1.bak"
-	echo.正在修补 [\Windows\SystemResources\mydocs.dll.mun] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\mydocs.bak", "%Temp%\mydocs.dll.mun", "%Skins%\mydocs.dll.res" ,,,
-	call :RemoveFile "%Temp%\mydocs.bak"
-	echo.正在修补 [\Windows\SystemResources\shell32.dll.mun] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\shell32.bak", "%Temp%\shell32.dll.mun", "%Skins%\shell32.dll.res" ,,,
-	call :RemoveFile "%Temp%\shell32.bak"
-	echo.正在修补 [\Windows\SystemResources\taskmgr.exe.mun] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\taskmgr.bak", "%Temp%\taskmgr.exe.mun", "%Skins%\taskmgr.exe.res" ,,,
-	call :RemoveFile "%Temp%\taskmgr.bak"
-	echo.正在修补 [\Windows\SystemResources\zipfldr.dll.mun] 文件……
-	"%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\zipfldr.bak", "%Temp%\zipfldr.dll.mun", "%Skins%\zipfldr.dll.res" ,,,
-	call :RemoveFile "%Temp%\zipfldr.bak"
+    rem ==> 注释掉不再需要的备份和 ResourceHacker 处理步骤 <==
+    rem ==> 以下三个文件将直接从 Packs\Skins\Icons 覆盖，不再需要备份和修补。
+    rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\imageres.dll.mun" "%Temp%\imageres.bak" >nul
+    rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\shell32.dll.mun" "%Temp%\shell32.bak" >nul
+    rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\zipfldr.dll.mun" "%Temp%\zipfldr.bak" >nul
+    
+    copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\imagesp1.dll.mun" "%Temp%\imagesp1.bak" >nul
+    copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\mydocs.dll.mun" "%Temp%\mydocs.bak" >nul
+    copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\taskmgr.exe.mun" "%Temp%\taskmgr.bak" >nul
+    echo.
+    rem echo.正在修补 [\Windows\SystemResources\imageres.dll.mun] 文件……
+    rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imageres.bak", "%Temp%\imageres.dll.mun", "%Skins%\imageres.dll.res" ,,,
+    rem call :RemoveFile "%Temp%\imageres.bak"
+    echo.正在修补 [\Windows\SystemResources\imagesp1.dll.mun] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imagesp1.bak", "%Temp%\imagesp1.dll.mun", "%Skins%\imagesp1.dll.res" ,,,
+    call :RemoveFile "%Temp%\imagesp1.bak"
+    echo.正在修补 [\Windows\SystemResources\mydocs.dll.mun] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\mydocs.bak", "%Temp%\mydocs.dll.mun", "%Skins%\mydocs.dll.res" ,,,
+    call :RemoveFile "%Temp%\mydocs.bak"
+    rem echo.正在修补 [\Windows\SystemResources\shell32.dll.mun] 文件……
+    rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\shell32.bak", "%Temp%\shell32.dll.mun", "%Skins%\shell32.dll.res" ,,,
+    rem call :RemoveFile "%Temp%\shell32.bak"
+    echo.正在修补 [\Windows\SystemResources\taskmgr.exe.mun] 文件……
+    "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\taskmgr.bak", "%Temp%\taskmgr.exe.mun", "%Skins%\taskmgr.exe.res" ,,,
+    call :RemoveFile "%Temp%\taskmgr.bak"
+    rem echo.正在修补 [\Windows\SystemResources\zipfldr.dll.mun] 文件……
+    rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\zipfldr.bak", "%Temp%\zipfldr.dll.mun", "%Skins%\zipfldr.dll.res" ,,,
+    rem call :RemoveFile "%Temp%\zipfldr.bak"
 )
 echo.
 echo.-------------------------------------------------------------------------------
@@ -17315,84 +17336,85 @@ echo.####正在集成 Windows 图标皮肤##############################################
 echo.-------------------------------------------------------------------------------
 echo.
 for /l %%i in (1, 1, %ImageCount%) do (
-	if exist "%InstallMount%\%%i" (
-		if not %%i gtr 9 echo.===========================[Install.wim，索引 ：%%i]============================
-		if %%i gtr 9 echo.==========================[Install.wim，索引 ：%%i]============================
-		echo.
-		echo.正在复制已修补的 Windows 图标文件……
-		echo.
-		echo.正在复制 [\Windows\System32\cmd.exe] 文件……
-		copy /y "%Temp%\cmd.exe" "%InstallMount%\%%i\Windows\System32\cmd.exe" >nul
-		echo.正在复制 [\Windows\System32\SnippingTool.exe] 文件……
-		copy /y "%Temp%\SnippingTool.exe" "%InstallMount%\%%i\Windows\System32\SnippingTool.exe" >nul
+    if exist "%InstallMount%\%%i" (
+        if not %%i gtr 9 echo.===========================[Install.wim，索引 ：%%i]============================
+        if %%i gtr 9 echo.==========================[Install.wim，索引 ：%%i]============================
+        echo.
+        echo.正在复制已修补的 Windows 图标文件……
+        echo.
+        echo.正在复制 [\Windows\System32\cmd.exe] 文件……
+        copy /y "%Temp%\cmd.exe" "%InstallMount%\%%i\Windows\System32\cmd.exe" >nul
+        echo.正在复制 [\Windows\System32\SnippingTool.exe] 文件……
+        copy /y "%Temp%\SnippingTool.exe" "%InstallMount%\%%i\Windows\System32\SnippingTool.exe" >nul
 
-		if exist "%InstallMount%\%%i\Windows\System32\win32calc.exe" (
-			echo.正在复制 [\Windows\System32\win32calc.exe] 文件……
-			copy /y "%Temp%\win32calc.exe" "%InstallMount%\%%i\Windows\System32\win32calc.exe" >nul
-		)
+        if exist "%InstallMount%\%%i\Windows\System32\win32calc.exe" (
+            echo.正在复制 [\Windows\System32\win32calc.exe] 文件……
+            copy /y "%Temp%\win32calc.exe" "%InstallMount%\%%i\Windows\System32\win32calc.exe" >nul
+        )
 
-		if "%ImageArchitecture%" equ "x64" (
-			echo.正在复制 [\Windows\SysWOW64\cmd.exe] 文件……
-			copy /y "%Temp%\cmd_wow64.exe" "%InstallMount%\%%i\Windows\SysWOW64\cmd.exe" >nul
+        if "%ImageArchitecture%" equ "x64" (
+            echo.正在复制 [\Windows\SysWOW64\cmd.exe] 文件……
+            copy /y "%Temp%\cmd_wow64.exe" "%InstallMount%\%%i\Windows\SysWOW64\cmd.exe" >nul
 
-			if exist "%InstallMount%\%%i\Windows\SysWOW64\win32calc.exe" (
-				echo.正在复制 [\Windows\SysWOW64\win32calc.exe] 文件……
-				copy /y "%Temp%\Win32Calc_wow64.exe" "%InstallMount%\%%i\Windows\SysWOW64\Win32Calc.exe" >nul
-			)
-		)
+            if exist "%InstallMount%\%%i\Windows\SysWOW64\win32calc.exe" (
+                echo.正在复制 [\Windows\SysWOW64\win32calc.exe] 文件……
+                copy /y "%Temp%\Win32Calc_wow64.exe" "%InstallMount%\%%i\Windows\SysWOW64\Win32Calc.exe" >nul
+            )
+        )
 
-		if "%ImageBuild%" leq "17763" (
-			echo.正在复制 [\Windows\System32\imageres.dll] 文件……
-			copy /y "%Temp%\imageres.dll" "%InstallMount%\%%i\Windows\System32\imageres.dll" >nul
-			echo.正在复制 [\Windows\System32\imagesp1.dll] 文件……
-			copy /y "%Temp%\imagesp1.dll" "%InstallMount%\%%i\Windows\System32\imagesp1.dll" >nul
-			echo.正在复制 [\Windows\System32\mydocs.dll] 文件……
-			copy /y "%Temp%\mydocs.dll" "%InstallMount%\%%i\Windows\System32\mydocs.dll" >nul
-			rem echo.正在复制 [\Windows\System32\shell32.dll] 文件……
-			rem copy /y "%Temp%\shell32.dll" "%InstallMount%\%%i\Windows\System32\shell32.dll" >nul
-			rem echo.正在复制 [\Windows\System32\taskmgr.exe] 文件……
-			rem copy /y "%Temp%\taskmgr.exe" "%InstallMount%\%%i\Windows\System32\taskmgr.exe" >nul
-			echo.正在复制 [\Windows\System32\zipfldr.dll] 文件……
-			copy /y "%Temp%\zipfldr.dll" "%InstallMount%\%%i\Windows\System32\zipfldr.dll" >nul
+        if "%ImageBuild%" leq "17763" (
+            echo.正在复制 [\Windows\System32\imageres.dll] 文件……
+            copy /y "%Temp%\imageres.dll" "%InstallMount%\%%i\Windows\System32\imageres.dll" >nul
+            echo.正在复制 [\Windows\System32\imagesp1.dll] 文件……
+            copy /y "%Temp%\imagesp1.dll" "%InstallMount%\%%i\Windows\System32\imagesp1.dll" >nul
+            echo.正在复制 [\Windows\System32\mydocs.dll] 文件……
+            copy /y "%Temp%\mydocs.dll" "%InstallMount%\%%i\Windows\System32\mydocs.dll" >nul
+            rem echo.正在复制 [\Windows\System32\shell32.dll] 文件……
+            rem copy /y "%Temp%\shell32.dll" "%InstallMount%\%%i\Windows\System32\shell32.dll" >nul
+            rem echo.正在复制 [\Windows\System32\taskmgr.exe] 文件……
+            rem copy /y "%Temp%\taskmgr.exe" "%InstallMount%\%%i\Windows\System32\taskmgr.exe" >nul
+            echo.正在复制 [\Windows\System32\zipfldr.dll] 文件……
+            copy /y "%Temp%\zipfldr.dll" "%InstallMount%\%%i\Windows\System32\zipfldr.dll" >nul
 
-			if "%ImageArchitecture%" equ "x64" (
-				echo.正在复制 [\Windows\SysWOW64\imageres.dll] 文件……
-				copy /y "%Temp%\imageres_wow64.dll" "%InstallMount%\%%i\Windows\SysWOW64\imageres.dll" >nul
-				echo.正在复制 [\Windows\SysWOW64\imagesp1.dll] 文件……
-				copy /y "%Temp%\imagesp1_wow64.dll" "%InstallMount%\%%i\Windows\SysWOW64\imagesp1.dll" >nul
-				echo.正在复制 [\Windows\SysWOW64\mydocs.dll] 文件……
-				copy /y "%Temp%\mydocs_wow64.dll" "%InstallMount%\%%i\Windows\SysWOW64\mydocs.dll" >nul
-				rem echo.正在复制 [\Windows\SysWOW64\taskmgr.exe] 文件……
-				rem copy /y "%Temp%\taskmgr_wow64.exe" "%InstallMount%\%%i\Windows\SysWOW64\taskmgr.exe" >nul
-				echo.正在复制 [\Windows\SysWOW64\zipfldr.dll] 文件……
-				copy /y "%Temp%\zipfldr_wow64.dll" "%InstallMount%\%%i\Windows\SysWOW64\zipfldr.dll" >nul
-			)
-		)
+            if "%ImageArchitecture%" equ "x64" (
+                echo.正在复制 [\Windows\SysWOW64\imageres.dll] 文件……
+                copy /y "%Temp%\imageres_wow64.dll" "%InstallMount%\%%i\Windows\SysWOW64\imageres.dll" >nul
+                echo.正在复制 [\Windows\SysWOW64\imagesp1.dll] 文件……
+                copy /y "%Temp%\imagesp1_wow64.dll" "%InstallMount%\%%i\Windows\SysWOW64\imagesp1.dll" >nul
+                echo.正在复制 [\Windows\SysWOW64\mydocs.dll] 文件……
+                copy /y "%Temp%\mydocs_wow64.dll" "%InstallMount%\%%i\Windows\SysWOW64\mydocs.dll" >nul
+                rem echo.正在复制 [\Windows\SysWOW64\taskmgr.exe] 文件……
+                rem copy /y "%Temp%\taskmgr_wow64.exe" "%InstallMount%\%%i\Windows\SysWOW64\taskmgr.exe" >nul
+                echo.正在复制 [\Windows\SysWOW64\zipfldr.dll] 文件……
+                copy /y "%Temp%\zipfldr_wow64.dll" "%InstallMount%\%%i\Windows\SysWOW64\zipfldr.dll" >nul
+            )
+        )
 
-		if "%ImageBuild%" geq "18363" (
-			echo.正在复制 [\Windows\SystemResources\imageres.dll.mun] 文件……
-			copy /y "%Temp%\imageres.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\imageres.dll.mun" >nul
-			echo.正在复制 [\Windows\SystemResources\imagesp1.dll.mun] 文件……
-			copy /y "%Temp%\imagesp1.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\imagesp1.dll.mun" >nul
-			echo.正在复制 [\Windows\SystemResources\mydocs.dll.mun] 文件……
-			copy /y "%Temp%\mydocs.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\mydocs.dll.mun" >nul
-			echo.正在复制 [\Windows\SystemResources\shell32.dll.mun] 文件……
-			copy /y "%Temp%\shell32.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\shell32.dll.mun" >nul
-			echo.正在复制 [\Windows\SystemResources\taskmgr.exe.mun] 文件……
-			copy /y "%Temp%\taskmgr.exe.mun" "%InstallMount%\%%i\Windows\SystemResources\taskmgr.exe.mun" >nul
-			echo.正在复制 [\Windows\SystemResources\zipfldr.dll.mun] 文件……
-			copy /y "%Temp%\zipfldr.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\zipfldr.dll.mun" >nul
-		)
-	)
+        if "%ImageBuild%" geq "18363" (
+            rem ==> 更改复制源为 %Skins% 目录，实现直接覆盖 <==
+            echo.正在复制 [\Windows\SystemResources\imageres.dll.mun] 文件……
+            copy /y "%Skins%\imageres.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\imageres.dll.mun" >nul
+            echo.正在复制 [\Windows\SystemResources\imagesp1.dll.mun] 文件……
+            copy /y "%Temp%\imagesp1.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\imagesp1.dll.mun" >nul
+            echo.正在复制 [\Windows\SystemResources\mydocs.dll.mun] 文件……
+            copy /y "%Temp%\mydocs.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\mydocs.dll.mun" >nul
+            echo.正在复制 [\Windows\SystemResources\shell32.dll.mun] 文件……
+            copy /y "%Skins%\shell32.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\shell32.dll.mun" >nul
+            echo.正在复制 [\Windows\SystemResources\taskmgr.exe.mun] 文件……
+            copy /y "%Temp%\taskmgr.exe.mun" "%InstallMount%\%%i\Windows\SystemResources\taskmgr.exe.mun" >nul
+            echo.正在复制 [\Windows\SystemResources\zipfldr.dll.mun] 文件……
+            copy /y "%Skins%\zipfldr.dll.mun" "%InstallMount%\%%i\Windows\SystemResources\zipfldr.dll.mun" >nul
+        )
+    )
 )
 
 for %%f in (cmd; cmd_wow64; imageres; imageres_wow64; imagesp1; imagesp1_wow64; SnippingTool; SnippingTool_wow64; shell32; shell32_wow64; taskmgr; taskmgr_wow64; Win32Calc; Win32Calc_wow64; zipfldr; zipfldr_wow64; ResourceHacker.exe; ResourceHacker.ini; ResourceHacker.log) do (
-	call :RemoveFile "%Temp%\%%f"
-	call :RemoveFile "%Temp%\%%f.bak"
-	call :RemoveFile "%Temp%\%%f.dll"
-	call :RemoveFile "%Temp%\%%f.exe"
-	call :RemoveFile "%Temp%\%%f.dll.mun"
-	call :RemoveFile "%Temp%\%%f.exe.mun"
+    call :RemoveFile "%Temp%\%%f"
+    call :RemoveFile "%Temp%\%%f.bak"
+    call :RemoveFile "%Temp%\%%f.dll"
+    call :RemoveFile "%Temp%\%%f.exe"
+    call :RemoveFile "%Temp%\%%f.dll.mun"
+    call :RemoveFile "%Temp%\%%f.exe.mun"
 )
 
 echo.
