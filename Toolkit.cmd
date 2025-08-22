@@ -17159,7 +17159,7 @@ setlocal
 
 cls
 echo.===============================================================================
-echo.         MSMG 工具箱 - 集成 Windows 图标皮肤
+echo.    MSMG 工具箱 - 集成 Windows 图标皮肤
 echo.===============================================================================
 echo.
 
@@ -17180,30 +17180,24 @@ for %%i in (imageres.dll.mun, shell32.dll.mun, zipfldr.dll.mun) do (
 )
 
 :: 检查其余需要 ResourceHacker 处理的 .res 文件是否存在
-for %%i in (cmd.exe.res, imageres.dll.res, imagesp1.dll.res, mydocs.dll.res, snippingtool.exe.res, taskmgr.exe.res, win32calc.exe.res, zipfldr.dll.res) do (
-    rem ==> 对于 imageres, shell32, zipfldr，我们检查 .res 文件是为了兼容旧系统版本，如果不存在则跳过检查 <==
-    if "%%i" equ "imageres.dll.res" goto :SkipCheck
-    if "%%i" equ "shell32.dll.res" goto :SkipCheck
-    if "%%i" equ "zipfldr.dll.res" goto :SkipCheck
-
+:: imageres.dll.res, shell32.dll.res, zipfldr.dll.res 仅用于旧版本系统，如果不存在也不报错，因此从强制检查列表中移除。
+for %%i in (cmd.exe.res, imagesp1.dll.res, mydocs.dll.res, snippingtool.exe.res, taskmgr.exe.res, win32calc.exe.res) do (
     if not exist "%Skins%\%%i" (
         echo.Windows 图标皮肤包文件“%%i”没有找到……
         echo.
         echo.请复制上述文件到 ^<Packs\Skins\Icons^> 文件夹……
         goto :Stop
     )
-    :SkipCheck
 )
-
 
 echo.-------------------------------------------------------------------------------
 echo.####正在开始集成 Windows 图标皮肤##############################################
 echo.-------------------------------------------------------------------------------
 echo.
-echo.   映像文件名称           ：Install.wim
-echo.   映像索引               ：%ImageIndexNo%
-echo.   映像体系结构           ：%ImageArchitecture%
-echo.   映像版本               ：%ImageVersion%.%ImageServicePackBuild%.%ImageServicePackLevel%
+echo.    映像文件名称            ：Install.wim
+echo.    映像索引                ：%ImageIndexNo%
+echo.    映像体系结构            ：%ImageArchitecture%
+echo.    映像版本                ：%ImageVersion%.%ImageServicePackBuild%.%ImageServicePackLevel%
 echo.
 echo.-------------------------------------------------------------------------------
 echo.####正在处理 Windows 图标皮肤资源##############################################
@@ -17301,34 +17295,21 @@ if "%ImageArchitecture%" equ "x64" (
 )
 
 if "%ImageBuild%" geq "18363" (
-    rem ==> 注释掉不再需要的备份和 ResourceHacker 处理步骤 <==
-    rem ==> 以下三个文件将直接从 Packs\Skins\Icons 覆盖，不再需要备份和修补。
-    rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\imageres.dll.mun" "%Temp%\imageres.bak" >nul
-    rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\shell32.dll.mun" "%Temp%\shell32.bak" >nul
-    rem copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\zipfldr.dll.mun" "%Temp%\zipfldr.bak" >nul
+    rem ==> 以下文件将直接从 Packs\Skins\Icons 覆盖，不再需要备份和修补。
     
     copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\imagesp1.dll.mun" "%Temp%\imagesp1.bak" >nul
     copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\mydocs.dll.mun" "%Temp%\mydocs.bak" >nul
     copy /y "%InstallMount%\%DefaultIndexNo%\Windows\SystemResources\taskmgr.exe.mun" "%Temp%\taskmgr.bak" >nul
     echo.
-    rem echo.正在修补 [\Windows\SystemResources\imageres.dll.mun] 文件……
-    rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imageres.bak", "%Temp%\imageres.dll.mun", "%Skins%\imageres.dll.res" ,,,
-    rem call :RemoveFile "%Temp%\imageres.bak"
     echo.正在修补 [\Windows\SystemResources\imagesp1.dll.mun] 文件……
     "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\imagesp1.bak", "%Temp%\imagesp1.dll.mun", "%Skins%\imagesp1.dll.res" ,,,
     call :RemoveFile "%Temp%\imagesp1.bak"
     echo.正在修补 [\Windows\SystemResources\mydocs.dll.mun] 文件……
     "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\mydocs.bak", "%Temp%\mydocs.dll.mun", "%Skins%\mydocs.dll.res" ,,,
     call :RemoveFile "%Temp%\mydocs.bak"
-    rem echo.正在修补 [\Windows\SystemResources\shell32.dll.mun] 文件……
-    rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\shell32.bak", "%Temp%\shell32.dll.mun", "%Skins%\shell32.dll.res" ,,,
-    rem call :RemoveFile "%Temp%\shell32.bak"
     echo.正在修补 [\Windows\SystemResources\taskmgr.exe.mun] 文件……
     "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\taskmgr.bak", "%Temp%\taskmgr.exe.mun", "%Skins%\taskmgr.exe.res" ,,,
     call :RemoveFile "%Temp%\taskmgr.bak"
-    rem echo.正在修补 [\Windows\SystemResources\zipfldr.dll.mun] 文件……
-    rem "%Temp%\ResourceHacker.exe" -addoverwrite "%Temp%\zipfldr.bak", "%Temp%\zipfldr.dll.mun", "%Skins%\zipfldr.dll.res" ,,,
-    rem call :RemoveFile "%Temp%\zipfldr.bak"
 )
 echo.
 echo.-------------------------------------------------------------------------------
